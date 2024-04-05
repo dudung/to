@@ -5,6 +5,11 @@ body {
   margin: 1rem;
   max-width: 768px;
   text-align: justify;
+  word-wrap: break-word;
+  word-break: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  -ms-word-break: break-all;
 }
 
 header {
