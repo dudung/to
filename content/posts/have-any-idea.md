@@ -454,12 +454,23 @@ By the way, I add reading time and author to `single.html` from
 + -, "Reading time", Hugo Codex, url https://hugocodex.org/add-ons/reading-time/ [20240405].
 + McShelby, "Displaying author and date in content", Hugo, 30 Aug 2021, url https://discourse.gohugo.io/t/displaying-author-and-date-in-content/34505/6 [20240405].
 
-It can only support single author. It requires futher study to find the support for multiple authors shown in a post.
+It can only support single author. It requires futher study to find the support for multiple authors shown in a post. And
+
++ kascme, "Footnote styling", Hugo, 17 Jan 2019, url https://discourse.gohugo.io/t/footnote-styling/114/8 [20240405].
++ aeonfr, "Footnote styling:", Hugo, 19 Jul 1017, url https://discourse.gohugo.io/t/footnote-styling/114/7 [20240405].
+
+are some style changes for footnotes.
 
 
 ## markdown
 I think I might later write about examples of using Markdown in this part. Well, it might be happend or it might be not.
 
+\*\*\*
+
++ `05-May-2024` It is 2310 now and I am tired. This post will be continued tomorrow early morning, while performing sahur, hopefully. I have to go to bed now.
+
+
+## notes
 [^1]: Helen Foster, German Valero, "Advanced use of Markdown", Moodle Docs, 21 Feb 2024 15:24, url https://docs.moodle.org/403/en/index.php?oldid=147883 [20240405].
 [^2]: National Center for Biotechnology Information (2024), PubChem Compound Summary for CID 2244, Aspirin, url https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin [20240405].
 [^3]: Viridi S (2024) "some features on hugo", GitHub, 1 Mar 2024, url https://dudung.github.io/o/posts/if3110/some-features-on-hugo/ [20240405].

@@ -17,12 +17,6 @@ header {
   border-bottom: 0px solid #222;
 }
 
-
-.footnotes {
-  border-top: 0px solid #222;
-}
-
-
 footer {
   border-top: 1px solid #222;
   margin-top: 1rem;
@@ -58,3 +52,21 @@ nav {
 .readingtimedate {
   color: #999;
 }
+
+.footnotes {
+  border-top: 0px solid #222;
+  > hr {
+     display: none;
+   }
+}
+
+// footnote link
+a[href^="#fn:"],
+// Back to footnote link
+a[href^="#fnref:"] {
+  text-decoration: none;
+  color: $orange;
+  font-family: monospace;
+}
+a[href^="#fn:"]:before{ content: '[' }
+a[href^="#fn:"]:after{ content: ']' }
