@@ -436,6 +436,10 @@ m -25 15 l 0 -60
 
 Most of above codes are published previously in a post on o[^3]
 
+
+## markdown
+I think I might later write about examples of using Markdown in this part. Well, it might be happend or it might be not.
+
 [^1]: Helen Foster, German Valero, "Advanced use of Markdown", Moodle Docs, 21 Feb 2024 15:24, url https://docs.moodle.org/403/en/index.php?oldid=147883 [20240405].
 [^2]: National Center for Biotechnology Information (2024), PubChem Compound Summary for CID 2244, Aspirin, url https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin [20240405].
 [^3]: Viridi S (2024) "some features on hugo", GitHub, 1 Mar 2024, url https://dudung.github.io/o/posts/if3110/some-features-on-hugo/ [20240405].

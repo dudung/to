@@ -5,11 +5,6 @@ body {
   margin: 1rem;
   max-width: 768px;
   text-align: justify;
-  word-wrap: break-word;
-  word-break: break-word;
-  word-break: break-all;
-  overflow-wrap: break-word;
-  -ms-word-break: break-all;
 }
 
 header {
@@ -22,6 +17,12 @@ header {
   border-bottom: 0px solid #222;
 }
 
+
+.footnotes {
+  border-top: 0px solid #222;
+}
+
+
 footer {
   border-top: 1px solid #222;
   margin-top: 1rem;
@@ -30,6 +31,12 @@ footer {
 a {
   color: #00e;
   text-decoration: none;
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  -ms-word-break: break-all;
 }
 
 pre {
