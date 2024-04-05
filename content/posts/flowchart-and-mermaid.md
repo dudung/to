@@ -22,24 +22,22 @@ Then how to create a flowchart? There are at least about 15 best software that c
 ## types
 Type of process flowcharts represent and their purpose determine their types as follow [^developer_2023], where the first four are the main types, while the last six are additional sepecific purposes types.
 
-+ **Document Flowcharts**. These type is designed to show the existing controls over the document flow through the components of the system, e.g. various business units, and it is read from left to right.
-+ **Data Flowcharts**. This type represents the controls governing data flows within the system and is used primarily to show the channels through which data is transmitted throughout the system, which focuses on channels of data transmission, rather than how control flow is represented as in previous type.
-+ **System Flowcharts**. The flow of data to and through the main components of the system such as programs, storage media, data entry, processors, and communication networks are represented using this type of flowchart.
++ **Document flowchart**. These type is designed to show the existing controls over the document flow through the components of the system, e.g. various business units, and it is read from left to right.
++ **Data flowchart**. The controls governing data flows within the system and is used primarily to show the channels through which data is transmitted throughout the system, which focuses on channels of data transmission, rather than how control flow is represented as in previous type, are represented using this type of flowchart.
++ **System flowchart**. This type represent the flow of data to and through the main components of the system such as programs, storage media, data entry, processors, and communication networks.
++ **Program flowchart**. The controls placed internally in a program within a system are represented using this type of flowchart.
++ **Swimlane flowchart**. This type segments different functionalities into separate lanes, e.g. a swimlane diagram may be created with routes for the work processes performed by other organizational areas like human resources, operations, and accounting.
++ **Workflow flowchart**. In order to to document workflows that involve tasks, documents, and information in offices this type is used.
++ **Cross-functional flowcharts**. This type of flowchart is usually used to delineate who does what in a cross-functional team, since it represents who is responsible for ensuring that different functions are executed and when they are executed.
++ **Event-driven process chain flowchart**. To document or plan a business process, which is driven by event, this type of flowchart is used. 
++ **Specification and description language flowchart**. This type is used to brainstorm computer algorithms based on three basic components – system definition, block, and process, which illustrates the modeling language used to show how event-driven applications work in real-time, e.g. used in aviation, automotive, communication, and medical industries.
++ **Influence diagram**. It is a visual representations of decision problems, where the main purpose  is to outline critical elements like roadblocks or objectives to achieve at different points.
 
-- Program Flowcharts \
-These flowcharts represent the controls placed internally in a program within a system.
-- Swimlane Flowchart \
-these flowcharts segment different functionalities into separate lanes. For example, a swimlane diagram may be created with routes for the work processes performed by other organizational areas like human resources, operations, and accounting.
-- Workflow Flowchart \
-these flowcharts are used to document workflows that involve tasks, documents, and information in offices.
-- Cross-Functional Flowcharts \
-This type of flowchart is usually used to delineate who does what in a cross-functional team. They represent who is responsible for ensuring that different functions are executed and when they are executed. Such flowcharts are extremely useful when dealing with an extensive, complex process involving multiple teams, people, and departments, to understand the information flow between different areas.
-- Event-Driven Process Chain (EPC) Flowchart \
-These flowcharts are used to document or plan a business process.
-- Specification And Description Language (SDL) Flowchart \
-These flowcharts are used to brainstorm computer algorithms based on 3 basic components – system definition, block, and process. An SDL diagram illustrates the modeling language used to show how event-driven applications work in real-time. They are predominantly used in aviation, automotive, communication, and medical industries. The behavior of complex software can be effectively described with SDL flowcharts.
-- Influence Diagram \
-Influence diagrams are visual representations of decision problems. The main purpose of these flowcharts is to outline critical elements like roadblocks or objectives to achieve at different points.
+Only program flowchart is discussed further here.
+
+
+## symbols
+There are at least about 24 symbols used in flowchart [^ramuthi_2024], but only the first six are discussed here.
 
 
 ## notes
@@ -49,6 +47,7 @@ Influence diagrams are visual representations of decision problems. The main pur
 [^hira_2023]: Zira Hira, "How to Create Diagrams as Code with Mermaid, GitHub, and Visual Studio Code", freeCodeCamp, 6 Sep 2023, url https://www.freecodecamp.org/news/diagrams-as-code-with-mermaid-github-and-vs-code/ [20240406].
 [^karan_2023]: Rashmi Karan, "What is a Flowchart? (With Examples)", Shiksha Online, 28 Sep 2023, url https://www.shiksha.com/online-courses/articles/flowcharts-with-examples/ [20240406].
 [^kiran_2019]: D. R. Kiran,  "Product and process development", in Production Planning and Control, ch 16, p 223–246, 2019, url https://doi.org/10.1016/b978-0-12-818364-9.00016-0.
+[^ramuthi_2024]: Danesh Ramuthi, "Flowchart Symbols and Meaning: A Complete Guide (2024)", Venngage, 29 Feb 2024, url https://venngage.com/blog/flowchart-symbols/ [20240406].
 [^rila_2021]: Luciano Rila, "What is the significance of a flowchart?", University College London, 2 Jun 2021, url https://www.ucl.ac.uk/culture-online/case-studies/2021/jun/what-significance-flowchart [20240406].
 [^ward_2021]: Shauna Ward, "What is a flowchart? — tips, examples, and templates", Mural, 19 Mar 2021, url https://www.mural.co/blog/flowcharts [20240406].
 [^york_2024]: Alex York, "15 Best Flowchart Software Tools in 2024", ClickUp, 6 Mar 2024, url https://clickup.com/blog/flowchart-software/ [20240406].
