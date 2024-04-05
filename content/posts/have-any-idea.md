@@ -57,7 +57,7 @@ flowchart LR
   I[/"a, b, c"/]
   P["x<sub>1</sub> = -b + (b<sup>2</sup> - 4ac)<sup>&half;</sup>
   x<sub>2</sub> = -b - (b<sup>2</sup> - 4ac)<sup>&half;</sup>"]
-  O[/"x1, x2"/]
+  O[/"x<sub>1</sub>, x<sub>2</sub>"/]
   E(["End"])
 {{< /mermaid >}}
 
@@ -434,19 +434,18 @@ m -25 15 l 0 -60
 {{</* /blank/datablock */>}}
 ```
 
-Most of above codes are published previously in a post on o[^3], where [blank](https://dudung.github.io/blank/) is another project before o.
+Most of above codes are published previously in a post on o[^3], where [blank](https://dudung.github.io/blank/) is another project before [o](https://dudung.github.io/o/).
 
 {{< mermaid >}}
 flowchart RL
   B --> O --> T
-  B(["blank"])
-  O(["o"])
-  T(["to"])
+  B(("blank"))
+  O(("o"))
+  T(("to"))
   click T "https://dudung.github.io/to/" _blank
   click O "https://dudung.github.io/o/" _blank
   click B "https://dudung.github.io/blank/" _blank
 {{< /mermaid >}}
-
 
 
 ## markdown
