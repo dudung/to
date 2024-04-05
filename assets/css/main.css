@@ -58,6 +58,9 @@ nav {
   > hr {
      display: none;
    }
+  > ol > li:not(:first-child):not(:last-child) {
+    margin: -1em 0;
+  }
 }
 
 // footnote link
