@@ -124,6 +124,112 @@ There are at least about 24 symbols used in flowchart [^ramuthi_2024], but only 
   The arrow actually can not be drawn without origin and destination symbols. In order to show only the arrow, CSS is used to hide the symbols, and space is used as string to display.
 
 
+## directions
+Flowchart normally has top-bottom direction, but with current Mermaid version it can has top-bottom (TB), left-right (LR), bottom-top (BT) directions, and right-left (RL).
+
++ TB direction
+  {{< mermaid >}}
+  flowchart TB
+    A --> B
+  {{< /mermaid >}}
+  ```
+    {{</* mermaid */>}}
+    flowchart TB
+      A --> B
+    {{</* /mermaid */>}}
+  ```
++ LR direction
+  {{< mermaid >}}
+  flowchart LR
+    A --> B
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart LR
+    A --> B
+  {{</* /mermaid */>}}
+  ```
++ BT direction
+  {{< mermaid >}}
+  flowchart BT
+    A --> B
+  {{< /mermaid >}}
+  ```
+    {{</* mermaid /*>}}
+  flowchart BT
+    A --> B
+  {{</* /mermaid */>}}
+  ```
++ RL direction
+  {{< mermaid >}}
+  flowchart RL
+    A --> B
+  {{< /mermaid >}}
+  ```
+    {{</* mermaid */>}}
+  flowchart RL
+    A --> B
+  {{</* /mermaid */>}}
+  ```
+
+Using this direction feature, you can change direction of the flowchart without changing the whole code but only the option.
+
+
+## nodes id
+Following are some flowchart examples without and with the use of nodes id
+
++ Without nodes ide
+  {{< mermaid >}}
+  flowchart LR
+    First --> Second --> Third
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart LR
+    First --> Second --> Third
+  {{</* /mermaid */>}}
+  ```
+  This approach does not accomodate when the text containing spaces.
++ With nodes id 
+  {{< mermaid >}}
+  flowchart LR
+    A(("First step"))
+    B["Second step"]
+    C[/"Third step"/]
+    A --> B --> C
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart LR
+    A --> B --> C
+    A(("First step"))
+    B["Second step"]
+    C[/"Third step"/]
+  {{</* /mermaid */>}}
+  ```
+  Nodes id are A, B, and C. While declaring a node, a node id can be defined. Later, to create flow direction between two node, simple use nodes id of related nodes and an arrow connecting them.
++ Use style on node id
+  {{< mermaid >}}
+  flowchart LR
+    A(("Rot"))
+    B["Blau"]
+    A --> B
+    style A color: white, fill: red, stroke: blue, stroke-width: 4px;
+    style B color: white, fill: blue, stroke: red, stroke-width: 4px;
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart LR
+    A(("Rot"))
+    B["Blau"]
+    A --> B
+    style A color: white, fill: red, stroke: blue, stroke-width: 4px;
+    style B color: white, fill: blue, stroke: red, stroke-width: 4px;
+  {{</* /mermaid */>}}
+  ```
+  It can be seen that fill color, stroke color and widhth, and also text color can be customized using CSS-like format. Notice that `color` keyword must be put before others or it will not work.
+
+
 ## notes
 [^chapin_1970]: Ned Chapin, "Flowcharting With the ANSI Standard: A Tutorial", Computer Surveys, vol 2, no 2, p 119-146, url https://doi.org/10.1145/356566.356570.
 [^developer_2023]: Web Developer, "A Comprehensive Guide to Flowchart Symbols and Notations for Process Workflows", Cavintek, 22 Nov 2023, url https://www.cflowapps.com/flowchart-symbols/ [20240406].
