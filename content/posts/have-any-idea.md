@@ -5,6 +5,7 @@ draft = false
 math = true
 tags = []
 url = '0001'
+author = 'Sparisoma Viridi'
 +++
 A short story without any purposes
 <!--more-->
@@ -446,6 +447,14 @@ flowchart RL
   click O "https://dudung.github.io/o/" _blank
   click B "https://dudung.github.io/blank/" _blank
 {{< /mermaid >}}
+
+
+## features
+By the way, I add reading time and author to `single.html` from
++ -, "Reading time", Hugo Codex, url https://hugocodex.org/add-ons/reading-time/ [20240405].
++ McShelby, "Displaying author and date in content", Hugo, 30 Aug 2021, url https://discourse.gohugo.io/t/displaying-author-and-date-in-content/34505/6 [20240405].
+
+It can only support single author. It requires futher study to find the support for multiple authors shown in a post.
 
 
 ## markdown
