@@ -4,9 +4,12 @@
   {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
   {{ $dateHuman := .Date | time.Format ":date_long" }}
   
-  <div class='authors'>{{- .Params.author -}}</div>
+  <div class='author'>{{- .Params.author -}}</div>
+  <div class='readingtimedate'>
   {{ partial "reading-time.html" . }} &middot;
   <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  </div>
+  
   {{ .Content }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   

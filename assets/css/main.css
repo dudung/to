@@ -51,3 +51,10 @@ ul.menu-item li {
 nav {
   text-align: right;
 }
+
+.author {
+  font-size:110%;
+}
+.readingtimedate {
+  color: #999;
+}
