@@ -9,6 +9,7 @@ author = 'Sparisoma Viridi'
 +++
 Short intro about fowchart and the use of Mermaid <!--more-->
 
+
 ## intro
 The activity of using flowchart, or flowcharting, is a means of graphically stating ways of solving information handling problems, as people use the terms in working with computers[^chapin_1970]. It is a graphical representation of a process, where each process step is represented by a different symbol that contains a brief description of the process step [^karan_2023]. In process industry, flowcharts are used to indicate flow of the product during various stages or the process, where it is a combination of an outline process chart and the flow diagram, where each operation is represented by the appropriate shape of the equipment [^kiran_2019].
 
@@ -38,6 +39,89 @@ Only program flowchart is discussed further here.
 
 ## symbols
 There are at least about 24 symbols used in flowchart [^ramuthi_2024], but only the first six are discussed here.
+
+
++ Oval, ellipse, rounded rectangle are for start and finish.
+  {{< mermaid >}}
+  flowchart TD
+    A(["Begin"])
+    B(["End"])
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart TD
+    A(["Begin"])
+    B(["End"])
+  {{</* /mermaid */>}}
+  ```
++ Rectangle is for process.
+  {{< mermaid >}}
+  flowchart TD
+    P1["Calculate"]
+    P2["Sort"]
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart TD
+    P1["Calculate"]
+    P2["Sort"]
+  {{</* /mermaid */>}}
+  ```
++ Trapezium is for input and output.
+  {{< mermaid >}}
+  flowchart TD
+    I[/"Read"/]
+    O[/"Display"/]
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart TD
+    I[/"Read"/]
+    O[/"Display"/]
+  {{</* /mermaid */>}}
+  ```
++ Diamond is for decision.
+  {{< mermaid >}}
+  flowchart TD
+    \{"If x > 0"}
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart TD
+    {"If x > 0"}
+  {{</* /mermaid */>}}
+  ```
++ Circle is for connector.
+  {{< mermaid >}}
+  flowchart TD
+    \(("1"))
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart TD
+    (("1"))
+  {{</* /mermaid */>}}
+  ```
++ Arrow is for flow direction.
+  {{< mermaid >}}
+  flowchart LR
+    A ---> B
+    A["&nbsp;"]
+    B["&nbsp;"]
+    style A fill:none, stroke-width:0;
+    style B fill:none, stroke-width:0;
+  {{< /mermaid >}}
+  ```
+  {{</* mermaid */>}}
+  flowchart TD
+    A ---> B
+    A["&nbsp;"]
+    B["&nbsp;"]
+    style A fill:none, stroke-width:0;
+    style B fill:none, stroke-width:0;
+  {{</* /mermaid */>}}
+  ```
+  The arrow actually can not be drawn without origin and destination symbols. In order to show only the arrow, CSS is used to hide the symbols, and space is used as string to display.
 
 
 ## notes
