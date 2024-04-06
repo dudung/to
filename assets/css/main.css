@@ -89,6 +89,7 @@ div.tags {
   }
 }
 
+/*
 ul.authors {
   > li {
     display: inline-block;
@@ -100,9 +101,15 @@ ul.authors {
   border: 0px black solid;
   padding-left: 0px;
 }
+*/
 
 figure.authors {
   display: inline-block;
   border: 0px black solid;
   margin-left: 0px;
+  > figcaption {
+    border: 0px black solid;
+    float: right;
+    margin-left: 10px;
+  }
 }
