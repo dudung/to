@@ -82,4 +82,9 @@ div.tags {
   > ul > li:not(:last-child):after {
     content: ', ';
   }
+  > ul {
+    display: inline;
+    border: 0px black solid;
+    padding-left: 0px;
+  }
 }
