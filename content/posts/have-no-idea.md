@@ -572,13 +572,27 @@ It is a quote and the above appearance is obtained using following code
 > (Alexander Graham Bell)
 ```
 
-:x: :wave:
+Well, now is the last but not the least. It is about emoji. There is a lot of emojies supported by Hugo, e.g. as follow
 
-Hello! :wave:
+ico | shortcode | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | ico | shortcode
+:-: | :-: | :-: | :-: | :-:
+:grinning: | `:grinning:` | | :smiley: | `:smiley:`
+:grin: | `:grin:` | | :joy: | `:joy:`
+:monkey: | `:monkey:` | | :orangutan: | `:orangutan:`
+:tomato: | `:tomato:` | | :banana: | `:banana:`
+:crab: | `:crab:` | | :squid: | `:squid:`
+:clock10: | `:clock10:` | | :clock3: | `:clock3:`
+:heavy_check_mark: | `:heavy_check_mark:` | | :x: | `:x:`
+:red_circle: | `:red_circle:` | | :blue_square: | `:blue_square:`
+
+Information about the others can be found [here](https://gohugo.io/quick-reference/emojis/).
+
 
 ## closing
 + `05-may-2024` It is 2310 now and I am tired. This post will be continued tomorrow early morning, while performing sahur, hopefully. I have to go to bed now.
-+ `06-may-2024` A new post [0002](../0002) is being created. Perhaps the Markdown part of this post will also be the same. Today the other post will be the focus and not this one.
++ `06-may-2024` A new post [0002](../0002) is being created. Perhaps the Markdown part of this post will also be the same. ~~Today the other post will be the focus and not this one.~~ Today, this post is finished with 9 mins read, which I find sufficient long for a post without any purpose :laughing:.
+  - Use `~~erased phrases~~` to obtain ~~erased phrases~~.
+  - It ends at 1156, when the call is calling.
 
 
 ## notes
