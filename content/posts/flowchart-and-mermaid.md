@@ -3,7 +3,7 @@ title = 'flowchart and mermaid'
 date = 2024-04-06T01:15:00+07:00
 draft = false
 math = true
-tags = []
+tags = ['flowchart', 'mermaid']
 url = '0002'
 author = 'Sparisoma Viridi'
 +++

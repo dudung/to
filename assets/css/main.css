@@ -73,3 +73,13 @@ a[href^="#fnref:"] {
 }
 a[href^="#fn:"]:before{ content: '[' }
 a[href^="#fn:"]:after{ content: ']' }
+
+
+div.tags {
+  > ul > li {
+    display: inline-block;
+  }
+  > ul > li:not(:last-child):after {
+    content: ', ';
+  }
+}

@@ -3,7 +3,7 @@ title = 'have no idea'
 date = 2024-04-05T20:32:00+07:00
 draft = false
 math = true
-tags = []
+tags = ['to', 'mermaid', 'latex', 'chart.js', 'markdown']
 url = '0001'
 author = 'Sparisoma Viridi'
 +++
