@@ -236,8 +236,8 @@ Following is a flowchart example in sorting numbers using bubble sort algorithm 
 {{< mermaid >}}
 flowchart TB
   B --> I --> Init1 --> o1 --> Init2 --> o2 --> C1
-  C1 --"Y"--> Incj
-  C1 --"N"--> Swap --> Incj --> Cj --"Y"--> o2
+  C1 --"N"--> Incj
+  C1 --"Y"--> Swap --> Incj --> Cj --"Y"--> o2
   Cj --"N"--> Inci --> Ci --"Y"--> o1
   Ci --"N"--> O --> E
   Ci{"i &lt; n"}
@@ -245,7 +245,7 @@ flowchart TB
   Swap["Swap x<sub>i</sub>, x<sub>j</sub>"]
   Inci["i = i+1"]
   Incj["j = j+1"]
-  C1{"x<sub>i</sub> &lt; x<sub>j</sub>"}
+  C1{"x<sub>i</sub> &gt; x<sub>j</sub>"}
   o1(("1"))
   o2(("2"))
   Init1["i = 1"]
@@ -255,6 +255,28 @@ flowchart TB
   B(["Begin"])
   E(["End"])
 {{< /mermaid >}}
+
+
+```python
+y = [9, 1, 3, 8, 2, 5, 4, 7, 6, 8, 0]
+x = y.copy()
+
+n = len(y)
+for i in range(0, n-1):
+  for j in range(i, n):
+    if x[i] > x[j]:
+      x[i], x[j] = x[j], x[i]
+
+print('original:', y)
+print('sorted-a:', x)
+```
+
+```batch
+original: [9, 1, 3, 8, 2, 5, 4, 7, 6, 8, 0]
+sorted-a: [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 9]
+```
+
+on OneCompiler [429gbrbse](https://onecompiler.com/python/429gbrbse).
 
 
 ## notes
