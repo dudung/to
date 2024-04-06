@@ -5,7 +5,7 @@ draft = false
 math = false
 tags = []
 url = '0000'
-authors = ['viridi']
+authors = ['arimasen', 'renik', 'viridi']
 +++
 This page intentionally left blank
 <!--more-->
