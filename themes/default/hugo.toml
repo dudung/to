@@ -2,8 +2,6 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
-enableEmoji = true
-
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
