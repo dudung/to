@@ -5,7 +5,7 @@ draft = false
 math = true
 tags = ['to', 'mermaid', 'latex', 'chart.js', 'markdown']
 url = '0001'
-author = 'Sparisoma Viridi'
+authors = ['arimasen', 'dung', 'viridi']
 +++
 A short story without any purposes <!--more-->
 

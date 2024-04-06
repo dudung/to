@@ -5,7 +5,7 @@ draft = false
 math = true
 tags = ['flowchart', 'mermaid']
 url = '0002'
-author = 'Sparisoma Viridi'
+authors = ['viridi']
 +++
 Short intro about fowchart and the use of Mermaid <!--more-->
 
@@ -256,6 +256,61 @@ flowchart TB
   E(["End"])
 {{< /mermaid >}}
 
+Above flowchart is produced using following Mermaid code
+
+```mermaid
+{{</* mermaid */>}}
+flowchart TB
+  B --> I --> Init1 --> o1 --> Init2 --> o2 --> C1
+  C1 --"N"--> Incj
+  C1 --"Y"--> Swap --> Incj --> Cj --"Y"--> o2
+  Cj --"N"--> Inci --> Ci --"Y"--> o1
+  Ci --"N"--> O --> E
+  Ci{"i &lt; n"}
+  Cj{"j &le; n"}
+  Swap["Swap x<sub>i</sub>, x<sub>j</sub>"]
+  Inci["i = i+1"]
+  Incj["j = j+1"]
+  C1{"x<sub>i</sub> &gt; x<sub>j</sub>"}
+  o1(("1"))
+  o2(("2"))
+  Init1["i = 1"]
+  Init2["j = i + 1"]
+  O[/"x<sub>1</sub>, x<sub>2</sub>, &hellip;, x<sub>n</sub>"/]
+  I[/"x<sub>1</sub>, x<sub>2</sub>, &hellip;, x<sub>n</sub>"/]
+  B(["Begin"])
+  E(["End"])
+{{</* /mermaid */>}}
+```
+
+Let us see what it would be when use LR option for flowchart direction.
+
+{{< mermaid >}}
+flowchart LR
+  B --> I --> Init1 --> o1 --> Init2 --> o2 --> C1
+  C1 --"N"--> Incj
+  C1 --"Y"--> Swap --> Incj --> Cj --"Y"--> o2
+  Cj --"N"--> Inci --> Ci --"Y"--> o1
+  Ci --"N"--> O --> E
+  Ci{"i &lt; n"}
+  Cj{"j &le; n"}
+  Swap["Swap x<sub>i</sub>, x<sub>j</sub>"]
+  Inci["i = i+1"]
+  Incj["j = j+1"]
+  C1{"x<sub>i</sub> &gt; x<sub>j</sub>"}
+  o1(("1"))
+  o2(("2"))
+  Init1["i = 1"]
+  Init2["j = i + 1"]
+  O[/"x<sub>1</sub>, x<sub>2</sub>, &hellip;, x<sub>n</sub>"/]
+  I[/"x<sub>1</sub>, x<sub>2</sub>, &hellip;, x<sub>n</sub>"/]
+  B(["Begin"])
+  E(["End"])
+{{< /mermaid >}}
+
+It seems that flowchart with TB direction is better than with LR direction, even for the first user still requires to scroll the browser while reading it.
+
+Previous flowchart is used to create Python code, where one of its implementation is as follow
 
 ```python
 y = [9, 1, 3, 8, 2, 5, 4, 7, 6, 8, 0]
@@ -271,12 +326,16 @@ print('original:', y)
 print('sorted-a:', x)
 ```
 
+with
+
 ```batch
 original: [9, 1, 3, 8, 2, 5, 4, 7, 6, 8, 0]
 sorted-a: [0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 9]
 ```
 
-on OneCompiler [429gbrbse](https://onecompiler.com/python/429gbrbse).
+as the result. The code  is available on OneCompiler [429gbrbse](https://onecompiler.com/python/429gbrbse). The term `sorted-a` means sorted in ascending order.
+
+Notice that the code is simpler compared to the flowchart. For simple example as bubble sort algorithm, it can be understood without the help of flowchart, but for complex example, it is advisable to use flowchart before writing the code.
 
 
 ## notes

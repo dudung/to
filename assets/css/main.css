@@ -88,3 +88,21 @@ div.tags {
     padding-left: 0px;
   }
 }
+
+ul.authors {
+  > li {
+    display: inline-block;
+  }
+  > li:not(:last-child):after {
+    content: ', ';
+  }
+  display: inline;
+  border: 0px black solid;
+  padding-left: 0px;
+}
+
+figure.authors {
+  display: inline-block;
+  border: 0px black solid;
+  margin-left: 0px;
+}

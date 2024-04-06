@@ -5,7 +5,7 @@ draft = false
 math = false
 tags = []
 url = '0000'
-author = 'Sparisoma Viridi'
+authors = ['viridi']
 +++
 This page intentionally left blank
 <!--more-->

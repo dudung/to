@@ -5,6 +5,14 @@ theme = 'default'
 
 enableEmoji = true
 
+#disableKinds = ["taxonomyTerm"]
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category = "categories"
+
+
 [[menu.main]]
   name = 'Home'
   weight = 1
