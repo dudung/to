@@ -6,8 +6,8 @@
   
   <div class='author'>{{- .Params.author -}}</div>
   <div class='readingtimedate'>
-  {{ partial "reading-time.html" . }} &middot;
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    {{ partial "reading-time.html" . }} &middot;
+    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
   </div>
   
   {{ .Content }}
