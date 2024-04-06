@@ -230,10 +230,38 @@ Following are some flowchart examples without and with the use of nodes id
   It can be seen that fill color, stroke color and widhth, and also text color can be customized using CSS-like format. Notice that `color` keyword must be put before others or it will not work.
 
 
+## example
+Following is a flowchart example in sorting numbers using bubble sort algorithm [^gfg_2023].
+
+{{< mermaid >}}
+flowchart TB
+  B --> I --> Init1 --> o1 --> Init2 --> o2 --> C1
+  C1 --"Y"--> Incj
+  C1 --"N"--> Swap --> Incj --> Cj --"Y"--> o2
+  Cj --"N"--> Inci --> Ci --"Y"--> o1
+  Ci --"N"--> O --> E
+  Ci{"i &lt; n"}
+  Cj{"j &le; n"}
+  Swap["Swap x<sub>i</sub>, x<sub>j</sub>"]
+  Inci["i = i+1"]
+  Incj["j = j+1"]
+  C1{"x<sub>i</sub> &lt; x<sub>j</sub>"}
+  o1(("1"))
+  o2(("2"))
+  Init1["i = 1"]
+  Init2["j = i + 1"]
+  O[/"x<sub>1</sub>, x<sub>2</sub>, &hellip;, x<sub>n</sub>"/]
+  I[/"x<sub>1</sub>, x<sub>2</sub>, &hellip;, x<sub>n</sub>"/]
+  B(["Begin"])
+  E(["End"])
+{{< /mermaid >}}
+
+
 ## notes
 [^chapin_1970]: Ned Chapin, "Flowcharting With the ANSI Standard: A Tutorial", Computer Surveys, vol 2, no 2, p 119-146, url https://doi.org/10.1145/356566.356570.
 [^developer_2023]: Web Developer, "A Comprehensive Guide to Flowchart Symbols and Notations for Process Workflows", Cavintek, 22 Nov 2023, url https://www.cflowapps.com/flowchart-symbols/ [20240406].
 [^elland_2023]: Matt Eland, "How to Make Flowcharts with Mermaid.js", The New Dev's Guide -- Medium, 16 Apr 2023, url https://medium.com/p/799c1d07ec6a [20240406].
+[^gfg_2023]: GfG, "Bubble Sort – Data Structure and Algorithm Tutorials", GeeksforGeeks, 21 Nov 2023, url https://www.geeksforgeeks.org/bubble-sort/ [20240406].
 [^hira_2023]: Zira Hira, "How to Create Diagrams as Code with Mermaid, GitHub, and Visual Studio Code", freeCodeCamp, 6 Sep 2023, url https://www.freecodecamp.org/news/diagrams-as-code-with-mermaid-github-and-vs-code/ [20240406].
 [^karan_2023]: Rashmi Karan, "What is a Flowchart? (With Examples)", Shiksha Online, 28 Sep 2023, url https://www.shiksha.com/online-courses/articles/flowcharts-with-examples/ [20240406].
 [^kiran_2019]: D. R. Kiran,  "Product and process development", in Production Planning and Control, ch 16, p 223–246, 2019, url https://doi.org/10.1016/b978-0-12-818364-9.00016-0.
