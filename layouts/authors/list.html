@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+
 <h1>{{ .Params.name }}</h1>
 <img src="{{ .Params.photo }}" alt=""/>
 
@@ -17,3 +27,9 @@
     <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 {{ end }}
 </ul>
+
+<footer>
+  {{ partial "footer.html" . }}
+</footer>
+</body>
+</html>
