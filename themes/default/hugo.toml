@@ -2,6 +2,8 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
+enableEmoji = true
+
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
@@ -21,4 +23,3 @@ weight = 30
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
-

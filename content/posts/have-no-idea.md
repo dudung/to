@@ -7,8 +7,7 @@ tags = []
 url = '0001'
 author = 'Sparisoma Viridi'
 +++
-A short story without any purposes
-<!--more-->
+A short story without any purposes <!--more-->
 
 The same problem comes again and I follow the desire to make a new static site using [GitHub Pages](https://pages.github.com/). The last site is [o](https://dudung.github.io/o/), which still has the same style as this one. Usually, I become confused when there is already a lot of posts in a site, especially when it has various types of post that each have differents characteristics. Fortunately, a lot of posts are good for viewing how style works with many posts, that might look differently when only with few posts.
 
@@ -465,9 +464,121 @@ are some style changes for footnotes.
 ## markdown
 I think I might later write about examples of using Markdown in this part. Well, it might be happend or it might be not.
 
-\*\*\*
+No | First Name | Last Name
+:-: | :- | :-
+1 | Mister | Nobody
+2 | Jane | Doe
+3 | Fulana | Fulan
+4 | Nate | Avail
 
-+ `05-May-2024` It is 2310 now and I am tired. This post will be continued tomorrow early morning, while performing sahur, hopefully. I have to go to bed now.
+Above table is obtained using
+
+```md
+No | First Name | Last Name
+:-: | :- | :-
+1 | Mister | Nobody
+2 | Jane | Doe
+3 | Fulana | Fulan
+4 | Nate | Avail
+```
+
+as the Markdown code. Following icon in PNG format
+
+![GitHub Octocat](https://cdn.iconscout.com/icon/free/png-512/free-github-34-225988.png?f=webp&w=100)
+
+can be viewed using following code
+
+```md
+![GitHub Octocat](https://cdn.iconscout.com/icon/free/png-512/free-github-34-225988.png?f=webp&w=100)
+```
+
+Then how about list?
+
++ Animal
+  - Swim
+    - Fish
+  - Run
+    - Cheetah
+  - Fly
+    + Bird
+      - Shorebirds
+      - Falcons
+        + Prairie
+        + Peregrine
+    + Butterfly
++ Plantation
+  - Creeper
+  - Climbing
+  - Herbs
+    + Tomato
+      - Cherry
+      - Grape
+      - Roma
+      - Green
+    + Wheat
+    + Paddy
+    + Cabbage
+  - Shrub
+  - Tree
+
+Above list is obtained using following lines of Markdown code
+
+```md
++ Animal
+  - Swim
+    - Fish
+  - Run
+    - Cheetah
+  - Fly
+    + Bird
+      - Shorebirds
+      - Falcons
+        + Prairie
+        + Peregrine
+    + Butterfly
++ Plantation
+  - Creeper
+  - Climbing
+  - Herbs
+    + Tomato
+      - Cherry
+      - Grape
+      - Roma
+      - Green
+    + Wheat
+    + Paddy
+    + Cabbage
+  - Shrub
+  - Tree
+```
+
+What is the following?
+
+> When one door closes, another opens;
+> but we often look so long and so regretfully
+> upon the closed door that we do not see the
+> one which has opened for us
+
+> (Alexander Graham Bell)
+
+It is a quote and the above appearance is obtained using following code
+
+```md
+> When one door closes, another opens;
+> but we often look so long and so regretfully
+> upon the closed door that we do not see the
+> one which has opened for us
+
+> (Alexander Graham Bell)
+```
+
+:x: :wave:
+
+Hello! :wave:
+
+## closing
++ `05-may-2024` It is 2310 now and I am tired. This post will be continued tomorrow early morning, while performing sahur, hopefully. I have to go to bed now.
++ `06-may-2024` A new post [0002](../0002) is being created. Perhaps the Markdown part of this post will also be the same. Today the other post will be the focus and not this one.
 
 
 ## notes
