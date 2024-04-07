@@ -427,6 +427,76 @@ ul.food0 {
 Notice that there is CSS selectors `:nth-child()` and `::before` to select the right `<li>` element and apply certaint style, which is particular marker in this case. You can find other HTML entities representing [food on &what;](https://www.amp-what.com/unicode/search/food) website and also other characters [^peterson_2023]. What would happen when `::before` is replaced with `::after`? Explore this feature and get your understanding about it.
 
 
+## menu bar
+Let us see the result first as follow.
+
+{{< div "background: #f8f8f8; padding: 10px 20px;" >}}
+<style>
+ul.menu0 {
+  list-style-type: none;
+  overflow: hidden;
+  background: #228;
+  color: #ccc;
+  padding-left: 0px;
+  border-radius: 8px;
+  > li {
+    float: left;
+    padding: 2px 16px;
+  }
+  > li:hover {
+    color: white;
+    cursor: pointer;
+    background: #88f;
+  }
+}
+</style>
+
+<ul class="menu0">
+  <li>File</li>
+  <li>Edit</li>
+  <li>Layout</li>
+  <li>Style</li>
+  <li>View</li>
+  <li>Help</li>
+</ul>
+{{< /div >}}
+
+As mouse is hovering an item on the menu bar, mouse cursor changes and also font and background colors. All are controlled using features supported by CSS. Required code for that is as follow.
+
+```html
+<style>
+ul.menu0 {
+  list-style-type: none;
+  overflow: hidden;
+  background: #228;
+  color: #ccc;
+  padding-left: 0px;
+  border-radius: 8px;
+  > li {
+    float: left;
+    padding: 2px 16px;
+  }
+  > li:hover {
+    color: white;
+    cursor: pointer;
+    background: #88f;
+  }
+}
+</style>
+
+<ul class="menu0">
+  <li>File</li>
+  <li>Edit</li>
+  <li>Layout</li>
+  <li>Style</li>
+  <li>View</li>
+  <li>Help</li>
+</ul>
+```
+
+How the style changes as the mouse hovering an element is set using `:hover` selector. After it leaving the element styles become the default again.
+
+
 ## notes
 [^fitzgerald_2023]: Anna Fitzgerald, "How to Create an Unordered List in HTML [+Examples]", HubSpot, 15 Aug 2023, url https://blog.hubspot.com/website/unordered-list-html [20240407].
 [^lemonaki_2021]: Dionysia Lemonaki, "HTML Bullet Points – How to Create an Unordered List with the <ul> Tag Example", freeCodeCamp, 30 Sep 2021, url https://www.freecodecamp.org/news/html-bullet-points-how-to-create-an-unordered-list-with-the-ul-tag-example/ [20240407].
