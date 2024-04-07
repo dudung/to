@@ -497,6 +497,9 @@ ul.menu0 {
 How the style changes as the mouse hovering an element is set using `:hover` selector. After it leaving the element styles become the default again.
 
 
+## circular menu
+Based on previous knowledge about CSS, let us make a circular or radial menu as follow.
+
 {{< div "background: #f8f8f8; padding: 10px 20px;" >}}
 <style>
 ul.menu1 {
@@ -541,9 +544,11 @@ ul.menu1 {
 </ul>
 {{< /div >}}
 
+The menu is showing Gardner's mutliple intelligences [^cherry_2023]. It has features as in previous example, that is changing mouse cursor and also menu option text and background colors. The differences are it set each `<li>` elements with different position absolute to its parent element, whose relatively is positioned to futher parent element, the `<body>` element.
 
 
 ## notes
+[^cherry_2023]: Kendra Cherry, "Gardner's Theory of Multiple Intelligences", Verywell Mind, 11 Mar 2023, url https://www.verywellmind.com/p-2795161 [20240407].
 [^fitzgerald_2023]: Anna Fitzgerald, "How to Create an Unordered List in HTML [+Examples]", HubSpot, 15 Aug 2023, url https://blog.hubspot.com/website/unordered-list-html [20240407].
 [^lemonaki_2021]: Dionysia Lemonaki, "HTML Bullet Points – How to Create an Unordered List with the <ul> Tag Example", freeCodeCamp, 30 Sep 2021, url https://www.freecodecamp.org/news/html-bullet-points-how-to-create-an-unordered-list-with-the-ul-tag-example/ [20240407].
 [^leverenz_2023]: Andy Leverenz, "HTML Element: li", Envato Tuts+, 24 Oct 2024, url https://webdesign.tutsplus.com/html-element-li--cms-107838a [20240407].
