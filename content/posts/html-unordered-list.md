@@ -7,13 +7,13 @@ tags = ['html', 'ul', 'li', 'css']
 url = '0003'
 authors = ['viridi']
 +++
-The use of HTML &lt;ul&gt; element and customization its &lt;li&gt; element <!--more-->
+The use of HTML &lt;ul&gt; element and its &lt;li&gt; element customization <!--more-->
 
 
 ## intro
 In a HTML file an unordered list of items, which is typically rendered as a bulleted list, is represented by the `<ul>` HTML element [^mdncontributors_2024] with the items represented by some `<li>` elements [^leverenz_2023]. Marker for the bullet of `<li>` element can be set to disc, circle, square, or without marker using CSS `list-style-type` property of the element [^fitzgerald_2023]. Further customization using CSS makes the choices for the bullet unlimited [^lemonaki_2021] and it is also possible to change the `<li>` elements layout, e.g. arranged in horizontal direction [^singh_2024], for website navigation bar [^roy_2022].
 
-Some simple examples of using `<ul>` and `<li>` elements, with default style using only HTML, using CSS only, also with the help of CSS selectors [^rajora_2023], are given here.
+Some simple examples of using `<ul>` and `<li>` elements, with default style using only HTML, advanced by CSS only, also further with the help of CSS selectors [^rajora_2023], are given here.
 
 
 ## default
@@ -546,9 +546,61 @@ ul.menu1 {
 
 The menu is showing Gardner's mutliple intelligences [^cherry_2023]. It has features as in previous example, that is changing mouse cursor and also menu option text and background colors. The differences are it set each `<li>` elements with different position absolute to its parent element, whose relatively is positioned to futher parent element, the `<body>` element.
 
+```html
+<style>
+ul.menu1 {
+  list-style-type: none;
+  position: relative;
+  margin-top: 0px;
+  height: 210px;
+  > li {
+    border: 1px solid black;
+    width: 120px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    background: black;
+    position: absolute;
+  }
+  > li:hover {
+    color: black;
+    cursor: pointer;
+    background: white;
+  }
+  > li:nth-child(1) { left: 200px; top: 0px; }
+  > li:nth-child(2) { left: 280px; top: 50px; }
+  > li:nth-child(3) { left: 300px; top: 100px; }
+  > li:nth-child(4) { left: 280px; top: 150px; }
+  > li:nth-child(5) { left: 200px; top: 200px; }
+  > li:nth-child(6) { left: 120px; top: 150px; }
+  > li:nth-child(7) { left: 100px; top: 100px; }
+  > li:nth-child(8) { left: 120px; top: 50px; }
+}
+</style>
+
+<ul class="menu1">
+  <li>Visual</li>
+  <li>Liguistic</li>
+  <li>Logical</li>
+  <li>Kinesthetic</li>
+  <li>Musical</li>
+  <li>Interpersonal</li>
+  <li>Intrapersonal</li>
+  <li>Naturalistic</li>
+</ul>
+```
+
+Above code is for previous circular menu. Notice the parts with CSS selector `:nth-child()`, which are containing `left` and `top` position of all `<li>` elements. You can modify these values to obtain different layout other than circular menu.
+
 
 ## what's next
-I believe that using given knowledge about `<ul>` and `<li>` elements accompanied by CSS with its selector feature you can make any kind menus you want to make. Only imagination is the limit.
+I believe, using given knowledge about `<ul>` and `<li>` elements accompanied by CSS with its selector features you can make any kind of menus that you want, where only imagination is the limit. Furthermore, there are hundreds of inspiration of menus using only CSS, or enhanced with JS, available to learn [^muldoon_2024].
+
+The use of JS, which is out of scope of this post, will make the process of creating menu easier. You can just define array for menu items, use `for` loop iterating over the array, create all items, and then add them to parent element. CSS selectors can also be used using JS, which make the use of them more convenient especially when they should be repeated for other elements.
+
+
+## closing
+After read this post, you will be able to view the `<ul>` and `<li>` elements in different way, hopefully. Instead of using them as bulleted list, they can also serve as menu, where the structure might be clearer compare to the menu using nested `<div>` elements. There is not only single solution for something. You can make menu with many ways, e.g. an older way with `<table>`, `<tr>`, and `<td>` elements; here with `<ul>` and `<li>` elements; or next with nested `<div>` and `<span>` elements, where all aproaches should produce the same result but with different limitation and ease of maintenance.
 
 
 ## notes
@@ -557,6 +609,7 @@ I believe that using given knowledge about `<ul>` and `<li>` elements accompanie
 [^lemonaki_2021]: Dionysia Lemonaki, "HTML Bullet Points – How to Create an Unordered List with the <ul> Tag Example", freeCodeCamp, 30 Sep 2021, url https://www.freecodecamp.org/news/html-bullet-points-how-to-create-an-unordered-list-with-the-ul-tag-example/ [20240407].
 [^leverenz_2023]: Andy Leverenz, "HTML Element: li", Envato Tuts+, 24 Oct 2024, url https://webdesign.tutsplus.com/html-element-li--cms-107838a [20240407].
 [^mdncontributors_2024]: MDN contributors, "<ul>: The Unordered List element", MDN Web Docs, moz:lla, 26 Mar 2024, url https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul [20240407].
+[^muldoon_2024]: Kevin Muldoon, "120 Great CSS Menu Tutorials", Jotform Blog, 2 Apr 2024, url https://www.jotform.com/blog/great-css-menu-tutorials/ [20240407].
 [^peterson_2023]: Andrew J. Peterson, "&what; discover your character", NDP Software, 2023, url https://www.amp-what.com/ [20240407].
 [^rajora_2023]: Harish Rajora, "A Complete Guide to CSS Selectors", Medium, 10 Nov 2023, url https://medium.com/p/0cf15377e1c3 [20240407].
 [^roy_2022]: Kasturi Roy, "Navigation bar design best practices", WebFlow, 7 Dec 2022, url https://webflow.com/blog/navigation-bar-design [20240407].
