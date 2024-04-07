@@ -13,7 +13,7 @@ The use of HTML &lt;ul&gt; element and customization its &lt;li&gt; element <!--
 ## intro
 In a HTML file an unordered list of items, which is typically rendered as a bulleted list, is represented by the `<ul>` HTML element [^mdncontributors_2024] with the items represented by some `<li>` elements [^leverenz_2023]. Marker for the bullet of `<li>` element can be set to disc, circle, square, or without marker using CSS `list-style-type` property of the element [^fitzgerald_2023]. Further customization using CSS makes the choices for the bullet unlimited [^lemonaki_2021] and it is also possible to change the `<li>` elements layout, e.g. arranged in horizontal direction [^singh_2024], for website navigation bar [^roy_2022].
 
-Some simple examples of using `<ul>` and `<li>` elements, with the help of CSS selectors [^rajora_2023], are given here.
+Some simple examples of using `<ul>` and `<li>` elements, with default style using only HTML, using CSS only, also with the help of CSS selectors [^rajora_2023], are given here.
 
 
 ## notes
