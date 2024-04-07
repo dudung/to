@@ -497,6 +497,52 @@ ul.menu0 {
 How the style changes as the mouse hovering an element is set using `:hover` selector. After it leaving the element styles become the default again.
 
 
+{{< div "background: #f8f8f8; padding: 10px 20px;" >}}
+<style>
+ul.menu1 {
+  list-style-type: none;
+  position: relative;
+  margin-top: 0px;
+  height: 210px;
+  > li {
+    border: 1px solid black;
+    width: 120px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    background: black;
+    position: absolute;
+  }
+  > li:hover {
+    color: black;
+    cursor: pointer;
+    background: white;
+  }
+  > li:nth-child(1) { left: 200px; top: 0px; }
+  > li:nth-child(2) { left: 280px; top: 50px; }
+  > li:nth-child(3) { left: 300px; top: 100px; }
+  > li:nth-child(4) { left: 280px; top: 150px; }
+  > li:nth-child(5) { left: 200px; top: 200px; }
+  > li:nth-child(6) { left: 120px; top: 150px; }
+  > li:nth-child(7) { left: 100px; top: 100px; }
+  > li:nth-child(8) { left: 120px; top: 50px; }
+}
+</style>
+
+<ul class="menu1">
+  <li>Visual</li>
+  <li>Liguistic</li>
+  <li>Logical</li>
+  <li>Kinesthetic</li>
+  <li>Musical</li>
+  <li>Interpersonal</li>
+  <li>Intrapersonal</li>
+  <li>Naturalistic</li>
+</ul>
+{{< /div >}}
+
+
+
 ## notes
 [^fitzgerald_2023]: Anna Fitzgerald, "How to Create an Unordered List in HTML [+Examples]", HubSpot, 15 Aug 2023, url https://blog.hubspot.com/website/unordered-list-html [20240407].
 [^lemonaki_2021]: Dionysia Lemonaki, "HTML Bullet Points – How to Create an Unordered List with the <ul> Tag Example", freeCodeCamp, 30 Sep 2021, url https://www.freecodecamp.org/news/html-bullet-points-how-to-create-an-unordered-list-with-the-ul-tag-example/ [20240407].
