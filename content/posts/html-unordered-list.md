@@ -547,6 +547,10 @@ ul.menu1 {
 The menu is showing Gardner's mutliple intelligences [^cherry_2023]. It has features as in previous example, that is changing mouse cursor and also menu option text and background colors. The differences are it set each `<li>` elements with different position absolute to its parent element, whose relatively is positioned to futher parent element, the `<body>` element.
 
 
+## what's next
+I believe that using given knowledge about `<ul>` and `<li>` elements accompanied by CSS with its selector feature you can make any kind menus you want to make. Only imagination is the limit.
+
+
 ## notes
 [^cherry_2023]: Kendra Cherry, "Gardner's Theory of Multiple Intelligences", Verywell Mind, 11 Mar 2023, url https://www.verywellmind.com/p-2795161 [20240407].
 [^fitzgerald_2023]: Anna Fitzgerald, "How to Create an Unordered List in HTML [+Examples]", HubSpot, 15 Aug 2023, url https://blog.hubspot.com/website/unordered-list-html [20240407].
