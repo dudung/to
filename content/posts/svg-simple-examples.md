@@ -92,10 +92,230 @@ and you get the others basic SVG shapes and text, where
 are the results and also with the first one. More complex drawing can be built based on above given shapes and text.
 
 
+## viewport
+A viewport, a "port" through which you can "view" a section of an SVG image, is something akin to a porthole window through which you can see the world beyond [^bracey_2022], the phrase can be considered as a way to explain about SVG view port. Let us have following code
+
+```svg
+<svg height="100" width="100" style="background: #f8f8f8;">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+```
+
+for this SVG image
+
+{{< div "width: 100px; display: inline-block;" >}}
+<svg height="100" width="100" style="background: #f8f8f8;">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}}
+
+with attributes `height="100"` and `width="100"`. Notice that all objects are drawn within the range of the viewport so all can be seen. Let us change only value of `width` and `height` and then display the result.
+
+Table 1. Some values for SVG viewport `width`, `height`, and the output results.
+
+Params | 1 | 2 | 3 | 4 | 5
+:-: | :-: | :-: | :-: | :-: | :-:
+**Width** | 100 | 50 | 100 | 50 | 75
+**Height** | 100 | 100 | 50 | 50 | 150
+**Output** &nbsp;&nbsp; | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="100" height="100" style="background: #f8f8f8;">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div >}} | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="50" height="100" style="background: #f8f8f8;">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div >}} | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="100" height="50" style="background: #f8f8f8;">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div >}} | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="50" height="50" style="background: #f8f8f8;">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div >}} | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="75" height="150" style="background: #f8f8f8;">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div >}}
+
+It can be seen from Table 1 that viewport `width` and `height` act like window dimension on the wall but with origin, the top left corner, is a fixed point.
+
+## viewbox
+Next to explore is 'viewBox' attributes that has four parameters, `min-x`, `min-y`, `width`, `height` that are supplied without comma in a string as `viewBox = "min-x min-y width height"` [^pawar_2023].
+
+In explaining the use of `viewBox` attribute previous code is used with addtional lines
+
+{{< div "width: 100px; display: inline-block;" >}}
+<svg height="100" width="100" style="background: #f8f8f8;"
+ viewBox="0 0 100 100">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}}
+
+with
+
+```svg
+<svg height="100" width="100" style="background: #f8f8f8;"
+ viewBox="0 0 100 100">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+
+```
+
+as the default code. Notice the difference between that code and the previous one.
+
+Table 2. Some values for SVG viewBox `min-x`, `min-y`, `width`, `height`, and the output results.
+
+Params | 1 | 2 | 3 | 4 | 5
+:-: | :-: | :-: | :-: | :-: | :-:
+**min-x** | 0 | 0 | 0 | 50 | 25
+**min-y** | 0 | 0 | 0 | 50 | 25
+**width** | 100 | 75 | 50 | 100 | 50
+**height** | 100 | 75 | 50 | 100 | 50
+**Output** &nbsp;&nbsp; | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="100" height="100" style="background: #f8f8f8;"
+ viewBox="0 0 100 100">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}} | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="100" height="100" style="background: #f8f8f8;"
+ viewBox="0 0 75 75">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}} | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="100" height="100" style="background: #f8f8f8;"
+ viewBox="0 0 50 50">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}} | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="100" height="100" style="background: #f8f8f8;"
+ viewBox="50 50 100 100">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}} | {{< div "width: 100px; display: inline-block;" >}}
+<svg width="100" height="100" style="background: #f8f8f8;"
+ viewBox="25 25 50 50">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}}
+
+Here some some explanation for the output on Table 2.
+
++ **Params 1**. It is original `viewBox` all objects can be seen through the viewport.
++ **Param 2**. Since `width` and `height` both are decreased to `75`, it behaves like zooming in until `width` and `height` of the `viewBox` fit the viewport.
++ **Param 3**. Furhter zooming in is performed and half in `width` and `height` must fit into the viewport, so only quarter of the original image, left top part, can be seen.
++ **Param 4**. Using original `width` and `height` values, which are both `100`, set the `min-x` and `min-y` both to `50`. It will shift the original image `50` in horizontal and vertical directions showing only purple down triangle.
++ **Param 5**. Let us now modify all four values `min-x`, `min-y`, `width`, and `height` to `25`, `25`, `50`, `50`, respectively. It will zoom in and shift in both horizontal and vertical directions as shown.
+
+Notice that zooming in can be achieved when `width` and `height` in `viewBox` is smaller than `width` and `height` in the viewport, while zooming out can be achieved when they are larger.
+
+{{< div "width: 100px; display: inline-block;" >}}
+<svg height="100" width="100" style="background: #f8f8f8;"
+ viewBox="0 0 200 200">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}}
+{{< div "width: 100px; display: inline-block;" >}}
+<svg height="100" width="100" style="background: #f8f8f8;"
+ viewBox="-50 0 200 200">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}}
+{{< div "width: 100px; display: inline-block;" >}}
+<svg height="100" width="100" style="background: #f8f8f8;"
+ viewBox="-100 0 200 200">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}}
+{{< div "width: 100px; display: inline-block;" >}}
+<svg height="100" width="100" style="background: #f8f8f8;"
+ viewBox="-100 -100 200 200">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}}
+{{< div "width: 100px; display: inline-block;" >}}
+<svg height="100" width="100" style="background: #f8f8f8;"
+ viewBox="-50 -50 200 200">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}}
+{{< div "width: 100px; display: inline-block;" >}}
+<svg height="100" width="100" style="background: #f8f8f8;"
+ viewBox="25 -25 50 50">
+  <circle r="20" cx="25" cy="25" fill="salmon" />
+  <rect x="55" y="5" width="40" height="40" fill="cornflowerblue" />
+  <path d="M25,55 l20,20 l-20,20 l-20,-20 l20,-20" fill="darkkhaki" />
+  <polygon points="55,55 95,55 75,95" fill="violet" />
+</svg>
+{{< /div>}}
+
+Can you guess what the values of `min-x`, `min-y`, `width`, and `height` of the `viewBox` for most left SVG image above? They are `0 0 200 200`. Check your answer. And how about the rest?
+
+
 ## notes
+[^bracey_2022]: Kezz Bracey, "SVG Viewport and viewBox (For Complete Beginners)", Envato Tuts+, 16 Jun 2022, url https://webdesign.tutsplus.com/p--cms-30844t [20240408].
 [^chris_2022]: Kolade Chris, "What is an SVG File", freeCodeCamp, 1 Jun 2022, url https://www.freecodecamp.org/news/what-is-an-svg-file/ [20240408].
 [^davey_2023]: Mike Davey, "Why Developers Should Use SVG Files", WP Migrate, 6 Apr 2023, url https://deliciousbrains.com/svg-advantages-developers/ [20240408].
 [^edwards_2023]: Carl Edwards, "What is SVG: Definition, Pros & Cons and How to Make", Fotor, 20 Dec 2023, url https://www.fotor.com/blog/what-is-svg/ [20240408].
 [^fisher_2022]: Tim Fisher, "SVG Files: What They Are and How to Open & Convert Them", Livewire, 22 Sep 2022, url https://www.lifewire.com/p-4120603 [20240408].
 [^longson_2013]: Robert Longson, sleske, "Are SVG parameters such as 'xmlns' and 'version' needed?", Stack Overflow, 26 Sep 2018, url https://stackoverflow.com/a/18468348/9475509 [20240408].
+[^pawar_2023]: Aakash Pawar, "SVG viewBox Attribute", GeeksforGeeks, 7 May 2023, url https://www.geeksforgeeks.org/svg-viewbox-attribute/ [20240408].
 [^tey_2021]: Estee Tey, "Introduction to Scalable Vector Graphics (SVG)", DEV Community, 16 Nov 2021, url https://dev.to/lyqht/introduction-to-scalable-vector-graphics-svg-734 [20240408].
