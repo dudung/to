@@ -403,9 +403,11 @@ Above example is already using `<g>` element and also `<style>` element, with
 is the whole code.
 
 # reuse grouped elements
-Modify previous code by putting `<g id="container">` element inside a `<defs>` element, so it will not be drawn until it is called using `<use>` element.
+Modify previous code by putting `<g id="container2">` element, as an update from previous one, inside a `<defs>` element, so it will not be drawn until it is called using `<use>` element.
 
 {{< div "width: 200px;" >}}
+<svg width="200" height="100" style="background: #f8f8f8;"
+ viewBox="0 0 200 100">
 <svg width="200" height="100" style="background: #f8f8f8;"
  viewBox="0 0 200 100">
   <style>
@@ -429,7 +431,7 @@ Modify previous code by putting `<g id="container">` element inside a `<defs>` e
     }
   </style>
   <defs>
-    <g id="container">
+    <g id="container2">
       <title>Radioactive container</title>
       <desc>An image of a container containing radioactive substance.</desc>
       <ellipse id="bottom" rx="20" ry="10" cx="35" cy="70" />
@@ -444,34 +446,50 @@ Modify previous code by putting `<g id="container">` element inside a `<defs>` e
       <ellipse id="hole" rx="4" ry="2" cx="45" cy="20" />
     </g>
   </defs>
-  
-  <use xlink:href="#container" transform="translate(0, 0)" />
-  <use xlink:href="#container" transform="translate(50, -5)" />
-  <use xlink:href="#container" transform="translate(32, 15)" />
-  <use xlink:href="#container" transform="translate(82, 10)" />
-  <use xlink:href="#container" transform="translate(135, 10)" />
+  <use xlink:href="#container2" transform="translate(0, 0)" />
+  <use xlink:href="#container2" transform="translate(50, -5)" />
+  <use xlink:href="#container2" transform="translate(32, 15)" />
+  <use xlink:href="#container2" transform="translate(82, 10)" />
+  <use xlink:href="#container2" transform="translate(135, 10)" />
 </svg>
 {{< /div>}}
 
 Above result is obtained by adding following lines
 
 ```svg
-  <use xlink:href="#container" transform="translate(0, 0)" />
-  <use xlink:href="#container" transform="translate(50, -5)" />
-  <use xlink:href="#container" transform="translate(32, 15)" />
-  <use xlink:href="#container" transform="translate(82, 10)" />
-  <use xlink:href="#container" transform="translate(135, 10)" />
+  <use xlink:href="#container2" transform="translate(0, 0)" />
+  <use xlink:href="#container2" transform="translate(50, -5)" />
+  <use xlink:href="#container2" transform="translate(32, 15)" />
+  <use xlink:href="#container2" transform="translate(82, 10)" />
+  <use xlink:href="#container2" transform="translate(135, 10)" />
 ```
 
 after `<defs>` element into previous code. Can you point which line relate to which container object?
 
 
 ## rotate
-Actually one of SVG transformation, which is `translate()`, has been used in previous example. Now other SVG tranformation, `rotate()`, will be discussed.
+Actually one of SVG transformation, which is `translate()`, has been used in previous example. Now other SVG tranformation, `rotate()` [^jenkov_2021], will be discussed.
 
 {{< div "width: 100px;" >}}
 <svg width="100" height="100" style="background: #f8f8f8;"
  viewBox="0 0 100 100">
+  <use xlink:href="#container2" transform="rotate(-10)" />
+  <use xlink:href="#container2" transform="rotate(10)" />
+</svg>
+{{< /div>}}
+
+By modifying previous code with following lines
+
+```svg
+  <use xlink:href="#container2" transform="rotate(-10)" />
+  <use xlink:href="#container2" transform="rotate(10)" />
+```
+
+previous result is obtained. The rotation is in degree and clockwise direction. Negative values means the direction is counter clockwise. To study the rotation, previous SVG image is modified as following
+
+```svg
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
   <style>
     #top, #bottom {
       fill: cornflowerblue;
@@ -491,11 +509,15 @@ Actually one of SVG transformation, which is `translate()`, has been used in pre
     #textbg {
       fill: gold;
     }
+    #zero {
+      fill: red;
+    }
   </style>
   <defs>
-    <g id="container">
+    <g id="container3">
       <title>Radioactive container</title>
       <desc>An image of a container containing radioactive substance.</desc>
+      <circle id="zero" r="2" cx="0" cy="0" />
       <ellipse id="bottom" rx="20" ry="10" cx="35" cy="70" />
       <rect id="shell" x="15" y="20" width="40" height="50" />
       <line id="left" x1="15" y1="20", x2="15" y2="70" />
@@ -509,15 +531,62 @@ Actually one of SVG transformation, which is `translate()`, has been used in pre
     </g>
   </defs>
   
-  <use xlink:href="#container" transform="rotate(-10)" />
-  <use xlink:href="#container" transform="rotate(10)" />
+  <use xlink:href="#container3" transform="rotate(0)" />
 </svg>
-{{< /div>}}
-
-```svg
-  <use xlink:href="#container" transform="rotate(-10)" />
-  <use xlink:href="#container" transform="rotate(10)" />
 ```
+
+which produces
+
+{{< div "width: 200px;" >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <style>
+    #top, #bottom {
+      fill: cornflowerblue;
+      stroke-width: 2px;
+      stroke: midnightblue;
+    }
+    #shell { 
+      fill: cornflowerblue;
+    }
+    #left, #right {
+      stroke: midnightblue;
+      stroke-width: 2px;
+    }
+    #symbol {
+      font-size: 200%;
+    }
+    #textbg {
+      fill: gold;
+    }
+    #zero {
+      fill: red;
+    }
+  </style>
+  <defs>
+    <g id="container3">
+      <title>Radioactive container</title>
+      <desc>An image of a container containing radioactive substance.</desc>
+      <circle id="zero" r="2" cx="0" cy="0" />
+      <ellipse id="bottom" rx="20" ry="10" cx="35" cy="70" />
+      <rect id="shell" x="15" y="20" width="40" height="50" />
+      <line id="left" x1="15" y1="20", x2="15" y2="70" />
+      <line id="right" x1="55" y1="20", x2="55" y2="70" />
+      <ellipse id="top" rx="20" ry="10" cx="35" cy="20" />
+      <g id="symbol">
+        <circle id="textbg" r="11" cx="35" cy="54" />
+        <text id="text" x="22", y="65">☢</text>
+      </g>
+      <ellipse id="hole" rx="4" ry="2" cx="45" cy="20" />
+    </g>
+  </defs>
+  
+  <use xlink:href="#container3" transform="rotate(0)" />
+</svg>
+{{< /div >}}
+
+where the red dot on the left top corner is point on (0, 0) coordinates. This point will help us to understand three argments supported by the `rotation()`.
+
 
 ## notes
 [^bracey_2022]: Kezz Bracey, "SVG Viewport and viewBox (For Complete Beginners)", Envato Tuts+, 16 Jun 2022, url https://webdesign.tutsplus.com/p--cms-30844t [20240408].
@@ -525,6 +594,7 @@ Actually one of SVG transformation, which is `translate()`, has been used in pre
 [^davey_2023]: Mike Davey, "Why Developers Should Use SVG Files", WP Migrate, 6 Apr 2023, url https://deliciousbrains.com/svg-advantages-developers/ [20240408].
 [^edwards_2023]: Carl Edwards, "What is SVG: Definition, Pros & Cons and How to Make", Fotor, 20 Dec 2023, url https://www.fotor.com/blog/what-is-svg/ [20240408].
 [^fisher_2022]: Tim Fisher, "SVG Files: What They Are and How to Open & Convert Them", Livewire, 22 Sep 2022, url https://www.lifewire.com/p-4120603 [20240408].
+[^jenkov_2021]: Jakob Jenkov, "SVG Transformation", 
 [^longson_2013]: Robert Longson, sleske, "Are SVG parameters such as 'xmlns' and 'version' needed?", Stack Overflow, 26 Sep 2018, url https://stackoverflow.com/a/18468348/9475509 [20240408].
 [^pawar_2023]: Aakash Pawar, "SVG viewBox Attribute", GeeksforGeeks, 7 May 2023, url https://www.geeksforgeeks.org/svg-viewbox-attribute/ [20240408].
 [^tey_2021]: Estee Tey, "Introduction to Scalable Vector Graphics (SVG)", DEV Community, 16 Nov 2021, url https://dev.to/lyqht/introduction-to-scalable-vector-graphics-svg-734 [20240408].
