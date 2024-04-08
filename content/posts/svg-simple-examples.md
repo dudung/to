@@ -3,7 +3,7 @@ title = 'svg simple examples'
 date = 2024-04-08T03:27:00+07:00
 draft = false
 math = true
-tags = ['svg', 'html', 'css', 'js']
+tags = ['svg', 'html', 'css']
 url = '0004'
 authors = ['viridi']
 +++
@@ -12,6 +12,8 @@ Short intro to SVG and some simple examples <!--more-->
 
 ## intro
 SVG, that stands for scalable vector graphis, is a web friendly vector-based file format used to render two-dimensional images on the internet, and it is written in pure XML [^chris_2022], which makes it can be created or edited using any text and code editor. Other than to code SVG, there is also a lot of drawing applications available that can be used to open and edit SVG files [^fisher_2022]. There are some reasons to use SVG, where one of them is SEO (search engine optimization) friendly that allowing keywords, descriptions, and links addition directly to the markup [^davey_2023]. Infinity scalability, small file size, editability, and accessiblity are advantages of SVG files, while complexity and browser support are the disadvantages [^edwards_2023]. Image stored as SVG does not require compression compared to other formats [^tey_2021].
+
+How to create SVG basic shapes and text, group elements, and perform some transformations will be discussed here in brief but hopefully sufficient clear.
 
 
 ## minimal lines
