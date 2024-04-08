@@ -683,9 +683,66 @@ Let us now draw addition point, e.g. blue point at (50, 0) and use it as rotatio
 </svg>
 {{< /div >}}
 
-Results of `rotate(angle, 50, 0)` are shown in above figure with angle value is 45, -45, and 90, respectively.
+Results of `rotate(angle, 50, 0)` are shown in above figure with angle value is 45, -45, and 90, respectively. Notice the second and third arguments given to `rotate()` is for rotation point coordinates.
 
-Notice the second and third arguments given to `rotate()` is for rotation point coordinates.
+
+## translate - rotate
+Let us try to use two transformations one first and then followed by the other.
+
+Original | "Tr 1" | "Tr 1 Tr 2"
+:-: | :-: | :-:
+{{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container4"
+  />
+</svg>
+{{< /div >}} | {{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container4"
+  transform = "translate(50, 0)"
+  />
+</svg>
+{{< /div >}} | {{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container4"
+  transform = "translate(50, 0) rotate(90, 50, 0)"
+  />
+</svg>
+{{< /div >}}
+&nbsp; | "translate(50, 0)" | "translate (50, 0) 
+&nbsp; | | rotate(90, 50, 0)"
+{{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container4"
+  />
+</svg>
+{{< /div >}} | {{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container4"
+  transform = "rotate(90, 50, 0)"
+  />
+</svg>
+{{< /div >}} | {{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container4"
+  transform = "rotate(90, 50, 0) translate(50, 0)"
+  />
+</svg>
+{{< /div >}}
+&nbsp; | "rotate(90, 50, 0)" | "rotate(90, 50, 0) 
+&nbsp; | | translate (50, 0)"
+
+Above figure shows that transformations, in this case translation and rotation, depend on the order. Final result will be different when it is rotated first and translated, compared to translated first then rotated. Notice also that after rotation, translation is still using orginal axes, original x and y axes.
+
+
+## closing
+After read this post you are be able create SVG basic shapes and text, group those elements and reuse it, and finally perform transformations, translate and rotate, on the grouped elements.
 
 
 ## notes
@@ -694,7 +751,7 @@ Notice the second and third arguments given to `rotate()` is for rotation point 
 [^davey_2023]: Mike Davey, "Why Developers Should Use SVG Files", WP Migrate, 6 Apr 2023, url https://deliciousbrains.com/svg-advantages-developers/ [20240408].
 [^edwards_2023]: Carl Edwards, "What is SVG: Definition, Pros & Cons and How to Make", Fotor, 20 Dec 2023, url https://www.fotor.com/blog/what-is-svg/ [20240408].
 [^fisher_2022]: Tim Fisher, "SVG Files: What They Are and How to Open & Convert Them", Livewire, 22 Sep 2022, url https://www.lifewire.com/p-4120603 [20240408].
-[^jenkov_2021]: Jakob Jenkov, "SVG Transformation", 
+[^jenkov_2021]: Jakob Jenkov, "SVG Transformation", Jenkov.com -- Tech & Media Labs, 10 Mar 2021, url https://jenkov.com/tutorials/svg/svg-transformation.html [20240409].
 [^longson_2013]: Robert Longson, sleske, "Are SVG parameters such as 'xmlns' and 'version' needed?", Stack Overflow, 26 Sep 2018, url https://stackoverflow.com/a/18468348/9475509 [20240408].
 [^pawar_2023]: Aakash Pawar, "SVG viewBox Attribute", GeeksforGeeks, 7 May 2023, url https://www.geeksforgeeks.org/svg-viewbox-attribute/ [20240408].
 [^tey_2021]: Estee Tey, "Introduction to Scalable Vector Graphics (SVG)", DEV Community, 16 Nov 2021, url https://dev.to/lyqht/introduction-to-scalable-vector-graphics-svg-734 [20240408].
