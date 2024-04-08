@@ -587,6 +587,106 @@ which produces
 
 where the red dot on the left top corner is point on (0, 0) coordinates. This point will help us to understand three argments supported by the `rotation()`.
 
+{{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container3" transform="rotate(45)" />
+</svg>
+{{< /div >}}
+{{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container3" transform="rotate(-45)" />
+</svg>
+{{< /div >}}
+{{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container3" transform="rotate(-90)" />
+</svg>
+{{< /div >}}
+
+Above figure shows result of `rotate()` with single argument with value: 45 (left), -45 (center), and -90 (right). Notice that the origin (0, 0) does not change since it is the pivot or rotation point.
+
+{{< div "width: 200px;" >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <style>
+    #top, #bottom {
+      fill: cornflowerblue;
+      stroke-width: 2px;
+      stroke: midnightblue;
+    }
+    #shell { 
+      fill: cornflowerblue;
+    }
+    #left, #right {
+      stroke: midnightblue;
+      stroke-width: 2px;
+    }
+    #symbol {
+      font-size: 200%;
+    }
+    #textbg {
+      fill: gold;
+    }
+    #zero {
+      fill: red;
+    }
+    #zero2 {
+      fill: blue;
+    }
+  </style>
+  <defs>
+    <g id="container4">
+      <title>Radioactive container</title>
+      <desc>An image of a container containing radioactive substance.</desc>
+      <circle id="zero" r="2" cx="0" cy="0" />
+      <circle id="zero2" r="2" cx="50" cy="0" />
+      <ellipse id="bottom" rx="20" ry="10" cx="35" cy="70" />
+      <rect id="shell" x="15" y="20" width="40" height="50" />
+      <line id="left" x1="15" y1="20", x2="15" y2="70" />
+      <line id="right" x1="55" y1="20", x2="55" y2="70" />
+      <ellipse id="top" rx="20" ry="10" cx="35" cy="20" />
+      <g id="symbol">
+        <circle id="textbg" r="11" cx="35" cy="54" />
+        <text id="text" x="22", y="65">☢</text>
+      </g>
+      <ellipse id="hole" rx="4" ry="2" cx="45" cy="20" />
+    </g>
+  </defs>
+  
+  <use xlink:href="#container4" transform="rotate(0)" />
+</svg>
+{{< /div >}}
+
+Let us now draw addition point, e.g. blue point at (50, 0) and use it as rotation point.
+
+{{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container4" transform="rotate(45, 50, 0)" />
+</svg>
+{{< /div >}}
+
+{{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container4" transform="rotate(-45, 50, 0)" />
+</svg>
+{{< /div >}}
+
+{{< div "width: 200px; display: inline-block; " >}}
+<svg width="200" height="200" style="background: #f8f8f8;"
+ viewBox="-60 -60 200 200">
+  <use xlink:href="#container4" transform="rotate(-90, 50, 0)" />
+</svg>
+{{< /div >}}
+
+Results of `rotate(angle, 50, 0)` are shown in above figure with angle value is 45, -45, and 90, respectively.
+
+Notice the second and third arguments given to `rotate()` is for rotation point coordinates.
+
 
 ## notes
 [^bracey_2022]: Kezz Bracey, "SVG Viewport and viewBox (For Complete Beginners)", Envato Tuts+, 16 Jun 2022, url https://webdesign.tutsplus.com/p--cms-30844t [20240408].
