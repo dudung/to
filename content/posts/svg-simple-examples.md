@@ -463,8 +463,61 @@ Above result is obtained by adding following lines
   <use xlink:href="#container" transform="translate(135, 10)" />
 ```
 
-to previous code. Can you point which line to which container object?
+after `<defs>` element into previous code. Can you point which line relate to which container object?
 
+
+## rotate
+Actually one of SVG transformation, which is `translate()`, has been used in previous example. Now other SVG tranformation, `rotate()`, will be discussed.
+
+{{< div "width: 100px;" >}}
+<svg width="100" height="100" style="background: #f8f8f8;"
+ viewBox="0 0 100 100">
+  <style>
+    #top, #bottom {
+      fill: cornflowerblue;
+      stroke-width: 2px;
+      stroke: midnightblue;
+    }
+    #shell { 
+      fill: cornflowerblue;
+    }
+    #left, #right {
+      stroke: midnightblue;
+      stroke-width: 2px;
+    }
+    #symbol {
+      font-size: 200%;
+    }
+    #textbg {
+      fill: gold;
+    }
+  </style>
+  <defs>
+    <g id="container">
+      <title>Radioactive container</title>
+      <desc>An image of a container containing radioactive substance.</desc>
+      <ellipse id="bottom" rx="20" ry="10" cx="35" cy="70" />
+      <rect id="shell" x="15" y="20" width="40" height="50" />
+      <line id="left" x1="15" y1="20", x2="15" y2="70" />
+      <line id="right" x1="55" y1="20", x2="55" y2="70" />
+      <ellipse id="top" rx="20" ry="10" cx="35" cy="20" />
+      <g id="symbol">
+        <circle id="textbg" r="11" cx="35" cy="54" />
+        <text id="text" x="22", y="65">☢</text>
+      </g>
+      <ellipse id="hole" rx="4" ry="2" cx="45" cy="20" />
+    </g>
+  </defs>
+  
+  <use xlink:href="#container" transform="rotate(-10)" />
+  <use xlink:href="#container" transform="rotate(10)" />
+</svg>
+{{< /div>}}
+
+```svg
+  <use xlink:href="#container" transform="rotate(-10)" />
+  <use xlink:href="#container" transform="rotate(10)" />
+```
 
 ## notes
 [^bracey_2022]: Kezz Bracey, "SVG Viewport and viewBox (For Complete Beginners)", Envato Tuts+, 16 Jun 2022, url https://webdesign.tutsplus.com/p--cms-30844t [20240408].
