@@ -309,6 +309,162 @@ Notice that zooming in can be achieved when `width` and `height` in `viewBox` is
 
 Can you guess what the values of `min-x`, `min-y`, `width`, and `height` of the `viewBox` for most left SVG image above? They are `0 0 200 200`. Check your answer. And how about the rest?
 
+## elements grouping
+There is `<g>` element, stands for 'group', which is used for logically grouping together sets of related graphical elements [^soueidan_2014], that
+
++ usually has an id attribute to give that group a name for refering to,
++ groups all of its descendants into one group,
++ makes it easy to add styles, transformations, interactivity, and even animations to entire groups of objects.
+
+Any styles, you apply to the `<g>` element will also be applied to all of its descendants. It is also with the transformation.
+
+{{< div "width: 200px;" >}}
+<svg width="200" height="100" style="background: #f8f8f8;"
+ viewBox="0 0 200 100">
+  <style>
+    #top, #bottom {
+      fill: cornflowerblue;
+      stroke-width: 2px;
+      stroke: midnightblue;
+    }
+    #shell { 
+      fill: cornflowerblue;
+    }
+    #left, #right {
+      stroke: midnightblue;
+      stroke-width: 2px;
+    }
+    #symbol {
+      font-size: 200%;
+    }
+    #textbg {
+      fill: gold;
+    }
+  </style>
+  <g id="container">
+  	<title>Radioactive container</title>
+    <desc>An image of a container containing radioactive substance.</desc>
+    <ellipse id="bottom" rx="20" ry="10" cx="35" cy="70" />
+    <rect id="shell" x="15" y="20" width="40" height="50" />
+    <line id="left" x1="15" y1="20", x2="15" y2="70" />
+    <line id="right" x1="55" y1="20", x2="55" y2="70" />
+    <ellipse id="top" rx="20" ry="10" cx="35" cy="20" />
+    <g id="symbol">
+      <circle id="textbg" r="11" cx="35" cy="54" />
+      <text id="text" x="22", y="65">☢</text>
+    </g>
+    <ellipse id="hole" rx="4" ry="2" cx="45" cy="20" />
+  </g>
+</svg>
+{{< /div>}}
+
+Above example is already using `<g>` element and also `<style>` element, with
+
+```svg
+<svg width="200" height="100" style="background: #f8f8f8;"
+ viewBox="0 0 200 100">
+  <style>
+    #top, #bottom {
+      fill: cornflowerblue;
+      stroke-width: 2px;
+      stroke: midnightblue;
+    }
+    #shell { 
+      fill: cornflowerblue;
+    }
+    #left, #right {
+      stroke: midnightblue;
+      stroke-width: 2px;
+    }
+    #symbol {
+      font-size: 200%;
+    }
+    #textbg {
+      fill: gold;
+    }
+  </style>
+  <g id="container">
+  	<title>Radioactive container</title>
+    <desc>An image of a container containing radioactive substance.</desc>
+    <ellipse id="bottom" rx="20" ry="10" cx="35" cy="70" />
+    <rect id="shell" x="15" y="20" width="40" height="50" />
+    <line id="left" x1="15" y1="20", x2="15" y2="70" />
+    <line id="right" x1="55" y1="20", x2="55" y2="70" />
+    <ellipse id="top" rx="20" ry="10" cx="35" cy="20" />
+    <g id="symbol">
+      <circle id="textbg" r="11" cx="35" cy="54" />
+      <text id="text" x="22", y="65">☢</text>
+    </g>
+    <ellipse id="hole" rx="4" ry="2" cx="45" cy="20" />
+  </g>
+</svg>
+```
+
+is the whole code.
+
+# reuse grouped elements
+Modify previous code by putting `<g id="container">` element inside a `<defs>` element, so it will not be drawn until it is called using `<use>` element.
+
+{{< div "width: 200px;" >}}
+<svg width="200" height="100" style="background: #f8f8f8;"
+ viewBox="0 0 200 100">
+  <style>
+    #top, #bottom {
+      fill: cornflowerblue;
+      stroke-width: 2px;
+      stroke: midnightblue;
+    }
+    #shell { 
+      fill: cornflowerblue;
+    }
+    #left, #right {
+      stroke: midnightblue;
+      stroke-width: 2px;
+    }
+    #symbol {
+      font-size: 200%;
+    }
+    #textbg {
+      fill: gold;
+    }
+  </style>
+  <defs>
+    <g id="container">
+      <title>Radioactive container</title>
+      <desc>An image of a container containing radioactive substance.</desc>
+      <ellipse id="bottom" rx="20" ry="10" cx="35" cy="70" />
+      <rect id="shell" x="15" y="20" width="40" height="50" />
+      <line id="left" x1="15" y1="20", x2="15" y2="70" />
+      <line id="right" x1="55" y1="20", x2="55" y2="70" />
+      <ellipse id="top" rx="20" ry="10" cx="35" cy="20" />
+      <g id="symbol">
+        <circle id="textbg" r="11" cx="35" cy="54" />
+        <text id="text" x="22", y="65">☢</text>
+      </g>
+      <ellipse id="hole" rx="4" ry="2" cx="45" cy="20" />
+    </g>
+  </defs>
+  
+  <use xlink:href="#container" transform="translate(0, 0)" />
+  <use xlink:href="#container" transform="translate(50, -5)" />
+  <use xlink:href="#container" transform="translate(32, 15)" />
+  <use xlink:href="#container" transform="translate(82, 10)" />
+  <use xlink:href="#container" transform="translate(135, 10)" />
+</svg>
+{{< /div>}}
+
+Above result is obtained by adding following lines
+
+```svg
+  <use xlink:href="#container" transform="translate(0, 0)" />
+  <use xlink:href="#container" transform="translate(50, -5)" />
+  <use xlink:href="#container" transform="translate(32, 15)" />
+  <use xlink:href="#container" transform="translate(82, 10)" />
+  <use xlink:href="#container" transform="translate(135, 10)" />
+```
+
+to previous code. Can you point which line to which container object?
+
 
 ## notes
 [^bracey_2022]: Kezz Bracey, "SVG Viewport and viewBox (For Complete Beginners)", Envato Tuts+, 16 Jun 2022, url https://webdesign.tutsplus.com/p--cms-30844t [20240408].
@@ -319,3 +475,5 @@ Can you guess what the values of `min-x`, `min-y`, `width`, and `height` of the 
 [^longson_2013]: Robert Longson, sleske, "Are SVG parameters such as 'xmlns' and 'version' needed?", Stack Overflow, 26 Sep 2018, url https://stackoverflow.com/a/18468348/9475509 [20240408].
 [^pawar_2023]: Aakash Pawar, "SVG viewBox Attribute", GeeksforGeeks, 7 May 2023, url https://www.geeksforgeeks.org/svg-viewbox-attribute/ [20240408].
 [^tey_2021]: Estee Tey, "Introduction to Scalable Vector Graphics (SVG)", DEV Community, 16 Nov 2021, url https://dev.to/lyqht/introduction-to-scalable-vector-graphics-svg-734 [20240408].
+[^soueidan_2014]: Sarah Soueidan, "Structuring, Grouping, and Referencing in SVG — The<g>, <use>, <defs> and <symbol> Elements", 3 Jul 2014, url https://www.sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/ [20240408].
+[^answer]: `-50 0 200 200`, `-100 0 200 200`, `-100 -100 200 200`, `-50 -50 200 200`, `25 -25 50 50`.
