@@ -1,0 +1,8 @@
+{{- $seed := "foo" -}}
+{{- $id := delimit (shuffle (split (md5 $seed) "" )) "" -}}
+<div id="{{ $id }}">
+<script>
+let js = document.getElementById("{{ $id }}");
+{{- .Inner | safeJS -}}
+</script>
+</div>
