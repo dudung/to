@@ -7,7 +7,7 @@ tags = ['random', 'html', 'css', 'js']
 url = '0006'
 authors = ['viridi']
 +++
-Using random number for CSS and HTML using JS <!--more-->
+Random number for CSS and HTML using JS <!--more-->
 
 
 ## intro
