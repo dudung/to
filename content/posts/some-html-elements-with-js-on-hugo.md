@@ -582,7 +582,7 @@ circle | `fill = "#844"`   | `style.fill = "#faa"`
 &nbsp; | `stroke = "#f00"` | `stroke = "#a00"`
 rect   | `fill = "#00a"`   | `fill = "#aaf"`
 &nbsp; | `stroke = "#aaf"` | `stroke = "#00a"`
-path   | `fill = "#4c4"`   | `fill = "#afa";`
+path   | `fill = "#4c4"`   | `fill = "#afa"`
 &nbsp; | `stroke = "#044"` | `stroke = "#0aa"`
 
 Above tabel gives the states when `mouseenter` and `mouseleave` events triggered.
