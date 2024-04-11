@@ -585,7 +585,7 @@ rect   | `fill = "#00a"`   | `fill = "#aaf"`
 path   | `fill = "#4c4"`   | `fill = "#afa";`
 &nbsp; | `stroke = "#044"` | `stroke = "#0aa"`
 
-Above tabel give the states when `mouseenter` and `mouseleave` events triggered.
+Above tabel gives the states when `mouseenter` and `mouseleave` events triggered.
 
 Actually there is also another approach to change style using CSS selectors, but unfortunately, I can not still perform that using JS.
 
