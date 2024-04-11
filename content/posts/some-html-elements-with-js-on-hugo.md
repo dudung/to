@@ -590,6 +590,346 @@ Above tabel gives the states when `mouseenter` and `mouseleave` events triggered
 Actually there is also another approach to change style using CSS selectors, but unfortunately, I can not still perform that using JS.
 
 
+## select + button + svg
+Let us wrap all up with following code
+
+```
+{{</* js */>}}
+let div = document.createElement("div");
+div.style.border = "0px solid black";
+div.style.width = "100px";
+div.style.float = "left";
+
+let sel = document.createElement("select");
+sel.style.width = "100px";
+shapes = ["Circle", "Rect", "Path"]
+for(let s of shapes) {
+  let opt = document.createElement("option");
+  opt.innerHTML = s;
+  sel.add(opt)
+}
+sel.selectedIndex = 0;
+
+let btnL = document.createElement("button");
+btnL.innerHTML = "<<";
+btnL.style.width = "50px";
+btnL.addEventListener("click",
+  function () {
+    let id = sel[sel.selectedIndex].innerText;
+    let el = document.getElementById(id);
+    if(el instanceof SVGCircleElement) {
+      let cx = parseInt(el.getAttributeNS(null, "cx"));
+      cx -= 10;
+      el.setAttributeNS(null, "cx", cx);
+    } if(el instanceof SVGRectElement) {
+      let x = parseInt(el.getAttributeNS(null, "x"));
+      x -= 10;
+      el.setAttributeNS(null, "x", x);
+    } else if(el instanceof SVGPathElement) {
+      let d = el.getAttributeNS(null, "d");
+      let i = d.indexOf(',');
+      let sL = d.substring(0, i);
+      let sR = d.substring(i);
+      let x = parseInt(sL.split(' ')[1]);
+      x -= 10;
+      d = "M " + x + sR;
+      el.setAttributeNS(null, "d", d);
+    }
+  }
+)
+
+let btnR = document.createElement("button");
+btnR.innerHTML = ">>";
+btnR.style.width = "50px";
+btnR.addEventListener("click",
+  function () {
+    let id = sel[sel.selectedIndex].innerText;
+    let el = document.getElementById(id)
+    if(el instanceof SVGCircleElement) {
+      let cx = parseInt(el.getAttributeNS(null, "cx"));
+      cx += 10;
+      el.setAttributeNS(null, "cx", cx);
+    } if(el instanceof SVGRectElement) {
+      let x = parseInt(el.getAttributeNS(null, "x"));
+      x += 10;
+      el.setAttributeNS(null, "x", x);
+    } else if(el instanceof SVGPathElement) {
+      let d = el.getAttributeNS(null, "d");
+      let i = d.indexOf(',');
+      let sL = d.substring(0, i);
+      let sR = d.substring(i);
+      let x = parseInt(sL.split(' ')[1]);
+      x += 10;
+      d = "M " + x + sR;
+      el.setAttributeNS(null, "d", d);
+    }
+  }
+)
+
+let xlmns = "http://www.w3.org/2000/svg";
+let width = 400;
+let height = 150;
+
+let svg = document.createElementNS(xlmns, "svg");
+svg.setAttribute(null, "viewBox",
+  "0 0 " + width + " " + height);
+svg.setAttributeNS(null, "width", width);
+svg.setAttributeNS(null, "height", height);
+svg.style.background = "#fafafa";
+svg.style.border = "1px solid gray";
+svg.style.margin = "4px";
+
+let circ = document.createElementNS(xlmns, "circle");
+circ.id = "Circle"
+circ.setAttributeNS(null, "cx", 200);
+circ.setAttributeNS(null, "cy", 25);
+circ.setAttributeNS(null, "r", 15);
+circ.style.strokeWidth = "4px";
+circ.style.fill = "#faa";
+circ.style.stroke = "#a00";
+
+let rect = document.createElementNS(xlmns, "rect");
+rect.id = "Rect";
+rect.setAttributeNS(null, "x", 185);
+rect.setAttributeNS(null, "y", 60);
+rect.setAttributeNS(null, "width", 30);
+rect.setAttributeNS(null, "height", 30);
+rect.style.strokeWidth = 4;
+rect.style.fill = "#aaf";
+rect.style.stroke = "#00a";
+
+let path = document.createElementNS(xlmns, "path");
+path.id = "Path";
+path.style.strokeWidth = 4;
+path.style.fill = "#afa";
+path.style.stroke = "#0aa";
+path.setAttributeNS(null, 
+  "d", "M 200,110 l 20,30, h -40 z");
+
+path.addEventListener("mouseenter", function() {
+  path.style.fill = "#4c4";
+  path.style.stroke = "#044";
+});
+path.addEventListener("mouseleave", function() {
+  path.style.fill = "#afa";
+  path.style.stroke = "#0aa";
+});
+path.addEventListener("click", function() {
+  path.setAttributeNS(
+    null, "d",
+    "M 200,110 l 20,30, h -40 z"
+  );
+});
+
+circ.addEventListener("mouseenter", function() {
+  circ.style.fill = "#844";
+  circ.style.stroke = "#f00";
+});
+circ.addEventListener("mouseleave", function() {
+  circ.style.fill = "#faa";
+  circ.style.stroke = "#a00";
+});
+circ.addEventListener("click", function() {
+  circ.setAttributeNS(null, "cx", 200);
+  circ.setAttributeNS(null, "cy", 25);
+});
+
+rect.addEventListener("mouseenter", function() {
+  rect.style.fill = "#00a";
+  rect.style.stroke = "#aaf";
+});
+rect.addEventListener("mouseleave", function() {
+  rect.style.fill = "#aaf";
+  rect.style.stroke = "#00a";
+});
+rect.addEventListener("click", function() {
+  rect.setAttributeNS(null, "x", 185);
+  rect.setAttributeNS(null, "y", 60);
+});
+
+js.appendChild(div);
+  div.appendChild(sel);
+  div.appendChild(btnL);
+  div.appendChild(btnR);
+js.append(svg);
+  svg.appendChild(circ);
+  svg.appendChild(rect);
+  svg.appendChild(path);
+{{</* /js */>}}
+```
+
+that produces
+
+{{< js >}}
+let div = document.createElement("div");
+div.style.border = "0px solid black";
+div.style.width = "100px";
+div.style.float = "left";
+
+let sel = document.createElement("select");
+sel.style.width = "100px";
+shapes = ["Circle", "Rect", "Path"]
+for(let s of shapes) {
+  let opt = document.createElement("option");
+  opt.innerHTML = s;
+  sel.add(opt)
+}
+sel.selectedIndex = 0;
+
+let btnL = document.createElement("button");
+btnL.innerHTML = "<<";
+btnL.style.width = "50px";
+btnL.addEventListener("click",
+  function () {
+    let id = sel[sel.selectedIndex].innerText;
+    let el = document.getElementById(id);
+    if(el instanceof SVGCircleElement) {
+      let cx = parseInt(el.getAttributeNS(null, "cx"));
+      cx -= 10;
+      el.setAttributeNS(null, "cx", cx);
+    } if(el instanceof SVGRectElement) {
+      let x = parseInt(el.getAttributeNS(null, "x"));
+      x -= 10;
+      el.setAttributeNS(null, "x", x);
+    } else if(el instanceof SVGPathElement) {
+      let d = el.getAttributeNS(null, "d");
+      let i = d.indexOf(',');
+      let sL = d.substring(0, i);
+      let sR = d.substring(i);
+      let x = parseInt(sL.split(' ')[1]);
+      x -= 10;
+      d = "M " + x + sR;
+      el.setAttributeNS(null, "d", d);
+    }
+  }
+)
+
+let btnR = document.createElement("button");
+btnR.innerHTML = ">>";
+btnR.style.width = "50px";
+btnR.addEventListener("click",
+  function () {
+    let id = sel[sel.selectedIndex].innerText;
+    let el = document.getElementById(id)
+    if(el instanceof SVGCircleElement) {
+      let cx = parseInt(el.getAttributeNS(null, "cx"));
+      cx += 10;
+      el.setAttributeNS(null, "cx", cx);
+    } if(el instanceof SVGRectElement) {
+      let x = parseInt(el.getAttributeNS(null, "x"));
+      x += 10;
+      el.setAttributeNS(null, "x", x);
+    } else if(el instanceof SVGPathElement) {
+      let d = el.getAttributeNS(null, "d");
+      let i = d.indexOf(',');
+      let sL = d.substring(0, i);
+      let sR = d.substring(i);
+      let x = parseInt(sL.split(' ')[1]);
+      x += 10;
+      d = "M " + x + sR;
+      el.setAttributeNS(null, "d", d);
+    }
+  }
+)
+
+let xlmns = "http://www.w3.org/2000/svg";
+let width = 400;
+let height = 150;
+
+let svg = document.createElementNS(xlmns, "svg");
+svg.setAttribute(null, "viewBox",
+  "0 0 " + width + " " + height);
+svg.setAttributeNS(null, "width", width);
+svg.setAttributeNS(null, "height", height);
+svg.style.background = "#fafafa";
+svg.style.border = "1px solid gray";
+svg.style.margin = "4px";
+
+let circ = document.createElementNS(xlmns, "circle");
+circ.id = "Circle"
+circ.setAttributeNS(null, "cx", 200);
+circ.setAttributeNS(null, "cy", 25);
+circ.setAttributeNS(null, "r", 15);
+circ.style.strokeWidth = "4px";
+circ.style.fill = "#faa";
+circ.style.stroke = "#a00";
+
+let rect = document.createElementNS(xlmns, "rect");
+rect.id = "Rect";
+rect.setAttributeNS(null, "x", 185);
+rect.setAttributeNS(null, "y", 60);
+rect.setAttributeNS(null, "width", 30);
+rect.setAttributeNS(null, "height", 30);
+rect.style.strokeWidth = 4;
+rect.style.fill = "#aaf";
+rect.style.stroke = "#00a";
+
+let path = document.createElementNS(xlmns, "path");
+path.id = "Path";
+path.style.strokeWidth = 4;
+path.style.fill = "#afa";
+path.style.stroke = "#0aa";
+path.setAttributeNS(null, 
+  "d", "M 200,110 l 20,30, h -40 z");
+
+path.addEventListener("mouseenter", function() {
+  path.style.fill = "#4c4";
+  path.style.stroke = "#044";
+});
+path.addEventListener("mouseleave", function() {
+  path.style.fill = "#afa";
+  path.style.stroke = "#0aa";
+});
+path.addEventListener("click", function() {
+  path.setAttributeNS(
+    null, "d",
+    "M 200,110 l 20,30, h -40 z"
+  );
+});
+
+circ.addEventListener("mouseenter", function() {
+  circ.style.fill = "#844";
+  circ.style.stroke = "#f00";
+});
+circ.addEventListener("mouseleave", function() {
+  circ.style.fill = "#faa";
+  circ.style.stroke = "#a00";
+});
+circ.addEventListener("click", function() {
+  circ.setAttributeNS(null, "cx", 200);
+  circ.setAttributeNS(null, "cy", 25);
+});
+
+rect.addEventListener("mouseenter", function() {
+  rect.style.fill = "#00a";
+  rect.style.stroke = "#aaf";
+});
+rect.addEventListener("mouseleave", function() {
+  rect.style.fill = "#aaf";
+  rect.style.stroke = "#00a";
+});
+rect.addEventListener("click", function() {
+  rect.setAttributeNS(null, "x", 185);
+  rect.setAttributeNS(null, "y", 60);
+});
+
+js.appendChild(div);
+  div.appendChild(sel);
+  div.appendChild(btnL);
+  div.appendChild(btnR);
+js.append(svg);
+  svg.appendChild(circ);
+  svg.appendChild(rect);
+  svg.appendChild(path);
+{{< /js >}}
+
+First select shape than click `<<` to move it to the left or `>>` to move it to the right. Hover on the shape to see its colors change and click it to reset its position.
+
+
+## closing
+Some examples of using JS throgh a shortcode for displaying HTML elements in a Hugo post have been presented and discussed in brief. Using the examples further advanced and complex combination of HTML elements can be achieved, where only the imagination is the limit.
+
+
 ## notes
 [^gfg_2023]: GfG, "SVG Element Complete Reference", GeeksforGeek, 6 Jul 2023, url https://www.geeksforgeeks.org/svg-element-complete-reference/ [20240411].
 [^juviler_2022]: Jamie Juviler, "HTML Elements: What They Are and How to Use Them", HubSpot, 25 Jul 2022, url https://blog.hubspot.com/website/html-elements [20240411].
