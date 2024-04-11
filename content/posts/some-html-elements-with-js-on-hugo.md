@@ -93,7 +93,7 @@ let btn = document.createElement("button")
 js.appendChild(btn);
 
 btn.innerHTML = 0;
-btn.addEventListener("click", function(){ btn.innerHTML++; } )
+btn.addEventListener("click", function() { btn.innerHTML++; } )
 {{< /js >}}
 
 where the code is as follow
@@ -104,7 +104,7 @@ let btn = document.createElement("button")
 js.appendChild(btn);
 
 btn.innerHTML = 0;
-btn.addEventListener("click", function(){ btn.innerHTML++; } )
+btn.addEventListener("click", function() { btn.innerHTML++; } )
 {{</* /js */>}}
 ```
 
@@ -120,7 +120,7 @@ btn.style.left = "0px";
 btn.style.position = 'relative';
 btn.innerHTML = "&rightarrow;";
 btn.addEventListener("click",
-  function(){
+  function() {
     let left = parseInt(btn.style.left);
     left += 40;
     btn.style.left = left + "px";
@@ -139,7 +139,7 @@ btn.style.left = "0px";
 btn.style.position = 'relative';
 btn.innerHTML = "&rightarrow;";
 btn.addEventListener("click",
-  function(){
+  function() {
     let left = parseInt(btn.style.left);
     left += 40;
     btn.style.left = left + "px";
@@ -155,7 +155,7 @@ is the code. What do you think? Any other idea is crossing you mind for an examp
 Let us now using other HTML element, textarea.
 
 {{< js >}}
-let ta = document.createElement("textarea")
+let ta = document.createElement("textarea");
 js.appendChild(ta);
 {{< /js >}}
 
@@ -163,12 +163,28 @@ with
 
 ```
 {{</* js */>}}
-let ta = document.createElement("textarea")
+let ta = document.createElement("textarea");
 js.appendChild(ta);
 {{</* /js */>}}
 ```
 
-is the code.
+is the code. Then you can type whatever you want on the textarea.
+
+You can add content to textarea to produce
+
+{{< js >}}
+let ta = document.createElement("textarea");
+ta.value = "Hello, World!";
+js.appendChild(ta);
+{{< /js >}}
+
+where
+
+```
+ta.value = "Hello, World!";
+```
+
+is the only additional line to previous code.
 
 
 ## notes
