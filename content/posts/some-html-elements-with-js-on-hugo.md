@@ -187,6 +187,200 @@ ta.value = "Hello, World!";
 is the only additional line to previous code.
 
 
+## textarea + button
+Remember the button that change its caption when it is clicked? Now we can modify the `click` event not to change button caption but content of the textarea.
+
+{{< js >}}
+let btn = document.createElement("button")
+btn.innerHTML = "Add 'Hello, World!'"
+js.appendChild(btn);
+
+let ta = document.createElement("textarea");
+ta.style.height = "100px";
+js.appendChild(ta);
+
+btn.addEventListener("click",
+  function() {
+    ta.value += "Hello, World!" + "\n";
+  }
+);
+{{< /js >}}
+
+Every time the button clicked, it add a line of "Hello, World!" phrase to the textarea.
+
+```
+{{</* js */>}}
+let btn = document.createElement("button")
+btn.innerHTML = "Add 'Hello, World!'"
+js.appendChild(btn);
+
+let ta = document.createElement("textarea");
+ta.style.height = "100px";
+js.appendChild(ta);
+
+btn.addEventListener("click",
+  function() {
+    ta.value += "Hello, World!" + "\n";
+  }
+);
+{{</* /js */>}}
+```
+
+Above code has not yet used CSS but only to set height of the textarea by assigning `style.height` with value `100px`. The way to get nice layout using CSS will be discussed later.
+
+Let us now use two buttons, one is as in the previous example and the new one is for clearing the text area.
+
+{{< js >}}
+let btn = document.createElement("button")
+btn.innerHTML = "Add 'Hello, World!'"
+js.appendChild(btn);
+
+let btn2 = document.createElement("button")
+btn2.innerHTML = "Clear"
+js.appendChild(btn2);
+
+let ta = document.createElement("textarea");
+ta.style.height = "100px";
+js.appendChild(ta);
+
+btn.addEventListener("click",
+  function() {
+    ta.value += "Hello, World!" + "\n";
+  }
+);
+
+btn2.addEventListener("click",
+  function() {
+    ta.value = "";
+  }
+);
+{{< /js >}}
+
+Go get the result add following lines
+
+```
+let btn2 = document.createElement("button")
+btn2.innerHTML = "Clear"
+js.appendChild(btn2);
+
+btn2.addEventListener("click",
+  function() {
+    ta.value = "";
+  }
+);
+```
+
+to previous code. The layout still looks messy, but for now the importang thing is that works.
+
+
+## select
+There is select element with code
+
+```
+{{</* js */>}}
+var sel = document.createElement("select");
+js.appendChild(sel);
+
+var opt1 = document.createElement("option");
+opt1.innerHTML = "Apple";
+sel.add(opt1);
+var opt2 = document.createElement("option");
+opt2.innerHTML = "Durian";
+sel.add(opt2);
+
+sel.selectedIndex = -1;
+{{</* /js */>}}
+```
+
+to produce following result
+
+{{< js >}}
+var sel = document.createElement("select");
+js.appendChild(sel);
+
+var opt1 = document.createElement("option");
+opt1.innerHTML = "Apple";
+sel.add(opt1);
+var opt2 = document.createElement("option");
+opt2.innerHTML = "Durian";
+sel.add(opt2);
+
+sel.selectedIndex = -1;
+{{< /js >}}
+
+Notice that the `select` element has two `option` elements, one is with "Apple" for its `innerHTML` and the other is for "Durian". You can click to select which one you want to choose.
+
+
+## select + button + textarea
+Let us now use one select element, four option element, one button element, and one textarea element. The result is as follow
+
+{{< js >}}
+var sel = document.createElement("select");
+fruits = ["Apple", "Durian", "Manggo", "Pear"]
+for(let f of fruits) {
+  var opt = document.createElement("option");
+  opt.innerHTML = f;
+  sel.add(opt)
+}
+sel.selectedIndex = -1;
+
+var btn = document.createElement("button");
+btn.innerHTML = "Add";
+
+var txa = document.createElement("textarea");
+txa.style.height = "100px";
+
+btn.addEventListener("click",
+  function () {
+    if(sel.selectedIndex >= 0) {
+      txa.value += sel[sel.selectedIndex].innerHTML + "\n";
+    }
+  }
+)
+
+js.appendChild(sel);
+js.appendChild(btn);
+js.appendChild(txa);
+{{< /js >}}
+
+Now you can select the fruit you want and then click the button to add to textarea, a sort of shopping list. Pretty neat, isn't it?
+
+And
+
+```
+{{</* js */>}}
+var sel = document.createElement("select");
+fruits = ["Apple", "Durian", "Manggo", "Pear"]
+for(let f of fruits) {
+  var opt = document.createElement("option");
+  opt.innerHTML = f;
+  sel.add(opt)
+}
+sel.selectedIndex = -1;
+
+var btn = document.createElement("button");
+btn.innerHTML = "Add";
+
+var txa = document.createElement("textarea");
+txa.style.height = "100px";
+
+btn.addEventListener("click",
+  function () {
+    if(sel.selectedIndex >= 0) {
+      txa.value += sel[sel.selectedIndex].innerHTML + "\n";
+    }
+  }
+)
+
+js.appendChild(sel);
+js.appendChild(btn);
+js.appendChild(txa);
+{{</* /js */>}}
+```
+
+is the code to get above result. You can modify the code to add more fruit as options, just expand the array `fluits`.
+
+
 ## notes
 [^m_2020]: n_m, "Hugo use inline javascript within posts", Stack Overflow 28 Jul 2020, url https://stackoverflow.com/a/63138441/9475509 [20240411].
 [^pyth0n_2017]: Pyth0n, "Insert js in a Hugo post", Stack Overflow, 8 Mar 2017, url https://stackoverflow.com/a/42672833/9475509 [20240411].
