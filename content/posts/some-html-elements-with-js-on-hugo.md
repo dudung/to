@@ -13,6 +13,8 @@ Display HTML elements on Hugo with JS <!--more-->
 ## intro
 There are some static site generators, where one of the free ones is Hugo [^rajora_2023]. And one of the feature of Hugo static pages is its support to use JS for dynamic content, but in this post only feature to display some HTML elements is shown. Since normally Hugo does not allow to execute JS directly from its post [^m_2020] and it requires defining a shortcode [^pyth0n_2017], a shortcode `js` is provided, that has 10 lines of code.
 
+In order to understand this post it is assumed that you are already familiar with HTML, JS, CSS, and Hugo shortcode. And for the last you know where to save it and how to called in a post. 
+
 
 ## shortcode
 In order to embed JS in Hugo posts, a shortcode named `js` is made with following content
@@ -84,7 +86,89 @@ js.appendChild(btn);
 
 You can click it or hover mouse pointer on it, but nothing happen since how response on such events have not been defined.
 
-Now, 
+Now, with still using only button element, a `click` event can be added and how it behaves can also be defined. Let us make the simplest one
+
+{{< js >}}
+let btn = document.createElement("button")
+js.appendChild(btn);
+
+btn.innerHTML = 0;
+btn.addEventListener("click", function(){ btn.innerHTML++; } )
+{{< /js >}}
+
+where the code is as follow
+
+```
+{{</* js */>}}
+let btn = document.createElement("button")
+js.appendChild(btn);
+
+btn.innerHTML = 0;
+btn.addEventListener("click", function(){ btn.innerHTML++; } )
+{{</* /js */>}}
+```
+
+Notice the differences between the code above and the one preceeded it. Button `btn` caption `innerHTML` is assigned with number `0` in initialization. When the button is clicked by the registered even `click`, it adds `1` to the number and increase the caption. This code is not save, e.g. it would be better to use `parseInt()` from `innerHTML` to assure it is an integer before added it with `1` using `++` operator.
+
+What is next to do with only a button element?
+
+{{< js >}}
+let btn = document.createElement("button")
+js.appendChild(btn);
+
+btn.style.left = "0px";
+btn.style.position = 'relative';
+btn.innerHTML = "&rightarrow;";
+btn.addEventListener("click",
+  function(){
+    let left = parseInt(btn.style.left);
+    left += 40;
+    btn.style.left = left + "px";
+  } 
+)
+{{< /js >}}
+
+Position of button is altered as it is clicked. Every click moves the button `40px` to the right. And
+
+```
+{{</* js */>}}
+let btn = document.createElement("button")
+js.appendChild(btn);
+
+btn.style.left = "0px";
+btn.style.position = 'relative';
+btn.innerHTML = "&rightarrow;";
+btn.addEventListener("click",
+  function(){
+    let left = parseInt(btn.style.left);
+    left += 40;
+    btn.style.left = left + "px";
+  } 
+)
+{{</* /js */>}}
+```
+
+is the code. What do you think? Any other idea is crossing you mind for an example using only one HTML button?
+
+
+## textarea
+Let us now using other HTML element, textarea.
+
+{{< js >}}
+let ta = document.createElement("textarea")
+js.appendChild(ta);
+{{< /js >}}
+
+with
+
+```
+{{</* js */>}}
+let ta = document.createElement("textarea")
+js.appendChild(ta);
+{{</* /js */>}}
+```
+
+is the code.
 
 
 ## notes
