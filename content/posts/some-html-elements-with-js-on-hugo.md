@@ -380,10 +380,221 @@ js.appendChild(txa);
 
 is the code to get above result. You can modify the code to add more fruit as options, just expand the array `fluits`.
 
+## svg
+As one of HTML elements, svg element has special status in HTML, where SVG code can be put in it, since all the actual graphics tags are already defined in SVG standar [^schindlabua_2020], where there are at aleast about 52 elements available [^gfg_2023].
+
+{{< js >}}
+var xlmns = "http://www.w3.org/2000/svg";
+var width = 400;
+var height = 150;
+
+var svg = document.createElementNS(xlmns, "svg");
+svg.setAttribute(null, "viewBox",
+  "0 0 " + width + " " + height);
+svg.setAttributeNS(null, "width", width);
+svg.setAttributeNS(null, "height", height);
+svg.style.background = "#fafafa";
+
+var circ = document.createElementNS(xlmns, "circle");
+circ.setAttributeNS(null, "cx", 50);
+circ.setAttributeNS(null, "cy", 50);
+circ.setAttributeNS(null, "r", 40);
+circ.style.strokeWidth = "4px";
+circ.style.fill = "#faa";
+circ.style.stroke = "#a00";
+
+var rect = document.createElementNS(xlmns, "rect");
+rect.setAttributeNS(null, "x", 110);
+rect.setAttributeNS(null, "y", 40);
+rect.setAttributeNS(null, "width", 80);
+rect.setAttributeNS(null, "height", 40);
+rect.style.strokeWidth = 4;
+rect.style.fill = "#aaf";
+rect.style.stroke = "#00a";
+
+var path = document.createElementNS(xlmns, "path");
+path.style.strokeWidth = 4;
+path.style.fill = "#afa";
+path.style.stroke = "#0aa";
+path.setAttributeNS(null, "d", "M 270,50 l 50,50, h -100 z");
+
+svg.appendChild(circ);
+svg.appendChild(rect);
+svg.appendChild(path);
+
+js.appendChild(svg);
+{{< /js >}}
+
+Three graphical objects are created, which are circle, rect, and path elements with
+
+```
+{{</* js */>}}
+var xlmns = "http://www.w3.org/2000/svg";
+var width = 400;
+var height = 150;
+
+var svg = document.createElementNS(xlmns, "svg");
+svg.setAttribute(null, "viewBox",
+  "0 0 " + width + " " + height);
+svg.setAttributeNS(null, "width", width);
+svg.setAttributeNS(null, "height", height);
+svg.style.background = "#fafafa";
+
+var circ = document.createElementNS(xlmns, "circle");
+circ.setAttributeNS(null, "cx", 50);
+circ.setAttributeNS(null, "cy", 50);
+circ.setAttributeNS(null, "r", 40);
+circ.style.strokeWidth = "4px";
+circ.style.fill = "#faa";
+circ.style.stroke = "#a00";
+
+var rect = document.createElementNS(xlmns, "rect");
+rect.setAttributeNS(null, "x", 110);
+rect.setAttributeNS(null, "y", 40);
+rect.setAttributeNS(null, "width", 80);
+rect.setAttributeNS(null, "height", 40);
+rect.style.strokeWidth = 4;
+rect.style.fill = "#aaf";
+rect.style.stroke = "#00a";
+
+var path = document.createElementNS(xlmns, "path");
+path.style.strokeWidth = 4;
+path.style.fill = "#afa";
+path.style.stroke = "#0aa";
+path.setAttributeNS(null, "d", "M 270,50 l 50,50, h -100 z");
+
+svg.appendChild(circ);
+svg.appendChild(rect);
+svg.appendChild(path);
+
+js.appendChild(svg);
+{{</* /js */>}}
+```
+
+as the code. Let us advance it a litle bit to produce following result.
+
+{{< js >}}
+let xlmns = "http://www.w3.org/2000/svg";
+let width = 400;
+let height = 150;
+
+let svg = document.createElementNS(xlmns, "svg");
+svg.setAttribute(null, "viewBox",
+  "0 0 " + width + " " + height);
+svg.setAttributeNS(null, "width", width);
+svg.setAttributeNS(null, "height", height);
+svg.style.background = "#fafafa";
+
+let circ = document.createElementNS(xlmns, "circle");
+circ.id = "c1"
+circ.setAttributeNS(null, "cx", 50);
+circ.setAttributeNS(null, "cy", 50);
+circ.setAttributeNS(null, "r", 40);
+circ.style.strokeWidth = "4px";
+circ.style.fill = "#faa";
+circ.style.stroke = "#a00";
+
+let rect = document.createElementNS(xlmns, "rect");
+rect.id = "r1";
+rect.setAttributeNS(null, "x", 110);
+rect.setAttributeNS(null, "y", 40);
+rect.setAttributeNS(null, "width", 80);
+rect.setAttributeNS(null, "height", 40);
+rect.style.strokeWidth = 4;
+rect.style.fill = "#aaf";
+rect.style.stroke = "#00a";
+
+let path = document.createElementNS(xlmns, "path");
+path.id = "p1";
+path.style.strokeWidth = 4;
+path.style.fill = "#afa";
+path.style.stroke = "#0aa";
+path.setAttributeNS(null, "d", "M 270,50 l 50,50, h -100 z");
+
+path.addEventListener("mouseenter", function() {
+  path.style.fill = "#4c4";
+  path.style.stroke = "#044";
+});
+path.addEventListener("mouseleave", function() {
+  path.style.fill = "#afa";
+  path.style.stroke = "#0aa";
+});
+
+circ.addEventListener("mouseenter", function() {
+  circ.style.fill = "#844";
+  circ.style.stroke = "#f00";
+});
+circ.addEventListener("mouseleave", function() {
+  circ.style.fill = "#faa";
+  circ.style.stroke = "#a00";
+});
+
+rect.addEventListener("mouseenter", function() {
+  rect.style.fill = "#00a";
+  rect.style.stroke = "#aaf";
+});
+rect.addEventListener("mouseleave", function() {
+  rect.style.fill = "#aaf";
+  rect.style.stroke = "#00a";
+});
+
+svg.appendChild(circ);
+svg.appendChild(rect);
+svg.appendChild(path);
+
+js.appendChild(svg);
+{{< /js >}}
+
+Now, when mouse enter an object, object color and border change. Additional lines to previous code are as follow.
+
+```
+path.addEventListener("mouseenter", function() {
+  path.style.fill = "#4c4";
+  path.style.stroke = "#044";
+});
+path.addEventListener("mouseleave", function() {
+  path.style.fill = "#afa";
+  path.style.stroke = "#0aa";
+});
+
+circ.addEventListener("mouseenter", function() {
+  circ.style.fill = "#844";
+  circ.style.stroke = "#f00";
+});
+circ.addEventListener("mouseleave", function() {
+  circ.style.fill = "#faa";
+  circ.style.stroke = "#a00";
+});
+
+rect.addEventListener("mouseenter", function() {
+  rect.style.fill = "#00a";
+  rect.style.stroke = "#aaf";
+});
+rect.addEventListener("mouseleave", function() {
+  rect.style.fill = "#aaf";
+  rect.style.stroke = "#00a";
+});
+```
+
+Element &nbsp;&nbsp;&nbsp; | mouseenter event &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | mouseleave event
+:- | :- | :-
+circle | `fill = "#844"`   | `style.fill = "#faa"`
+&nbsp; | `stroke = "#f00"` | `stroke = "#a00"`
+rect   | `fill = "#00a"`   | `fill = "#aaf"`
+&nbsp; | `stroke = "#aaf"` | `stroke = "#00a"`
+path   | `fill = "#4c4"`   | `fill = "#afa";`
+&nbsp; | `stroke = "#044"` | `stroke = "#0aa"`
+
+Above tabel give the states when `mouseenter` and `mouseleave` events triggered.
+
+Actually there is also another approach to change style using CSS selectors, but unfortunately, I can not still perform that using JS.
+
 
 ## notes
+[^gfg_2023]: GfG, "SVG Element Complete Reference", GeeksforGeek, 6 Jul 2023, url https://www.geeksforgeeks.org/svg-element-complete-reference/ [20240411].
 [^juviler_2022]: Jamie Juviler, "HTML Elements: What They Are and How to Use Them", HubSpot, 25 Jul 2022, url https://blog.hubspot.com/website/html-elements [20240411].
 [^m_2020]: n_m, "Hugo use inline javascript within posts", Stack Overflow 28 Jul 2020, url https://stackoverflow.com/a/63138441/9475509 [20240411].
 [^pyth0n_2017]: Pyth0n, "Insert js in a Hugo post", Stack Overflow, 8 Mar 2017, url https://stackoverflow.com/a/42672833/9475509 [20240411].
 [^rajora_2023]: Harish Rajora, "A Beginner’s Guide to Static Site Generator", Medium, 13 Dec 2023, url https://medium.com/p/806583fd81f3 [20240411].
+[^schindlabua_2020]: Schindlabua, "Are SVG elements considered HTML elements?", Sololearn, 30 Jul 2020, url https://www.sololearn.com/en/Discuss/2421836/are-svg-elements-considered-html-elements [20240411].
 [^vidas_2015]: Šime Vidas, Russ Bateman, "How do I open the JavaScript console in different browsers?", Webmasters Stack Exchange, 17 Oct 2019, url https://webmasters.stackexchange.com/a/77337/138202 [20240411].
