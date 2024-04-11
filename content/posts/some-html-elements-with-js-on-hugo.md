@@ -13,7 +13,7 @@ Display HTML elements on Hugo with JS <!--more-->
 ## intro
 There are some static site generators, where one of the free ones is Hugo [^rajora_2023]. And one of the feature of Hugo static pages is its support to use JS for dynamic content, but in this post only feature to display some HTML elements is shown. Since normally Hugo does not allow to execute JS directly from its post [^m_2020] and it requires defining a shortcode [^pyth0n_2017], a shortcode `js` is provided, that has 10 lines of code.
 
-In order to understand this post it is assumed that you are already familiar with HTML, JS, CSS, and Hugo shortcode. And for the last you know where to save it and how to called in a post. 
+In order to understand this post it is assumed that you are already familiar with HTML, JS, CSS, and Hugo shortcode. And for the last you know where to save it and how to called in a post. And for the HTML elements [^juviler_2022], only few of them are discussed here.
 
 
 ## shortcode
@@ -382,6 +382,7 @@ is the code to get above result. You can modify the code to add more fruit as op
 
 
 ## notes
+[^juviler_2022]: Jamie Juviler, "HTML Elements: What They Are and How to Use Them", HubSpot, 25 Jul 2022, url https://blog.hubspot.com/website/html-elements [20240411].
 [^m_2020]: n_m, "Hugo use inline javascript within posts", Stack Overflow 28 Jul 2020, url https://stackoverflow.com/a/63138441/9475509 [20240411].
 [^pyth0n_2017]: Pyth0n, "Insert js in a Hugo post", Stack Overflow, 8 Mar 2017, url https://stackoverflow.com/a/42672833/9475509 [20240411].
 [^rajora_2023]: Harish Rajora, "A Beginner’s Guide to Static Site Generator", Medium, 13 Dec 2023, url https://medium.com/p/806583fd81f3 [20240411].
