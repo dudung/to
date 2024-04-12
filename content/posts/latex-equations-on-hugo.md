@@ -324,19 +324,19 @@ It is easy to memorize the Greek letter in LaTeX if you know how to write them i
 Code | LaTex | &nbsp;&nbsp;&nbsp;&nbsp; | Code | HTML
 :-: | :-: | :-: | :-: | :-:
 `\alpha` | $\alpha$ || `&alpha;` | &alpha;
-$\beta$
-$\gamma$
-$\delta$
-$\epsilon$
-$\zeta$
-$\eta$
-$\theta$
-$\iota$
-$\kappa$
-$\lambda$
-$\mu$
-$\nu$
-$\xi$
+`\beta` | $\beta$ || `&beta;` | &beta;
+`\gamma` | $\gamma$ || `&gamma;` | &gamma;
+`\delta` | $\delta$ || `&delta;` | &delta;
+`\epsilon` | $\epsilon$ || `&epsilon;` | &epsilon;
+`\zeta` | $\zeta$ || `&zeta;` | &zeta;
+`\eta` | $\eta$ || `&eta;` | &eta;
+`\theta` | $\theta$ || `&theta;` | &theta;
+`\iota` | $\iota$ || `&iota;` | &iota;
+`\kappa` | $\kappa$ || `&kappa;` | &kappa;
+`\lambda` | $\lambda$ || `&lambda;` | &lambda;
+`\mu` | $\mu$ || `&mu;` | &mu;
+`\nu` | $\nu$ || `&nu;` | &nu;
+`\xi` | $\xi$
 $\omicron$
 $\pi$
 $\rho$
@@ -348,6 +348,8 @@ $\chi$
 $\psi$
 $\omega$
 
+The HTML counterpart characters are also shown to show that they have the same pattern in defining the entities [^girard_2019].
+
 
 ## notes
 [^adminunco_2022]: UNCO Admin, "The Greek Alphabet", University of Northern Colorado, 10 Jun 2022, url https://www.unco.edu/fraternity-sorority/resources/greek-alphabet.aspx [20240412].
@@ -355,4 +357,5 @@ $\omega$
 [^authorshugo_2024b]: Hugo Authros, "Front matter", hugoDocs, 8 Apr 2024, url https://gohugo.io/content-management/front-matter/ [20240412].
 [^authorskatex_2024]: KaTeX Authors, "mhchem extension", KaTeX -- GitHub, 25 Mar 2024, url https://github.com/KaTeX/KaTeX/tree/ab323598f/contrib/mhchem [202404212].
 [^blevins_2009]: Jason Blevins, "The Greek Alphabet in LaTeX", 5 Feb 2009, url https://jblevins.org/log/greek [20240412].
+[^girard_2019]: Jeremy Girard, "How to Get HTML Codes for Greek Language Characters", ThoughtCo, 4 Aug 2019, url https://www.thoughtco.com/p-4062212 [20240412].
 [^hensel_2024]: Martin Hensel, "The mhchem Bundle Documentation for the LATEX Packages mhchem v4.10, hpstatement v2.1.0 and rsphrase v3.11", url https://www.ctan.org/pkg/mhchem [20240412].
