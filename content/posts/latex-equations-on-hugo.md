@@ -300,9 +300,59 @@ $$
 
 where both sides produce the same result, even the order is `_` then followed by `^` in the left side of the equation and is `^` then followed by `_` in the right side of the equation.
 
+Only one character after `_` or `^` considered as the subscript or superscript symbol. For more than multiple characters, put them inside `{}`, e.g.
+
+```tex
+$$\tag{15}
+x^21_abc \ne x^{21}_{abc}
+$$
+```
+
+gives
+
+$$\tag{15}
+x^21_abc \ne x^{21}_{abc}
+$$
+
+as the result. Notice that without `{}` the `x^21` is interpretated as `x^2 1`. Then the `_` is after `1` means that `1_a` instead of `abc` as subscript. To get the right expression for right side of equation (15) it should be `x^{21}_{abc}` which means that `21` is expression for superscript and `abc` is expression for subscript.
+
+
+## greek letters
+It is easy to memorize the Greek letter in LaTeX if you know how to write them in English [^adminunco_2022]. There are 24 Greek letters, where some of the capital letters are not available since their Roman counterparts are used instead [^blevins_2009].
+
+
+Code | LaTex | &nbsp;&nbsp;&nbsp;&nbsp; | Code | HTML
+:-: | :-: | :-: | :-: | :-:
+`\alpha` | $\alpha$ || `&alpha;` | &alpha;
+$\beta$
+$\gamma$
+$\delta$
+$\epsilon$
+$\zeta$
+$\eta$
+$\theta$
+$\iota$
+$\kappa$
+$\lambda$
+$\mu$
+$\nu$
+$\xi$
+$\omicron$
+$\pi$
+$\rho$
+$\sigma$
+$\tau$
+$\upsilon$
+$\phi$
+$\chi$
+$\psi$
+$\omega$
+
 
 ## notes
+[^adminunco_2022]: UNCO Admin, "The Greek Alphabet", University of Northern Colorado, 10 Jun 2022, url https://www.unco.edu/fraternity-sorority/resources/greek-alphabet.aspx [20240412].
 [^authorshugo_2024]: Hugo Authors, "Mathematics in Markdown", hugoDocs -- GitHub, 20 Feb 2024, url https://github.com/gohugoio/hugoDocs/blob/c60cd20a/content/en/content-management/mathematics.md [20240412].
 [^authorshugo_2024b]: Hugo Authros, "Front matter", hugoDocs, 8 Apr 2024, url https://gohugo.io/content-management/front-matter/ [20240412].
 [^authorskatex_2024]: KaTeX Authors, "mhchem extension", KaTeX -- GitHub, 25 Mar 2024, url https://github.com/KaTeX/KaTeX/tree/ab323598f/contrib/mhchem [202404212].
+[^blevins_2009]: Jason Blevins, "The Greek Alphabet in LaTeX", 5 Feb 2009, url https://jblevins.org/log/greek [20240412].
 [^hensel_2024]: Martin Hensel, "The mhchem Bundle Documentation for the LATEX Packages mhchem v4.10, hpstatement v2.1.0 and rsphrase v3.11", url https://www.ctan.org/pkg/mhchem [20240412].
