@@ -200,7 +200,105 @@ x = \frac{1 + \frac{a}{b}}{1 - \frac{c}{d}}
 $$
 ```
 
-as the code.
+as the code. To have bigger font, as not in a fraction inline, use `\displaystyle` as follow
+
+```tex
+$$
+x = \frac{\displaystyle 1 + \frac{\displaystyle 1 \times 
+\frac{a + c}{a - c}}{b}}
+{1 - \frac{c}{d}}
+$$
+```
+
+to produce
+
+$$
+x = \frac{\displaystyle 1 + \frac{\displaystyle 1 \times 
+\frac{a + c}{a - c}}{b}}
+{1 - \frac{c}{1 + \frac{d}{e}}}
+$$
+
+Notice that the denominator does not use the feature and it still has smaller font. And use it in excesive way as in the numerator makes difficult to read the sub fraction, doesn't it?
+
+
+## subscript
+A subscript is obtained using `_` followed by the subscript symbol, e.g.
+
+```tex
+$$
+x_1 + y_2 = z_3
+$$
+```
+
+will produce
+
+$$
+x_1 + y_2 = z_3
+$$
+
+The subscript symbol can be any mathematical expression in LaTex inside surrounded by `{` and `}`, e.g.
+
+```tex
+$$
+y_{f(x)} = f_2(x_{109}) + g_{a_{b + c}}
+$$
+```
+
+will produce
+
+$$
+y_{f(x)} = f_2(x_{109}) + g_{a_{b + c}}
+$$
+
+Notice that there might be another subscript in an expression as subscript.
+
+
+## superscript
+It is similear with the subscript but it uses `^` followed by subscript symbol, e.g.
+
+```tex
+$$
+y = ax^3 + bx^2 + cx + d
+$$
+```
+
+will produce
+
+$$
+y = ax^3 + bx^2 + cx + d
+$$
+
+It is also similar to subscript, that the superscript symbol can be any mathematical expression in LaTeX surrounded by `{` and `}`, and it can be nested, e.g.
+
+```tex
+$$
+y = x^{2x^2 + x} + x^{x^x}
+$$
+```
+
+wil produce
+
+$$
+y = x^{2x^2 + x} + x^{x^x}
+$$
+
+
+## subscript and superscript
+Both subscript and superscript can be used in any order, e.g.
+
+```tex
+$$
+x_3^2 \equiv x^2_3
+$$
+```
+
+will produce
+
+$$
+x_3^2 \equiv x^2_3
+$$
+
+where both sides produce the same result, even the order is `_` then followed by `^` in the left side of the equation and is `^` then followed by `_` in the right side of the equation.
 
 
 ## notes
