@@ -11,7 +11,7 @@ LaTex equations with KaTex and their code <!--more-->
 
 
 ## intro
-I have just informed today that both MathJax and KateX provide support for chemical equations [^authorshugo_2024], but for KaTeX the mhchem extension should be enabled first [^authorskatex_2024].
+I have just informed today that both MathJax and KateX provide support for chemical equations [^authorshugo_2024], but for KaTeX the [mhchem](https://mhchem.github.io/MathJax-mhchem/) extension should be enabled first [^authorskatex_2024].
 
 
 ## partial
