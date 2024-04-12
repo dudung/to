@@ -1,9 +1,9 @@
 +++
-title = 'some latex equations'
+title = 'latex equations on hugo'
 date = 2024-04-12T07:12:00+07:00
 draft = false
 math = true
-tags = ['latex', 'equation', 'graph', 'katex', 'mhchem']
+tags = ['latex', 'equation', 'katex', 'hugo', 'mhchem']
 url = '0008'
 authors = ['viridi']
 +++
