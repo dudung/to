@@ -321,32 +321,32 @@ as the result. Notice that without `{}` the `x^21` is interpretated as `x^2 1`. 
 It is easy to memorize the Greek letter in LaTeX if you know how to write them in English [^adminunco_2022]. There are 24 Greek letters, where some of the capital letters are not available since their Roman counterparts are used instead [^blevins_2009].
 
 
-Code | LaTex | &nbsp;&nbsp;&nbsp;&nbsp; | Code | HTML
-:-: | :-: | :-: | :-: | :-:
-`\alpha` | $\alpha$ || `&alpha;` | &alpha;
-`\beta` | $\beta$ || `&beta;` | &beta;
-`\gamma` | $\gamma$ || `&gamma;` | &gamma;
-`\delta` | $\delta$ || `&delta;` | &delta;
-`\epsilon` | $\epsilon$ || `&epsilon;` | &epsilon;
-`\zeta` | $\zeta$ || `&zeta;` | &zeta;
-`\eta` | $\eta$ || `&eta;` | &eta;
-`\theta` | $\theta$ || `&theta;` | &theta;
-`\iota` | $\iota$ || `&iota;` | &iota;
-`\kappa` | $\kappa$ || `&kappa;` | &kappa;
-`\lambda` | $\lambda$ || `&lambda;` | &lambda;
-`\mu` | $\mu$ || `&mu;` | &mu;
-`\nu` | $\nu$ || `&nu;` | &nu;
-`\xi` | $\xi$
-$\omicron$
-$\pi$
-$\rho$
-$\sigma$
-$\tau$
-$\upsilon$
-$\phi$
-$\chi$
-$\psi$
-$\omega$
+Code | LaTex | &nbsp;&nbsp;&nbsp;&nbsp; | Code | HTML| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Code | LaTex | &nbsp;&nbsp;&nbsp;&nbsp; | Code | HTML
+:-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-:
+`\alpha` | $\alpha$ || `&alpha;` | &alpha; || `\Alpha` | $\Alpha$ || `&Alpha;` | &Alpha;
+`\beta` | $\beta$ || `&beta;` | &beta; || `\Beta` | $\Beta$ || `&Beta;` | &Beta;
+`\gamma` | $\gamma$ || `&gamma;` | &gamma; || `\Gamma` | $\Gamma$ || `&Gamma;` | &Gamma;
+`\delta` | $\delta$ || `&delta;` | &delta; || `\Delta` | $\Delta$ || `&Delta;` | &Delta;
+`\epsilon` | $\epsilon$ || `&epsilon;` | &Epsilon; || `\Epsilon` | $\Epsilon$ || `&Epsilon;` | &Epsilon;
+`\zeta` | $\zeta$ || `&zeta;` | &zeta; || `\Zeta` | $\Zeta$ || `&Zeta;` | &Zeta;
+`\eta` | $\eta$ || `&eta;` | &eta; || `\eta` | $\Eta$ || `&Eta;` | &Eta;
+`\theta` | $\theta$ || `&theta;` | &theta; || `\Theta` | $\Theta$ || `&Theta;` | &Theta;
+`\iota` | $\iota$ || `&iota;` | &iota; || `\Iota` | $\Iota$ || `&Iota;` | &Iota;
+`\kappa` | $\kappa$ || `&kappa;` | &kappa; || `\Kappa` | $\Kappa$ || `&Kappa;` | &Kappa;
+`\lambda` | $\lambda$ || `&lambda;` | &Lambda; || `\Lambda` | $\Lambda$ || `&Lambda;` | &Lambda;
+`\mu` | $\mu$ || `&mu;` | &mu; || `\Mu` | $\Mu$ || `&Mu;` | &Mu;
+`\nu` | $\nu$ || `&nu;` | &nu; || `\Nu` | $\Nu$ || `&Nu;` | &Nu;
+`\xi` | $\xi$ || `&xi;` | &xi; || `\Xi` | $\Xi$ || `&Xi;` | &Xi;
+`\omicron` | $\omicron$ || `&omicron;` | &Omicron; || `\Omicron` | $\Omicron$ || `&Omicron;` | &Omicron;
+`\pi` | $\pi$ || `&pi;` | &pi; || `\Pi` | $\Pi$ || `&Pi;` | &Pi;
+`\rho` | $\rho$ || `&rho;` | &rho; || `\Rho` | $\Rho$ || `&Rho;` | &Rho;
+`\sigma` | $\sigma$ || `&sigma;` | &Sigma; || `\Sigma` | $\Sigma$ || `&Sigma;` | &Sigma;
+`\tau` | $\tau$ || `&tau;` | &tau; || `\Tau` | $\Tau$ || `&Tau;` | &Tau;
+`\upsilon` | $\upsilon$ || `&upsilon;` | &Upsilon; || `\Upsilon` | $\Upsilon$ || `&Upsilon;` | &Upsilon;
+`\phi` | $\phi$ || `&phi;` | &phi; || `\Phi` | $\Phi$ || `&Phi;` | &Phi;
+`\chi` | $\chi$ || `&chi;` | &chi; || `\Chi` | $\Chi$ || `&Chi;` | &Chi;
+`\psi` | $\psi$ || `&psi;` | &psi; || `\Psi` | $\Psi$ || `&Psi;` | &Psi;
+`\omega` | $\omega$ || `&omega;` | &omega; ||`\Omega` | $\Omega$ || `&Omega;` | &Omega;
 
 The HTML counterpart characters are also shown to show that they have the same pattern in defining the entities [^girard_2019].
 
