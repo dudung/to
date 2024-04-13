@@ -666,81 +666,31 @@ btnR.addEventListener("click",
   }
 )
 
-let xlmns = "http://www.w3.org/2000/svg";
-let width = 400;
-let height = 150;
 
-let svg = document.createElementNS(xlmns, "svg");
-svg.setAttribute(null, "viewBox",
-  "0 0 " + width + " " + height);
-svg.setAttributeNS(null, "width", width);
-svg.setAttributeNS(null, "height", height);
-svg.style.background = "#fafafa";
-svg.style.border = "1px solid gray";
-svg.style.margin = "4px";
-
-let circ = document.createElementNS(xlmns, "circle");
-circ.id = "Circle"
+// the differences to previous code
 circ.setAttributeNS(null, "cx", 200);
 circ.setAttributeNS(null, "cy", 25);
 circ.setAttributeNS(null, "r", 15);
-circ.style.strokeWidth = "4px";
-circ.style.fill = "#faa";
-circ.style.stroke = "#a00";
 
-let rect = document.createElementNS(xlmns, "rect");
-rect.id = "Rect";
 rect.setAttributeNS(null, "x", 185);
 rect.setAttributeNS(null, "y", 60);
 rect.setAttributeNS(null, "width", 30);
 rect.setAttributeNS(null, "height", 30);
-rect.style.strokeWidth = 4;
-rect.style.fill = "#aaf";
-rect.style.stroke = "#00a";
 
-let path = document.createElementNS(xlmns, "path");
-path.id = "Path";
-path.style.strokeWidth = 4;
-path.style.fill = "#afa";
-path.style.stroke = "#0aa";
 path.setAttributeNS(null, 
   "d", "M 200,110 l 20,30, h -40 z");
 
-path.addEventListener("mouseenter", function() {
-  path.style.fill = "#4c4";
-  path.style.stroke = "#044";
-});
-path.addEventListener("mouseleave", function() {
-  path.style.fill = "#afa";
-  path.style.stroke = "#0aa";
-});
+// mouseenter & mouseleave events are the same as previous code
+
 path.addEventListener("click", function() {
   path.setAttributeNS(
     null, "d",
     "M 200,110 l 20,30, h -40 z"
   );
 });
-
-circ.addEventListener("mouseenter", function() {
-  circ.style.fill = "#844";
-  circ.style.stroke = "#f00";
-});
-circ.addEventListener("mouseleave", function() {
-  circ.style.fill = "#faa";
-  circ.style.stroke = "#a00";
-});
 circ.addEventListener("click", function() {
   circ.setAttributeNS(null, "cx", 200);
   circ.setAttributeNS(null, "cy", 25);
-});
-
-rect.addEventListener("mouseenter", function() {
-  rect.style.fill = "#00a";
-  rect.style.stroke = "#aaf";
-});
-rect.addEventListener("mouseleave", function() {
-  rect.style.fill = "#aaf";
-  rect.style.stroke = "#00a";
 });
 rect.addEventListener("click", function() {
   rect.setAttributeNS(null, "x", 185);
@@ -880,12 +830,6 @@ path.addEventListener("mouseleave", function() {
   path.style.fill = "#afa";
   path.style.stroke = "#0aa";
 });
-path.addEventListener("click", function() {
-  path.setAttributeNS(
-    null, "d",
-    "M 200,110 l 20,30, h -40 z"
-  );
-});
 
 circ.addEventListener("mouseenter", function() {
   circ.style.fill = "#844";
@@ -895,10 +839,6 @@ circ.addEventListener("mouseleave", function() {
   circ.style.fill = "#faa";
   circ.style.stroke = "#a00";
 });
-circ.addEventListener("click", function() {
-  circ.setAttributeNS(null, "cx", 200);
-  circ.setAttributeNS(null, "cy", 25);
-});
 
 rect.addEventListener("mouseenter", function() {
   rect.style.fill = "#00a";
@@ -907,6 +847,17 @@ rect.addEventListener("mouseenter", function() {
 rect.addEventListener("mouseleave", function() {
   rect.style.fill = "#aaf";
   rect.style.stroke = "#00a";
+});
+
+path.addEventListener("click", function() {
+  path.setAttributeNS(
+    null, "d",
+    "M 200,110 l 20,30, h -40 z"
+  );
+});
+circ.addEventListener("click", function() {
+  circ.setAttributeNS(null, "cx", 200);
+  circ.setAttributeNS(null, "cy", 25);
 });
 rect.addEventListener("click", function() {
   rect.setAttributeNS(null, "x", 185);
@@ -923,11 +874,11 @@ js.append(svg);
   svg.appendChild(path);
 {{< /js >}}
 
-First select shape than click `<<` to move it to the left or `>>` to move it to the right. Hover on the shape to see its colors change and click it to reset its position.
+Select shape, click `<<` to move left or `>>` to move right. Hover on shapes to see they react, and click them to reset their position.
 
 
 ## closing
-Some examples of using JS throgh a shortcode for displaying HTML elements in a Hugo post have been presented and discussed in brief. Using the examples further advanced and complex combination of HTML elements can be achieved, where only the imagination is the limit.
+Some examples of using JS through a shortcode for displaying HTML elements in a Hugo post have been presented and discussed in brief.
 
 
 ## notes
