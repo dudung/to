@@ -351,6 +351,10 @@ Code | LaTex | &nbsp;&nbsp;&nbsp;&nbsp; | Code | HTML| &nbsp;&nbsp;&nbsp;&nbsp;&
 The HTML counterpart characters are also shown to show that they have the same pattern in defining the entities [^girard_2019].
 
 
+## matrices
+There are at least to ways to display matrices in LaTex. The first way is using matrix environment and the second is using array environment.
+
+
 ## notes
 [^adminunco_2022]: UNCO Admin, "The Greek Alphabet", University of Northern Colorado, 10 Jun 2022, url https://www.unco.edu/fraternity-sorority/resources/greek-alphabet.aspx [20240412].
 [^authorshugo_2024]: Hugo Authors, "Mathematics in Markdown", hugoDocs -- GitHub, 20 Feb 2024, url https://github.com/gohugoio/hugoDocs/blob/c60cd20a/content/en/content-management/mathematics.md [20240412].
