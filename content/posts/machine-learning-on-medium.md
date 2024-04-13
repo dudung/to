@@ -82,6 +82,7 @@ There might be further discussion for each topics as this post evolving through 
 + Editor: Towards AI Editorial Team
 + Link: https://pub.towardsai.net/machine-learning-algorithms-for-beginners-with-python-code-examples-ml-19c6afd60daa
 + Date: 4 Jun 2023
++ Access: Member-only story
 + Notes:
 
 There are types of regression discussed
@@ -134,6 +135,56 @@ It is actually a Member-only story, but there are notification
 > You're reading for free via Towards AI Editorial Team's Friend Link. Become a member to access the best of Medium.
 
 but after reopen it, the "Friend link" does not work anymore. So, I can read with when I open it again in Microsoft Edge as the first time, while previously it is opened and reopened in Google Chrome. An as I repopen that in a new tab on Edge, it becomes Member-only story which I can not read anymore, while the first tab still works until I refresh it. I believe hat it is a mechanisme to avoid in sharing the link to third person or further person?
+
+
+## res-2
++ Title: Machine Learning Algorithms for Beginners: An Easy-to-Follow Tutorial with Python Examples
++ Authors: Waleed Mousa
++ Editor: -
++ Link: https://ai.plainenglish.io/machine-learning-algorithms-for-beginners-an-easy-to-follow-tutorial-with-python-examples-5bb68e464a1e
++ Date: 25 Mar 2023
++ Access: All-reader story
++ Notes: N/A
+
+
+## res-3
++ Title: Principal Component Analysis with python : An example for beginners — by a beginner
++ Authors: Americana Chen
++ Editor: -
++ Link: https://towardsdatascience.com/principal-component-analysis-with-python-an-example-for-beginners-by-a-beginner-ac052eff45c
++ Date: 1 Dec 2020
++ Access: All-reader story
++ Notes: N/A
+
+
+## res-4
++ Title: How to build a simple neural network in 9 lines of Python code
++ Authors: Milo Spencer-Harper
++ Editor: -
++ Link: https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1
++ Date: 21 Jul 2015
++ Access: All-reader story
++ Notes: N/A
+
+
+## res-5
++ Title: 10 Machine Learning Projects on Classification with Python
++ Authors: Aman Kharwal
++ Editor: -
++ Link: https://medium.datadriveninvestor.com/10-machine-learning-projects-on-classification-with-python-9261add2e8a7
++ Date: 26 Nov 2020
++ Access: All-reader story
++ Notes: N/A
+
+
+## n
++ Title: 
++ Authors: 
++ Editor: -
++ Link: 
++ Date: 
++ Access: 
++ Notes: N/A
 
 
 ## notes
