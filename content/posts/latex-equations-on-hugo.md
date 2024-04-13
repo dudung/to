@@ -352,11 +352,186 @@ The HTML counterpart characters are also shown to show that they have the same p
 
 
 ## matrices
-There are at least to ways to display matrices in LaTex. The first way is using matrix environment and the second is using array environment.
+There are at least to ways to display matrices in LaTex, where the first way is using `matrix` environment and the second is using `array` environment, and there is also other environments for matrix with various types of brackets and also for smaller size [^atulsaini2810_2023].
+
+Let us firs use `array` environment to obtain
+
+$$
+\begin{array}{cccc}
+1 & 2 & 3 & 4 \newline
+5 & 6 & 7 & 8
+\end{array}
+$$
+
+which using following code
+
+```tex
+$$
+\begin{array}{cccc}
+1 & 2 & 3 & 4 \newline
+5 & 6 & 7 & 8
+\end{array}
+$$
+```
+
+Notice that it requires one argument for number of columns and also at the same time for columns alignment, that can have value `l` for left, `c` for center, and `r` for right. Following code
+
+```tex
+$$
+\begin{array}{lcr}
+1000 & 2000 & 3000  \newline
+400 & 500 & 600 \newline
+70 & 80 & 90 \newline
+a & b & c
+\end{array}
+$$
+```
+
+would produce
+
+$$
+\begin{array}{lcr}
+1000 & 2000 & 3000  \newline
+400 & 500 & 600 \newline
+70 & 80 & 90 \newline
+a & b & c
+\end{array}
+$$
+
+what hopefully give better understanding about columns alignment options `l`, `c`, and `r`.
+
+If the columns alignment always `c` then consider to use `matrix` environment instead, e.g.
+
+```tex
+$$
+\begin{matrix}
+1000 & 2000 & 3000  \newline
+400 & 500 & 600 \newline
+70 & 80 & 90 \newline
+a & b & c
+\end{matrix}
+$$
+```
+
+will produce
+
+$$
+\begin{matrix}
+1000 & 2000 & 3000  \newline
+400 & 500 & 600 \newline
+70 & 80 & 90 \newline
+a & b & c
+\end{matrix}
+$$
+
+Or addtional argument can also be supplied when using the alternative `matrix*` environment but it holds for all columns, e.g.
+
+```tex
+$$
+\begin{matrix*}[l]
+1000 & 2000 & 3000  \newline
+400 & 500 & 600 \newline
+70 & 80 & 90 \newline
+a & b & c
+\end{matrix*}
+$$
+```
+
+will produce
+
+$$
+\begin{matrix*}[l]
+1000 & 2000 & 3000  \newline
+400 & 500 & 600 \newline
+70 & 80 & 90 \newline
+a & b & c
+\end{matrix*}
+$$
+
+where you can also use `[r]` and `[c]` other than `[l]` as the optional argument.  
+
+Next is matrix with small size what can be used inline with text, following is for display mode
+
+$$
+\begin{smallmatrix}
+1 & 2 & 3 & 4 \newline
+5 & 6 & 7 & 8
+\end{smallmatrix}
+$$
+
+and this is for inline mode $\begin{smallmatrix} 1 & 2 & 3 & 4 \newline 5 & 6 & 7 & 8 \end{smallmatrix}$, where the codes are
+
+```tex
+$$
+\begin{smallmatrix}
+1 & 2 & 3 & 4 \newline
+5 & 6 & 7 & 8
+\end{smallmatrix}
+$$
+```
+
+and `$\begin{smallmatrix} 1 & 2 & 3 & 4 \newline 5 & 6 & 7 & 8 \end{smallmatrix}$`.
+
+If brackets are required there are `bmatrix`, `pmatrix`, and `vmatrix` enviroment that provide `[]`, `()`, and `||` brackets types, respectively, as shown in following table.
+
+Bracket type | &nbsp; Environment &nbsp; | Result
+:-: | :-: | :-:
+square `[]` | `bmatrix` | $\begin{bmatrix} 1 & 2 \newline 3 & 4 \end{bmatrix}$
+&nbsp; | &nbsp; | &nbsp;
+round `()` | `pmatrix` | $\begin{pmatrix} 1 & 2 \newline 3 & 4 \end{pmatrix}$
+&nbsp; | &nbsp; | &nbsp;
+vertical `\|\|` | `vmatrix` | $\begin{vmatrix} 1 & 2 \newline 3 & 4 \end{vmatrix}$
+
+If other types of brackets required, use `\left` and `\right` macros followed by bracket characters or macro representing the characters, e.g.
+
+$$
+\left|
+\left(
+\left\lfloor
+\begin{matrix}
+11 & 12 & 13 & 14 \newline
+21 & 22 & 23 & 24 \newline
+31 & 32 & 33 & 34
+\end{matrix}
+\right\rceil
+\right\rbrace
+\right]
+$$
+
+Notice the pairs of `\left` and `\right` should be complete.
+
+
+## root
+Root of something can be obtained using `\sqrt[]{}`, e.g.
+
+```tex
+$$
+\sqrt{x} + \sqrt[7]{1 + \frac{x}{1 - x^2}} = 0
+$$
+```
+
+will produce
+
+$$
+\sqrt{x} + \sqrt[7]{1 + \frac{x}{1 - x^2}} = 0
+$$
+
+where inside `{}` can any LaTeX math expressions.
+
+
+## functions
+There are predefined functions, e.g. `\sin`, `\cos`, `\tan`, `\log`, `\ln`,`\exp` that can be used
+
+$$
+\exp x + \log y \ne exp x + ln y
+$$
+
+Notice that `\sin` is name of a function, while `sin` are three variables `s`, `i`, and `n`.
 
 
 ## notes
 [^adminunco_2022]: UNCO Admin, "The Greek Alphabet", University of Northern Colorado, 10 Jun 2022, url https://www.unco.edu/fraternity-sorority/resources/greek-alphabet.aspx [20240412].
+[^atulsaini2810_2023]: atulsaini2810, "matrices in LaTeX", GeeksforGeeks, 8 May 2023, url https://www.geeksforgeeks.org/matrices-in-latex/ [20240414].
 [^authorshugo_2024]: Hugo Authors, "Mathematics in Markdown", hugoDocs -- GitHub, 20 Feb 2024, url https://github.com/gohugoio/hugoDocs/blob/c60cd20a/content/en/content-management/mathematics.md [20240412].
 [^authorshugo_2024b]: Hugo Authros, "Front matter", hugoDocs, 8 Apr 2024, url https://gohugo.io/content-management/front-matter/ [20240412].
 [^authorskatex_2024]: KaTeX Authors, "mhchem extension", KaTeX -- GitHub, 25 Mar 2024, url https://github.com/KaTeX/KaTeX/tree/ab323598f/contrib/mhchem [202404212].
