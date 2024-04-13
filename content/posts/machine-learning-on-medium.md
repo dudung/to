@@ -144,7 +144,7 @@ but after reopen it, the "Friend link" does not work anymore. So, I can read wit
 + Link: https://ai.plainenglish.io/machine-learning-algorithms-for-beginners-an-easy-to-follow-tutorial-with-python-examples-5bb68e464a1e
 + Date: 25 Mar 2023
 + Access: All-reader story
-+ Notes: N/A
++ Notes: N/A yet
 
 
 ## res-3
@@ -154,7 +154,7 @@ but after reopen it, the "Friend link" does not work anymore. So, I can read wit
 + Link: https://towardsdatascience.com/principal-component-analysis-with-python-an-example-for-beginners-by-a-beginner-ac052eff45c
 + Date: 1 Dec 2020
 + Access: All-reader story
-+ Notes: N/A
++ Notes: N/A yet
 
 
 ## res-4
@@ -164,7 +164,7 @@ but after reopen it, the "Friend link" does not work anymore. So, I can read wit
 + Link: https://medium.com/technology-invention-and-more/how-to-build-a-simple-neural-network-in-9-lines-of-python-code-cc8f23647ca1
 + Date: 21 Jul 2015
 + Access: All-reader story
-+ Notes: N/A
++ Notes: N/A yet
 
 
 ## res-5
@@ -174,10 +174,10 @@ but after reopen it, the "Friend link" does not work anymore. So, I can read wit
 + Link: https://medium.datadriveninvestor.com/10-machine-learning-projects-on-classification-with-python-9261add2e8a7
 + Date: 26 Nov 2020
 + Access: All-reader story
-+ Notes: N/A
++ Notes: N/A yet
 
 
-## n
+## res-n
 + Title: 
 + Authors: 
 + Editor: -
@@ -189,5 +189,3 @@ but after reopen it, the "Friend link" does not work anymore. So, I can read wit
 
 ## notes
 [^google_2024]: Google, 13 Apr 2024, url https://www.google.com/search?q=%2B%22machine+learning%22+beginner+example+%2Bpython+-%22member-only+story%22+site%3Amedium.com#ip=1 [2024].
-
-
