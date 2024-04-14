@@ -11,7 +11,7 @@ Random number for CSS and HTML using JS <!--more-->
 
 
 ## intro
-To generate random number in JS `math.random()` method can be used, which produces a pseudo-random floating point-number between 0 (inclusive) and 1 (exclusive) [^yajasvikhqmsg_2024], which can later be processed to create certain random numbers, e.g. decimal with specified max or min-max range, integer with specified max or min-max range, and ones with specified inclusive [^lemonaki_2022]. Beside the pseudo-random generator provided in `Math` object, there are also some alternatives, e.g. one supported by some browsers or create yourself some functions [^castrogiovanni_2021].
+To generate random number in JS `Math.random()` method can be used, which produces a pseudo-random floating point-number between 0 (inclusive) and 1 (exclusive) [^yajasvikhqmsg_2024], which can later be processed to create certain random numbers, e.g. decimal with specified max or min-max range, integer with specified max or min-max range, and ones with specified inclusive [^lemonaki_2022]. Beside the pseudo-random generator provided in `Math` object, there are also some alternatives, e.g. one supported by some browsers or create yourself some functions [^castrogiovanni_2021].
 
 In this post results of using random number in JS is shown in HTML with support of CSS. HMTL is a markup language, CSS is a styling language, and JS is a programming language, where they are working together to render the interactive results displayed in a web browser [^patel_2020]. It is also assumed that you are already familiar with JS, CSS, and HTML.
 
@@ -102,6 +102,85 @@ function run(ta, dv) {
 ```
 
 inside of `run()` function, where `ta` and `dv` are the output, which stand for `textarea` and `div` elements, respectively.
+
+
+## random number
+Random number betweens 0 (inclusive) and 1 (exclusive) can be generated using `Math.random()` function.
+
+{{< js >}}
+let bt = document.createElement("button");
+bt.innerHTML = "Run"
+bt.style.float = "left";
+bt.style.width = "50px";
+
+let ta = document.createElement("textarea");
+ta.style.overflowY = "scroll";
+ta.style.width = "180px";
+ta.style.height = "100px";
+ta.style.float = "left";
+ta.style.marginLeft = "4px";
+
+let dv = document.createElement("div");
+dv.style.border = "1px solid #888";
+dv.style.height = "104px";
+dv.style.float = "left";
+dv.style.width = "320px";
+dv.style.marginLeft = "4px";
+
+js.appendChild(bt);
+js.appendChild(ta);
+js.appendChild(dv);
+
+bt.addEventListener("click", function() {
+  run(ta, dv)
+});
+
+function run(ta, dv) {
+  dv.style.textAlign = "left";
+  dv.style.fontSize = "15px";
+  dv.innerHTML = "";
+  ta.value = "";
+  
+  let N = 18;
+  for(let i = 0; i < N; i++) {
+    let x = Math.random();
+    
+    ta.value += x.toFixed(3);
+    if(i < N-1) ta.value += ", ";
+    
+    dv.innerHTML += x.toFixed(5); 
+    if(i < N-1) dv.innerHTML += ", ";
+  }
+}
+{{< /js >}}
+
+Above results show `18` random numbers between 0 and 1, which is displayed in `textarea` with 3 decimal places, while in `div` with 5 decimal places. And following
+
+```js
+function run(ta, dv) {
+  dv.style.textAlign = "left";
+  dv.style.fontSize = "15px";
+  dv.innerHTML = "";
+  ta.value = "";
+  
+  let N = 18;
+  for(let i = 0; i < N; i++) {
+    let x = Math.random();
+    
+    ta.value += x.toFixed(3);
+    if(i < N-1) ta.value += ", ";
+    
+    dv.innerHTML += x.toFixed(5); 
+    if(i < N-1) dv.innerHTML += ", ";
+  }
+}
+```
+
+is the code. Two first lines are for styling the `div` with `left` alignment and `15px` font size. Then two lines for clearing the `div` and `textarea` are followed. A for loop generate random number `Math.random()` for `18` times. The function `toFixed()` will round the number to certain decimal places `n`, where `n` is the given argument.
+
+
+## random position
+..
 
 
 ## notes
