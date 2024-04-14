@@ -16,6 +16,94 @@ To generate random number in JS `math.random()` method can be used, which produc
 In this post results of using random number in JS is shown in HTML with support of CSS. HMTL is a markup language, CSS is a styling language, and JS is a programming language, where they are working together to render the interactive results displayed in a web browser [^patel_2020]. It is also assumed that you are already familiar with JS, CSS, and HTML.
 
 
+## button + textarea + div
+As common elements there are at least button, textarea, and div elements. The first element trigger generating random number, the next shows the values, and the las is for displaying the result. 
+
+
+{{< js >}}
+let bt = document.createElement("button");
+bt.innerHTML = "Run"
+bt.style.float = "left";
+bt.style.width = "50px";
+
+let ta = document.createElement("textarea");
+ta.style.overflowY = "scroll";
+ta.style.width = "180px";
+ta.style.height = "100px";
+ta.style.float = "left";
+ta.style.marginLeft = "4px";
+
+let dv = document.createElement("div");
+dv.style.border = "1px solid #888";
+dv.style.height = "104px";
+dv.style.float = "left";
+dv.style.width = "320px";
+dv.style.marginLeft = "4px";
+
+js.appendChild(bt);
+js.appendChild(ta);
+js.appendChild(dv);
+
+bt.addEventListener("click", function() {
+  run(ta, dv)
+});
+
+function run(ta, dv) {
+  ta.value = "run";
+  dv.innerHTML = "run";
+}
+{{< /js >}}
+
+Above appearance can be produced using following code
+
+```
+{{</* js */>}}
+let bt = document.createElement("button");
+bt.innerHTML = "Run"
+bt.style.float = "left";
+bt.style.width = "50px";
+
+let ta = document.createElement("textarea");
+ta.style.overflowY = "scroll";
+ta.style.width = "180px";
+ta.style.height = "100px";
+ta.style.float = "left";
+ta.style.marginLeft = "4px";
+
+let dv = document.createElement("div");
+dv.style.border = "1px solid #888";
+dv.style.height = "104px";
+dv.style.float = "left";
+dv.style.width = "320px";
+dv.style.marginLeft = "4px";
+
+js.appendChild(bt);
+js.appendChild(ta);
+js.appendChild(dv);
+
+bt.addEventListener("click", function() {
+  run(ta, dv)
+});
+
+function run(ta, dv) {
+  ta.value = "run";
+  dv.innerHTML = "run";
+}
+{{</* /js */>}}
+```
+
+and from this part forwards only additional code will be displyed to avoid redundancy, which are
+
+```js
+function run(ta, dv) {
+  ta.value = "run";
+  dv.innerHTML = "run";
+}
+```
+
+inside of `run()` function, where `ta` and `dv` are the output, which stand for `textarea` and `div` elements, respectively.
+
+
 ## notes
 [^castrogiovanni_2021]: Jessica Reuter Castrogiovanni, "Creating Javascript Random Numbers with Math.random()", Udacity, 16 Apr 2021, url https://www.udacity.com/blog/2021/04/javascript-random-numbers.html [20240410].
 [^lemonaki_2022]: Dionysia Lemonaki, "JavaScript Random Number – How to Generate a Random Number in JS", freeCodeCamp, 3 Aug 2022, url https://www.freecodecamp.org/news/javascript-random-number-how-to-generate-a-random-number-in-js/ [20240410].

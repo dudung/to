@@ -1,6 +1,6 @@
 {{- $seed := "foo" -}}
 {{- $id := delimit (shuffle (split (md5 $seed) "" )) "" -}}
-<div id="{{- $id -}}">
+<div id="{{- $id -}}" style="overflow: hidden;">
 <script>
 js = document.getElementById("{{- $id -}}");
 fn = "f_{{- $id -}}";
