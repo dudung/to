@@ -218,16 +218,46 @@ function run(ta, dv) {
   
   let N = 18;
   for(let i = 0; i < N; i++) {
-    let x = Math.random();
+    let x = Math.round(10 * Math.random());
     
-    ta.value += x.toFixed(3);
+    ta.value += x;
     if(i < N-1) ta.value += ", ";
     
-    dv.innerHTML += x.toFixed(5); 
+    dv.innerHTML += x; 
     if(i < N-1) dv.innerHTML += ", ";
   }
 }
 {{< /js >}}
+
+And
+
+```js
+function run(ta, dv) {
+  dv.style.textAlign = "left";
+  dv.style.fontSize = "15px";
+  dv.innerHTML = "";
+  ta.value = "";
+  
+  let N = 18;
+  for(let i = 0; i < N; i++) {
+    let x = Math.round(10 * Math.random());
+    
+    ta.value += x;
+    if(i < N-1) ta.value += ", ";
+    
+    dv.innerHTML += x; 
+    if(i < N-1) dv.innerHTML += ", ";
+  }
+}
+```
+
+is the code. Can you notice the differences with previous code? In order to make integer numbers
+
+```js
+let x = Math.round(10 * Math.random());
+```
+
+it multiplies generated random numbers between 0 and 1 with 10 and then round them to the nearest integers, which are integer numbers 0, 1, .., 9, 10.
 
 
 ## notes
