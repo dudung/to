@@ -11,7 +11,7 @@ Finding machine learning datasets <!--more-->
 
 
 ## intro
-One of the challenges in entering machine learning world is to find the right datasets [^ailinkedin_2024]. There are posts, stories, articles about how to find them [^admincmu_2024], [^badr_2019], [^gupta_2022], [^hillier_2023], [^luck_2021], [^rizzoli_2021].
+One of the challenges in entering machine learning world is to find the right datasets [^ailinkedin_2024], and there are posts, stories, articles about how to find them [^admincmu_2024] [^badr_2019] [^gupta_2022] [^hillier_2023] [^luck_2021] [^rizzoli_2021].
 
 
 ## notes
