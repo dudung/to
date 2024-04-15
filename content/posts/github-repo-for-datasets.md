@@ -13,7 +13,7 @@ Github repo for machine learning datasets as a pseudo data lake <!--more-->
 ## intro
 There is load step in ETL, where well-structure data is loaded to permanen storage system [^haider_2024]. To simulate that a GitHub repository is created as a data lake [^cuello_2023] and transformed data in XLSX format is uploaded to it.
 
-The repository is https://github.com/dudung/datasets.
+The repository is https://github.com/dudung/datasets with the initial category is [stress-strain](https://github.com/dudung/datasets/tree/main/stress-strain).
 
 
 ## notes
