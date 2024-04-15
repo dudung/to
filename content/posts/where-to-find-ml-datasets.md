@@ -72,7 +72,7 @@ They are reduced to only 7 datasets.
   - `Size` 4.35 MB
   - `Link` https://figshare.com/ndownloader/files/32118758
   - `Info`
-    + Materials: Elastosil 7600 (3 reps), Elastosil 7683 (3 reps)
+    + Materials: RTV-2 Elastosil 7600 (3 reps), Elastosil 7683 (3 reps)
     + Test Method: -
     + Spreadhseet: 1 sheet, 21155-2 rows, 6 columns
     + Others: 1 scatter plot, unit unclear but traceable
@@ -81,12 +81,34 @@ They are reduced to only 7 datasets.
   - `Size` 45.8 kB
   - `Link` https://figshare.com/ndownloader/files/12459251
   - `Info`
-    + Materials: - (1 rep)
+    + Materials: Carbon composite with a nano mat of PAN-derived carbon fiber at the top of assembly (1 rep)
     + Test Method: MTS EM Tension.msm
     + Spreadhseet: 1 sheet, 557-6 rows, 6 columns
     + Others: 1 scatter plot, 1 table specimen dimension
-+ g-3. https://doi.org/10.6084/m9.figshare.17430572.v1.
-+ g-4. https://doi.org/10.15131/shef.data.4063269.v1.
++ g-3. https://doi.org/10.6084/m9.figshare.17430572.v1. :heavy_check_mark:
+  - `Name` SWCNTS-RTV2_TENSILE.xlsx
+  - `Size` 2.07 MB
+  - `Link` https://figshare.com/ndownloader/files/32118698
+  - `Info`
+    + Materials: RTV-2 and SWCNTs nanocomposites 3wt (3 reps), 4wt (3 reps), 5wt (3 reps)
+    + Test Method: -
+    + Spreadhseet: 3 sheets, 4905-2, 5143-2, 5518-2 rows, 6 columns
+    + Others: 1 scatter plot
++ g-4. https://doi.org/10.15131/shef.data.4063269.v1. :heavy_check_mark:
+  - `Name` "Neat Nylon 12 (N12).xlsx", "5%NEC+Nylon12.xlsx", "5%EC+Nylon12.xlsx", "3%NEC+Nylon12.xlsx", "3%EC+Nylon12.xlsx"
+  - `Size` 107.12 kB, 111.25 kB, 113.98 kB, 77.26 kB, 101.62 kB
+  - `Link` https://orda.shef.ac.uk/ndownloader/articles/4063269/versions/1
+  - `Info`
+    + Nylon12 and its composites (3% and 5% of nanoclay) (3 reps each)
+    + Test Method: -
+    + Spreadhseet:
+      - 3 sheets, 893-7, 924-7, 838-7 rows, 4 columns
+      - 3 sheets, 920-7, 773-7, 953-7 rows, 4 columns
+      - 3 sheets, 972-7, 928-7, 898-7 rows, 4 columns
+      - 1 sheets, 778-7, 760-7, 902-7 rows, 18-7 columns
+      - 3 sheets, 904-7, 743-7, 891-7 rows, 4 columns
+    + Others: Thickness, width, calculated columns
+
 + g-5. https://doi.org/10.17862/cranfield.rd.22890563.v1.
 + g-6. https://doi.org/10.1371/journal.pone.0297372.t002.
 + g-7. https://doi.org/10.6084/m9.figshare.4737154.v1.
