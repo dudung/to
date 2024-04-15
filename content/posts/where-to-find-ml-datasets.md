@@ -36,7 +36,9 @@ Normally, ETL is an automated process, but in this post it will be conducted man
 
 
 ## google
-**Step 1**. Let us begin with Google Dataset search
+Let us begin with Google Dataset search
+
+**Step 1**. Search datasets.
 
 > https://datasetsearch.research.google.com/
 
@@ -46,7 +48,7 @@ which gives a text field for typing search phrases. Try to type
 
 for obtaining stress-strain data of composite materials, which gives the [results](https://datasetsearch.research.google.com/search?query=composite%20stress-strain%20data) with 59 datasets.
 
-**Step 2**. Filter the result for only XLSX file
+**Step 2**. Filter the result for only XLSX file.
 
 1. Stress-strain curves of uniaxial tension test subjected to quasi-static axial loads of RTV-2 material \
 url https://doi.org/10.6084/m9.figshare.17430608.v1.
@@ -116,13 +118,37 @@ They are reduced to only 7 datasets.
     + Materials: -
     + Test Method: -
     + Spreadhseet: 5, 5, 5, 18 sheets; 864-1, 201-1, 48-1 rows; 3, 5, 4, 3 columns
-    + Others:
+    + Others: It is not related to stress-strain data.
       - Time (s), Temperature (oC), Viscosity (Pa.s)
       - Time (s), Temperature (oC), alpha(-), dalphadt(1/s)
       - Time (s), Temperature (oC), Stress(MPa), Strain(%), Relaxation Modulus(Mpa)
-      - ime (s), Temperature (oC), Heat Flow (Normalized) (J/g)
-+ g-6. https://doi.org/10.1371/journal.pone.0297372.t002.
-+ g-7. https://doi.org/10.6084/m9.figshare.4737154.v1.
+      - Time (s), Temperature (oC), Heat Flow (Normalized) (J/g)
++ g-6. https://doi.org/10.1371/journal.pone.0297372.t002. :x:
+  - `Name` -
+  - `Size` -
+  - `Link` https://doi.org/10.1371/journal.pone.0297372.t002
+  - `Info`
+    + Materials: CaO, Fe2O3, SiO2, Al2O3, MgO, SO3, Loss, Cement, Slag
+    + Test Method: -
+    + Spreadhseet: - sheets, - rows, - columns
+    + Others: 1 table in PNG format and not about stress-strain data
++ g-7. https://doi.org/10.6084/m9.figshare.4737154.v1. :x:
+  - `Name` ists_a_1298587_sm5273.xlsx
+  - `Size` 11.89 kB
+  - `Link` https://tandf.figshare.com/ndownloader/files/7733623
+  - `Info`
+    + Materials: -
+    + Test Method: -
+    + Spreadhseet: 1 sheets, 26 rows, 3 columns
+    + Others: It is about gene and not related to stress-strain data: GRIA1, GRIA2, GRIA3, GRIA4, GRIN1, GRIN2A, GRIN2B, GRM1, GRM2, GRM3, GRM4, GRM5, IL1a, IL1b, IL1R1, IL2Rb, IL6, IL10, IL10RA, IL10RB, NFKB1, TNFA, TNFSF4, TNFSF6, TNFSF10
+
+Then the are reduced to only 4 datasets groupd (there are at least one datasets or more in each group).
+
+
+**Step 4**. Define filename and features in a flat file.
+
+
+**Step 5**. Set standard to mantain integrity for all datasets.
 
 
 ## notes
