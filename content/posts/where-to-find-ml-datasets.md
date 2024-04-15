@@ -95,21 +95,32 @@ They are reduced to only 7 datasets.
     + Spreadhseet: 3 sheets, 4905-2, 5143-2, 5518-2 rows, 6 columns
     + Others: 1 scatter plot
 + g-4. https://doi.org/10.15131/shef.data.4063269.v1. :heavy_check_mark:
-  - `Name` "Neat Nylon 12 (N12).xlsx", "5%NEC+Nylon12.xlsx", "5%EC+Nylon12.xlsx", "3%NEC+Nylon12.xlsx", "3%EC+Nylon12.xlsx"
+  - `Name` 4063269.zip ("Neat Nylon 12 (N12).xlsx", "5%NEC+Nylon12.xlsx", "5%EC+Nylon12.xlsx", "3%NEC+Nylon12.xlsx", "3%EC+Nylon12.xlsx")
   - `Size` 107.12 kB, 111.25 kB, 113.98 kB, 77.26 kB, 101.62 kB
   - `Link` https://orda.shef.ac.uk/ndownloader/articles/4063269/versions/1
   - `Info`
     + Nylon12 and its composites (3% and 5% of nanoclay) (3 reps each)
     + Test Method: -
     + Spreadhseet:
-      - 3 sheets, 893-7, 924-7, 838-7 rows, 4 columns
-      - 3 sheets, 920-7, 773-7, 953-7 rows, 4 columns
-      - 3 sheets, 972-7, 928-7, 898-7 rows, 4 columns
-      - 1 sheets, 778-7, 760-7, 902-7 rows, 18-7 columns
-      - 3 sheets, 904-7, 743-7, 891-7 rows, 4 columns
+      - 3 sheets; 893-7, 924-7, 838-7 rows; 4 columns
+      - 3 sheets; 920-7, 773-7, 953-7 rows; 4 columns
+      - 3 sheets; 972-7, 928-7, 898-7 rows; 4 columns
+      - 1 sheet; 778-7, 760-7, 902-7 rows; 18-7 columns
+      - 3 sheets; 904-7, 743-7, 891-7 rows; 4 columns
     + Others: Thickness, width, calculated columns
-
-+ g-5. https://doi.org/10.17862/cranfield.rd.22890563.v1.
++ g-5. https://doi.org/10.17862/cranfield.rd.22890563.v1. :x:
+  - `Name` 22890563.zip (Chemorheology-dataset.xlsx, Cure-kinetics-dataset.xlsx, Stress-relaxation-dataset.xlsx, Tg-advancement-dataset.xlsx)
+  - `Size` 10.3 MB (80.80 kB, 145.8 kB, 27.25 kB, 10.05 MB)
+  - `Link` https://cord.cranfield.ac.uk/ndownloader/articles/22890563/versions/1
+  - `Info`
+    + Materials: -
+    + Test Method: -
+    + Spreadhseet: 5, 5, 5, 18 sheets; 864-1, 201-1, 48-1 rows; 3, 5, 4, 3 columns
+    + Others:
+      - Time (s), Temperature (oC), Viscosity (Pa.s)
+      - Time (s), Temperature (oC), alpha(-), dalphadt(1/s)
+      - Time (s), Temperature (oC), Stress(MPa), Strain(%), Relaxation Modulus(Mpa)
+      - ime (s), Temperature (oC), Heat Flow (Normalized) (J/g)
 + g-6. https://doi.org/10.1371/journal.pone.0297372.t002.
 + g-7. https://doi.org/10.6084/m9.figshare.4737154.v1.
 
