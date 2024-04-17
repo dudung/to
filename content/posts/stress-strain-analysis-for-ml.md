@@ -26,18 +26,45 @@ A typical stress-strain curve is as follow.
 {{< blank/scatter 80 320 >}}
 B_XLABEL Strain
 B_YLABEL Stress
-B_SLABEL X
-B_PCOLOR #f88
-B_PRADII 0
-B_LVISIB true
-B_LCOLOR #f88
+B_SLABEL point,data
+B_PCOLOR #800,#f88
+B_PRADII 4,0
+B_LVISIB false,true
+B_LCOLOR none,#f88
 
 0,0
-10,20
-12,19
-20,28
-30,22
+8.6,19.2
+18.25,27
+21,22.3
+
+0.0,0
+8.6,19.2
+9.0,19.7
+9.1,19.8
+9.6,20
+9.8,19.9
+9.9,19.85
+10.3,19.35
+10.4,19.3
+10.5,19.2
+10.9,19.2
+11,19.25
+11.5,19.8
+16,25.5
+16.5,26
+17,26.5
+17.5,26.8
+18,27
+18.5,27
+19,26.9
+19.5,26.4
+20,25.3
+21,22.3
 {{< /blank/scatter >}}
+
+Figure 1. Stress-strain curve with yield streng, ultimate strength, fracture points and linear elastic, strain hardening, necking regions. 
+
+Width each the regions are not always the same for different materials. This information can be used in categorizing process.
 
 
 ## notes
