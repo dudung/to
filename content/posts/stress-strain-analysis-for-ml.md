@@ -21,7 +21,7 @@ For the case of stress-strain analysis, ML can use directly stress-strain data o
 
 
 ## graph
-A typical stress-strain curve is as follow.
+A typical stress-strain curve is as follow, where it is drawn in arbitrary unit on both axes.
 
 {{< blank/scatter 80 320 >}}
 B_XLABEL Strain
@@ -65,6 +65,25 @@ B_LCOLOR none,#f88
 Figure 1. Stress-strain curve with yield streng, ultimate strength, fracture points and linear elastic, strain hardening, necking regions. 
 
 Width each the regions are not always the same for different materials. This information can be used in categorizing process.
+
+Table 1. Points on stress-strain curve.
+&nbsp;&nbsp; Point &nbsp;&nbsp; | &nbsp;&nbsp; Strain &nbsp;&nbsp; | &nbsp;&nbsp; Stress &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; Name
+:-: | :-: | :-: | :-
+A | 0 | 0 | -
+B | 8.6 | 19.2 | yield strength
+C | 18.25 | 27 | ultimate strength
+D | 21 | 22.3 | fracture
+
+From points in Table 1 the three regions can be defined as shown in Table 2, wheere only first region is clearly defined, while the others require further criteria.
+
+Table 2. Regions on stress-strain curve.
+&nbsp;&nbsp; Region | &nbsp;&nbsp;  Left Point &nbsp;&nbsp; | &nbsp;&nbsp; Right point
+:- | :-: | :-:
+linear elastic | A | B
+strain hardening | B | C
+necking | C | D
+
+Information provided in Tables 1 and 2 can be the initial features of common stress-strain data to be fed to a ML model.
 
 
 ## notes
