@@ -11,7 +11,7 @@ Search result for mangrove in Bahrain <!--more-->
 
 
 ## intro
-An meeting has been conducted about mangrove in Bahrain [^damars_2024]. Using Google an internet search is performed[google_2024] and the SERP is discussed here.
+An internal, unofficial meeting has been conducted about mangrove in Bahrain [^damars_2024]. Using Google an internet search is performed[^google_2024] and the SERP is discussed here.
 
 
 ## serp
@@ -51,4 +51,4 @@ Only results with date shown in SERP are listed. Two are misleading for mangrove
 ## notes
 [^damars_2024]: -, private documentation, DAMARS -- OSF, 18 Apr 2024, url https://osf.io/r4w3z/ [20240419].
 [^dean_2023]: Brian Dean, "What Are SERPSs?", Backlinko, 16 Nov 2023, url https://backlinko.com/hub/seo/serps [20240419].
-[google_2024]: -, search engine result page, Google, 19 Apr 2024, url https://www.google.com/search?q=mangrove+bahrain+2024 [2024].
+[^google_2024]: -, search engine result page, Google, 19 Apr 2024, url https://www.google.com/search?q=mangrove+bahrain+2024 [2024].
