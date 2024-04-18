@@ -5,7 +5,7 @@ draft = false
 math = true
 tags = ['stress-strain', 'elasticity', 'machine learning']
 url = '0014'
-authors = ['viridi']
+authors = ['viridi', 'widayani']
 +++
 Short intro about stress-stress analysis for machine learning <!--more-->
 
