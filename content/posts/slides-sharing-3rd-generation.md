@@ -11,8 +11,9 @@ Info about 3rd generation in sharing slides <!--more-->
 
 
 ## intro
-For slides there are changes in where the place to share them. The first was SlideShare and must be left because of login problem due to the event when Scribd acquired SlideShare [^ha_2020].
+For slides there are changes in where the place I share them. The first was SlideShare and must be left because of login problem due to the event when Scribd acquired SlideShare [^ha_2020]. Next is Zenodo, which is awesome since it has DOI even for versioning [^nielsen_2017].
 
 
 ## notes
 [^ha_2020]: Anthony Ha, "Scribd acquires presentation-sharing service SlideShare from LinkedIn", 12 Aug 2020, url https://techcrunch.com/2020/08/11/scribd-acquires-slideshare/ [20240420].
+[^nielsen_2017]: Lars Holm Nielsen, "Zenodo now supports DOI versioning!", OpenAIRE, 30 May 2017, url https://www.openaire.eu/blogs/zenodo-now-supports-doi-versioning-1 [20240420].
