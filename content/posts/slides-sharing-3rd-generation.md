@@ -18,6 +18,7 @@ Following are links for accesing the slides on [o](https://osf.io/gv8h5/), a OSF
 
 
 ## apr
++ `21` [`k8b7q`](https://osf.io/k8b7q) Practicing Python for ML
 + `20` [`42tq9`](https://osf.io/42tq9) ANN with spreadsheet
 + `19` [`3ksmu`](https://osf.io/3ksmu) Neural network intro
 + `04` [`5x7zt`](https://osf.io/5x7zt) MLforplantx
