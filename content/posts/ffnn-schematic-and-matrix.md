@@ -20,6 +20,65 @@ In this post both schematics showing flow of data from left to right or from rig
 A FNN with input layer, hidden layer, and output layer with some nodes can be drawn as follow.
 
 
+{{< mermaid >}}
+flowchart LR
+  I1 --"w<sub>11</sub>"--> H1
+  I1 --"w<sub>21</sub>"--> H2
+  I1 --"w<sub>31</sub>"--> H3
+  I1 --"w<sub>41</sub>"--> H4
+  I2 --"w<sub>12</sub>"--> H1
+  I2 --"w<sub>22</sub>"--> H2
+  I2 --"w<sub>32</sub>"--> H3
+  I2 --"w<sub>42</sub>"--> H4
+  I3 --"w<sub>13</sub>"--> H1
+  I3 --"w<sub>23</sub>"--> H2
+  I3 --"w<sub>33</sub>"--> H3
+  I3 --"w<sub>43</sub>"--> H4
+  H1 --"u<sub>11</sub>"--> O1
+  H1 --"u<sub>21</sub>"--> O2
+  H2 --"u<sub>12</sub>"--> O1
+  H2 --"u<sub>22</sub>"--> O2
+  H3 --"u<sub>13</sub>"--> O1
+  H3 --"u<sub>23</sub>"--> O2
+  H4 --"u<sub>14</sub>"--> O1
+  H4 --"u<sub>24</sub>"--> O2
+  subgraph I
+    I1(("I<sub>1</sub>"))
+    I2(("I<sub>2</sub>"))
+    I3(("I<sub>3</sub>"))
+  end
+  subgraph H
+    H1(("H<sub>1</sub>"))
+    H2(("H<sub>2</sub>"))
+    H3(("H<sub>3</sub>"))
+    H4(("H<sub>4</sub>"))
+  end
+  subgraph O
+    O1(("O<sub>1</sub>"))
+    O2(("O<sub>2</sub>"))
+  end
+  style I fill:#8c8, stroke-width:0;
+  style H fill:#88f, stroke-width:0;
+  style O fill:#f88, stroke-width:0;
+{{< /mermaid >}}
+
+Figure 1. A left-right schematic of 3-4-2 FFNN.
+
+Neuron $i$ in hidden layer $H$ obtains its value via
+
+$$
+H_j = f\left( a_j + \sum_i w_{ji} I_i \right)
+$$
+
+and neuraon $k$ in output layer $O$ via
+
+$$
+O_k = f\left( b_k + \sum_j u_{kj} H_j \right),
+$$
+
+with $a_j$ and $b_k$ are bias for each related neurons.
+
+
 ## notes
 [^rameshkumar_2023]: Sasirekha Rameshkumar, "Deep Learning Basics — Part 7 — Feed Forward Neural Networks (FFNN)", Medium, 7 Dec 2023, url https://medium.com/p/93a708f84a31 [20240422].
 [^fox_2024]: Josh Fox, "Feedforward Neural Network", Deepgram, 16 Feb 2024, url https://deepgram.com/ai-glossary/feedforward-neural-network [20240422].
