@@ -1,0 +1,24 @@
++++
+title = 'euler method simple motion'
+date = 2024-04-23T18:55:00+07:00
+draft = false
+math = true
+tags = ['euler method', 'ode', 'simple motion']
+url = '0019'
+authors = ['viridi']
++++
+Schematic for feed forward neural network and its matrix <!--more-->
+
+
+## intro
+Euler method, which is also called forward Euler method, is a first-order numerical procedure for solving ordinary differential equation (ODE) as initial value problem (IVP)
+[^bhardwaj_2022]. This method can be described in only five lines of pseudocode using variables with index [^fCC_2020] or without index [^dawkins_2022]. And it is an an explicit method for solving IVP [^rosettacode_2024].
+
+The use of Euler method for some simple motions is discussed here.
+
+
+## notes
+[^dawkins_2022]: Paul Dawkins, "Euler's Method", 16 Nov 2022, url https://tutorial.math.lamar.edu/classes/de/eulersmethod.aspx [20240423].
+[^fCC_2020]: fCC, "Euler's Method Explained with Examples", freeCodeCamp, 26 Jan 2020, url https://www.freecodecamp.org/news/eulers-method-explained-with-examples/ [20240423].
+[^bhardwaj_2022]: Sharad Bhardwaj, "Euler Method for solving differential equation", GeeksforGeeks, 23 Nov 2022, url https://www.geeksforgeeks.org/euler-method-solving-differential-equation/ [20240423].
+[^rosettacode_2024]: Rosetta Code contributors, "Euler method", 14 Apr 2024, url https://rosettacode.org/wiki/?oldid=363664 [20240423].
