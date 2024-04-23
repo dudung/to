@@ -25,8 +25,11 @@ $$
 must be supplied with initial value
 
 $$\tag{2}
-x(t_0) = x_0.
+x(t_0) = x_0
 $$
+
+to be an IVP.
+
 
 ## solution
 With time step $\Delta t$, Eqn (1) will have
