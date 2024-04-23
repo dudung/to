@@ -1,5 +1,5 @@
 +++
-title = 'euler method simple motion'
+title = 'euler method for simple motion'
 date = 2024-04-23T18:55:00+07:00
 draft = false
 math = true
