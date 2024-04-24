@@ -21,8 +21,7 @@
           &bull;
         {{ end }}
         
-        
-        <code>{{ dateFormat "02-Jan-2006" .Date }}</code>
+        <code>{{ $index }} {{ dateFormat "02-Jan-2006" .Date }}</code>
         <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
         {{/* .Summary */}}
         
