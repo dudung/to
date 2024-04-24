@@ -1,6 +1,6 @@
 baseURL = 'https://dudung.github.io/to'
 languageCode = 'en-us'
-title = 'text only'
+title = 'to'
 theme = 'default'
 
 enableEmoji = true

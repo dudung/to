@@ -10,11 +10,18 @@
       <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
       {{ .Content }}
     </div>
-    
+   
     {{ $time1 := printf "2024-04-05T20:32:00+07:00" | time }}
+    {{ $time2 := printf "2024-04-01T09:01:00+07:00" | time }}
    
     <div>
       {{ range $index, $element := .Site.RegularPages }}
+        
+        {{ if and (gt $index 0) (ne .Date.Unix $time2.Unix) }}
+          &bull;
+        {{ end }}
+        
+        
         <code>{{ dateFormat "02-Jan-2006" .Date }}</code>
         <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
         {{/* .Summary */}}
@@ -23,9 +30,6 @@
           <br><br>
         {{ end }}
         
-        {{ if and (ge $index 0) (ne .Date.Unix $time1.Unix) }}
-          &bull;
-        {{ end }}
       {{ end }}
     </div>
   </main>
