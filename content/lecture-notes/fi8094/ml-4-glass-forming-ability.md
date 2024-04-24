@@ -5,7 +5,7 @@ authors: ['Eka Sylvianti Rahayu', 'Sparisoma Viridi']
 tags: ['fi8094']
 draft: false
 math: true
-url: "0121"
+url: "l/0121"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Raden Sutiadi', 'Aria Wahyu Wicaksono']
 tags: ['sk6090']
 draft: false
 math: true
-url: "0132"
+url: "l/0132"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Alexander Iskandar', 'Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0095"
+url: "l/0095"
 ---
 Copyright © 2018 John Wiley & Sons, Inc. and primarily advanced by Prof. A. Iskandar[.](https://cdn-edunex.itb.ac.id/52883-Elementary-Physics-IA/190757-Gerak-menggelinding-torsi-momentum-sudut/1696347658680_Handout-FI-1101-Module_08---ch11.pdf)
 

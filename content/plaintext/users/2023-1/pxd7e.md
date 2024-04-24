@@ -5,7 +5,7 @@ authors: ['Eka Sylvianti Rahayu', 'Sparisoma Viridi']
 tags: ['users']
 draft: false
 math: false
-url: "000c"
+url: "p/000c"
 ---
 {{< toc >}}
 

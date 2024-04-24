@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0004"
+url: "l/0004"
 ---
 Sebagaimana dapat tergambarkan dari namanya, gerak lurus beraturan atau GLB adalah suatu gerak pada lintasan lurus dengan kecepatan tetap ([Yukimura, 2023](https://www.yukimura-physics.com/en/uniform-linear-motion/)), yang berarti bahwa kecepatan sesaat tidak berubah terhadap waktu ([Phyley, 2022](https://www.phyley.com/uniform-linear-motion)). Sistem pada keadaan ini dapat dicapai bila tidak ada gaya yang bekerja pada pada sistem sebagaimana menurut hukum pertama Newton dan kecepatan awal sistem tidak nol ([Britannica, 2017](https://www.britannica.com/science/linear-motion)). GLB secara umum dapat teramati pada kegiatan sehari-hari seperti kendaraan bergerak, benda di atas ban berjalan, dan lain-lain.
 

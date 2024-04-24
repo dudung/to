@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['python']
 draft: false
 math: true
-url: "000x"
+url: "p/000x"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Alexander Iskandar', 'Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0067"
+url: "l/0067"
 ---
 Copyright © 2018 John Wiley & Sons, Inc. and primarily advanced by Prof. A. Iskandar[.](https://cdn-edunex.itb.ac.id/27677-Elementary-Physics-I/16711-Momentum-Linear-/1695691865898_Handout-FI1101-Module_06-1---ch09a.pdf)
 

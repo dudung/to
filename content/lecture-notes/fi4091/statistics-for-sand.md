@@ -5,7 +5,7 @@ authors: ['Angeli Fransiska Njo', 'Sparisoma Viridi']
 tags: ['fi4091']
 draft: false
 math: true
-url: "0103"
+url: "l/0103"
 ---
 {{< toc >}}
 

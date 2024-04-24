@@ -5,7 +5,7 @@ authors: ['Yeni Pertiwi', 'Idam Arif', 'Freddy Haryanto', 'Deni Hardiansyah', 'S
 tags: ['users']
 draft: false
 math: false
-url: "000z"
+url: "p/000z"
 ---
 {{< toc >}}
 

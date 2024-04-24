@@ -5,7 +5,7 @@ authors: ['Zaida', 'Edy Suryadi', 'Roby Andoyo', 'Adi bin Md Sikin', 'Andriabdur
 tags: ['users']
 draft: false
 math: false
-url: "000b"
+url: "p/000b"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Nawaf Alfarizki', 'Sparisoma Viridi']
 tags: ['users']
 draft: false
 math: false
-url: "000g"
+url: "p/000g"
 ---
 {{< toc >}}
 

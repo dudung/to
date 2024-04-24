@@ -5,7 +5,7 @@ authors: ['Alexander Iskandar', 'Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0022"
+url: "l/0022"
 ---
 Copyright © 2018 John Wiley & Sons, Inc. and primarily advanced by Prof. A. Iskandar[.](https://cdn-edunex.itb.ac.id/52883-Elementary-Physics-IA/190705-Gerak-dalam-2--dan-3-dimensi/1693271858437_Handout-FI1101-Module_02-2---ch04b.pdf)
 

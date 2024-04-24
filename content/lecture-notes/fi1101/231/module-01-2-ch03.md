@@ -5,7 +5,7 @@ authors: ['Alexander Iskandar', 'Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0013"
+url: "l/0013"
 ---
 Copyright © 2018 John Wiley & Sons, Inc. and primarily advanced by Prof. A. Iskandar[.](https://drive.google.com/drive/folders/1Q3BrFUVQ5Sseneaz2XDNbN8ByFQO6U9u)
 

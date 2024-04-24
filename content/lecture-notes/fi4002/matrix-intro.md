@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi4002']
 draft: false
 math: true
-url: "0026"
+url: "l/0026"
 ---
 Matrix is set of numbers arranged in rows and columns as to form a rectangular array, where the numbers are called elements or entries of the matrix ([Britannica, 2023](https://www.britannica.com/science/matrix-mathematics)). It can also considered as a compact but general way to represent any linear transforms, such as rotations, scallings, projections that map points / lines / planes to point / lines / planes ([user65203, 2018](https://math.stackexchange.com/a/2782730/645927)). The concept of matrix overlaps in the fields of mathematics and computer science, where elements represent data or mathematical equations, which are used as a way of providing quick approximations of more complicated calculations since they can offer accurate and quick calculations used to better control an operation regarding as a mechanical device or a computer ([Monitor, 2023](https://techmonitor.ai/what-is/what-is-a-matrix)). Here how to define matrix and apply some simple operations to them in Python are presented.
 

@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi4002']
 draft: false
 math: true
-url: "0019"
+url: "l/0019"
 ---
 There are three common temperature scales, that each scale has its uses and conversion formulas between them are available ([Helmenstine, 2019](https://www.thoughtco.com/temperature-conversion-formulas-609324)). Here illustrations how to obtain the formulas are given.
 

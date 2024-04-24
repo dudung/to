@@ -5,7 +5,7 @@ authors: ['Alexander Iskandar', 'Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0142"
+url: "l/0142"
 ---
 Copyright © 2023 Physics Department, Faculty of Mathematics and Natural Sciences, Institut Teknologi Bandung, under coordination of Harry Mahardika, Ph.D., Dr. Fiki Taufik Akbar Sobar, and Muhammad Rizqie Arbie Ph.D. & RBL team.
 

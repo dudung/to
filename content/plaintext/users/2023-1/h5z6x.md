@@ -5,7 +5,7 @@ authors: ['Muhammad Lawrence Patterson', 'Freddy Permana Zen', 'Getbogi Himawan'
 tags: ['users']
 draft: false
 math: false
-url: "0009"
+url: "p/0009"
 ---
 {{< toc >}}
 

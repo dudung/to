@@ -5,7 +5,7 @@ authors: ['Alexander Iskandar', 'Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0107"
+url: "l/0107"
 ---
 Copyright © 2018 John Wiley & Sons, Inc. and primarily advanced by Prof. A. Iskandar[.](https://cdn-edunex.itb.ac.id/27677-Elementary-Physics-I/16715-Gelombang-Mekanik/1697949770477_Handout-FI-1101-Module_10-1---ch16.pdf)
 

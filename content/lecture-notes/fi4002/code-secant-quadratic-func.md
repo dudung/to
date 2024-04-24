@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi4002']
 draft: false
 math: true
-url: "0006"
+url: "l/0006"
 ---
 Metode secant, some method ([Haftka & Gustafson, 2009](https://mae.ufl.edu/haftka/numerical/Lectures/Chapter6rev1.pdf))
 

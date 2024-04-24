@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['hugo']
 draft: false
 math: false
-url: "000l"
+url: "p/000l"
 ---
 {{< toc >}}
 

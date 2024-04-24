@@ -5,7 +5,7 @@ authors: ['Asep Bustanil Aripin', 'Sparisoma Viridi']
 tags: ['fi8093']
 draft: false
 math: true
-url: "0126"
+url: "l/0126"
 ---
 {{< toc >}}
 

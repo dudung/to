@@ -5,7 +5,7 @@ authors: ['Nazla Innaya', 'Sparisoma Viridi', 'Alexander Iskandar']
 tags: ['fi6092']
 draft: false
 math: true
-url: "0120"
+url: "l/0120"
 ---
 {{< toc >}}
 

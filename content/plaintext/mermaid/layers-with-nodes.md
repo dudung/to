@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['mermaid']
 draft: false
 math: true
-url: "0005"
+url: "p/0005"
 ---
 {{< toc >}}
 

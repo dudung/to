@@ -5,7 +5,7 @@ authors: ['Muhammad Reza Fahriyansyah', 'Priastuti Wulandari','Sparisoma Viridi'
 tags: ['fi4091']
 draft: false
 math: true
-url: "0104"
+url: "l/0104"
 ---
 {{< toc >}}
 

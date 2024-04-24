@@ -5,7 +5,7 @@ authors: ['Asep Bustanil Aripin', 'Sparisoma Viridi']
 tags: ['users']
 draft: false
 math: false
-url: "000d"
+url: "p/000d"
 ---
 {{< toc >}}
 

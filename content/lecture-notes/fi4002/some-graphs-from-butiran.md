@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi4002']
 draft: false
 math: true
-url: "0014"
+url: "l/0014"
 ---
 Some test of butiran ([Viridi, 2023](https://github.com/dudung/butiran/tree/9719298f)).
 

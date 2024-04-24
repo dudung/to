@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi1101']
 math: true
 draft: false
-url: "0002"
+url: "l/0002"
 ---
 Suatu benda yang bergerak dalam satu-dimensi dengan gerak harmonis sederhana (GHS), atau simple harmonic motion (SHM), memiliki solusi yang telah umum dikenal. Penerapan syarat awal yang berbeda akan memberikan penjelasan mengenai koefisien-koefisien pada solusi umum tersebut.
 

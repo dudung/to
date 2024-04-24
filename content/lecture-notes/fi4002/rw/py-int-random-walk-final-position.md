@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi4002']
 draft: false
 math: true
-url: "0060"
+url: "l/0060"
 ---
 {{< toc >}}
 

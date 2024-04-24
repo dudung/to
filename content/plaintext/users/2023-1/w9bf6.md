@@ -5,7 +5,7 @@ authors: ['Vepy Asyana', 'Freddy Haryanto', 'Deni Hardiansyah', 'Siti Nurul Khot
 tags: ['users']
 draft: false
 math: false
-url: "0022"
+url: "p/0022"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Muhammad Fauzan', 'Kamarisima', 'Anwar Fauzi Rakhmat', 'Sparisoma Vir
 tags: ['bi6094']
 draft: false
 math: true
-url: "0114"
+url: "l/0114"
 ---
 
 {{< toc >}}

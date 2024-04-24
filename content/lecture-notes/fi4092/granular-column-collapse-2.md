@@ -5,7 +5,7 @@ authors: ['Nawaf Alfarizki', 'Sparisoma Viridi']
 tags: ['fi4091']
 draft: false
 math: true
-url: "0148"
+url: "l/0148"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0007"
+url: "l/0007"
 subt: "difference of the physical quantities"
 ---
 

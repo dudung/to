@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['nt6094']
 draft: false
 math: false
-url: "0000"
+url: "l/0000"
 ---
 Terdapat bacaan empat paragraf yang perlu dibaca dengan seksama untuk kemudian diperbaiki.
 

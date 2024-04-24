@@ -5,7 +5,7 @@ authors: ['Alexander Iskandar', 'Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0139"
+url: "l/0139"
 ---
 Copyright © 2018 John Wiley & Sons, Inc. and primarily advanced by Prof. A. Iskandar[.](https://cdn-edunex.itb.ac.id/52940-Elementary-Physics-IA/205790-Temperatur-kalor-hukum-I-termodinamika/1697552275286_Handout-FI-1101-Module_12---ch18.pdf)
 

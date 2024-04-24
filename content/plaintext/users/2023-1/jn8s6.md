@@ -5,7 +5,7 @@ authors: ['Yuant Tiandho', 'Suprijadi', 'Brian Yuliarto', 'Riri Jonuarti', 'Spar
 tags: ['users']
 draft: false
 math: false
-url: "000a"
+url: "p/000a"
 ---
 {{< toc >}}
 

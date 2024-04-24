@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi4002']
 draft: false
 math: true
-url: "0003"
+url: "l/0003"
 ---
 Secara umum rumusan pencarian akar secara iteratif melibatkan setidaknya dua nilai tebakan sebelumnya dan fungsinya atau satu tebakan sebelumnya dan fungsi serta turunannya. Generalisasi ini mencakup metode Newton-Raphson, secant, dan false position.
 

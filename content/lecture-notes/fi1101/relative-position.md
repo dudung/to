@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0009"
+url: "l/0009"
 subt: "a description for elementary physics"
 ---
 Relative position of an object is position of the object measured relatively from other object, which simply substraction of the object position and other object position ([Smith, 2012](https://astarmathsandphysics.com/igcse-maths-notes/510-relative-velocities-and-relative-positions.html#)). Numerical calculation in solving physics problem is recommended, because the difficulty faced by the students will be a valuable experience in advancing their understanding and skill ([Allain, 2017](https://www.wired.com/2017/03/physics-teachers-really-teach-numerical-calculations/)). Here illustration about relative position is given and it is also accompanied with a numerical example.

@@ -5,7 +5,7 @@ authors: ['Zainuddin', 'Sparisoma Viridi']
 tags: ['users']
 draft: false
 math: false
-url: "000q"
+url: "p/000q"
 ---
 {{< toc >}}
 

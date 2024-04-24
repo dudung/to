@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi4002']
 draft: false
 math: true
-url: "0023"
+url: "l/0023"
 ---
 Fungsi linier yang dibuat untuk menghubungkan dua buah titik data terdekat akan menyediakan informasi sehingga titik-titik lain di antara kedua titik data tersebut dapat diperoleh menggunakan fungsi tersebut. Hal ini dengan asumsi bahwa hubungan antara variabel bebas dan terikatnya antara kedua titik data bersifat linier.
 

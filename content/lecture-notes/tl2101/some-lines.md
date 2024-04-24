@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['tl2101']
 draft: false
 math: true
-url: "0090"
+url: "l/0090"
 ---
 {{< toc >}}
 

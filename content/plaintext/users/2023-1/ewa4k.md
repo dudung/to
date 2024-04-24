@@ -5,7 +5,7 @@ authors: ['Nurlaila H Tan', 'Idam Arif', 'Sparisoma Viridi']
 tags: ['users']
 draft: false
 math: false
-url: "0010"
+url: "p/0010"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['xx1000']
 draft: false
 math: true
-url: "0027"
+url: "l/0027"
 ---
 A Microsoft Word 2007 document can be converted into SVG image using online conversion tools, where one of them is GroupDocs, which is a cloud-based document management and collaboration software that enables user to collaborate and share various documents with functionality to annotate, display, compare, e-sign, convert, and assamble documents ([Lavi, 2022](https://www.itqlick.com/groupdocs)).
 

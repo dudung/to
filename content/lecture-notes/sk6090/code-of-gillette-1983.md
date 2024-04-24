@@ -5,7 +5,7 @@ authors: ['Aria Wahyu Wicaksono', 'Nina Siti Aminah', 'Sparisoma Viridi']
 tags: ['sk6090']
 draft: false
 math: true
-url: "0127"
+url: "l/0127"
 ---
 {{< toc >}}
 

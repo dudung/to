@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['polynomial']
 draft: false
 math: true
-url: "000w"
+url: "p/000w"
 ---
 {{< toc >}}
 

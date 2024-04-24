@@ -5,7 +5,7 @@ authors: ['Aditya Adiaksa', 'Sparisoma Viridi']
 tags: ['users']
 draft: false
 math: false
-url: "000r"
+url: "p/000r"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['rn6086']
 draft: false
 math: false
-url: "0147"
+url: "l/0147"
 ---
 {{< toc >}}
 

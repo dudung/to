@@ -5,7 +5,7 @@ authors: ['Fajris Zahrotun Nihayah', 'Mikrajuddin Abdullah', 'Sparisoma Viridi']
 tags: ['users']
 draft: false
 math: false
-url: "000m"
+url: "p/000m"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Akhmad Faeda Insani', 'Sparisoma Viridi']
 tags: ['users']
 draft: false
 math: false
-url: "000p"
+url: "p/000p"
 ---
 {{< toc >}}
 

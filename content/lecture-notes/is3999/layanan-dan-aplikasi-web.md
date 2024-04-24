@@ -5,7 +5,7 @@ authors: ['Suhardi', 'Sparisoma Viridi']
 tags: ['is3999']
 draft: false
 math: true
-url: "0020"
+url: "l/0020"
 ---
 Persiapan kuliah Layanan dan aplikasi web.
 

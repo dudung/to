@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi', 'Agus Suroso']
 tags: ['fi9901']
 draft: false
 math: true
-url: "0066"
+url: "l/0066"
 ---
 {{< toc >}}
 

@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi4002']
 draft: false
 math: true
-url: "0005"
+url: "l/0005"
 ---
 Kesalahan kuadrat rata-rata diakarkan, yang dalam bahasa Inggrisnya root mean square error atau RMSE dapat direpresentasikan dalam bentuk fungsi dan matriks. Di sini hanya fungsi linier yang diilustrasikan.
 

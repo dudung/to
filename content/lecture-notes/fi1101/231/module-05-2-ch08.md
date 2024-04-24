@@ -5,7 +5,7 @@ authors: ['Alexander Iskandar', 'Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0050"
+url: "l/0050"
 ---
 Copyright © 2018 John Wiley & Sons, Inc. and primarily advanced by Prof. A. Iskandar[.](https://cdn-edunex.itb.ac.id/27677-Elementary-Physics-I/16710-Usaha-dan-Energi/1695084682997_Handout-FI1101-Module_05-2---ch08.pdf)
 

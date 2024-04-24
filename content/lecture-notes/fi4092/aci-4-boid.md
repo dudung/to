@@ -5,7 +5,7 @@ authors: ['Faiz Aulia Rahman', 'Utriweni Mukhaiyar', 'Sparisoma Viridi']
 tags: ['fi4092']
 draft: false
 math: true
-url: "0043"
+url: "l/0043"
 ---
 {{< toc >}}
 

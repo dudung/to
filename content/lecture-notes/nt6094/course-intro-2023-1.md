@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['nt6094']
 draft: false
 math: true
-url: "0017"
+url: "l/0017"
 ---
 Since writing research papers does not not come naturally to most of people ([Perneger & Hudelson, 2004](https://doi.org/10.1093/intqhc/mzh053)), there is any simple formula for getting a work published in an academic journal, but at least there are some tips for it ([Guardian, 2015](https://www.theguardian.com/education/2015/jan/03/how-to-get-published-in-an-academic-journal-top-tips-from-editors)). By following some suggested guidelines and avoiding common errors, even novice authors can make the publication process streamlined and success ([Hoogenboom & Manske, 2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3474301/)). To make it more structured universities provide science writing course, such as in Standford university, Nature Research, Moscow Institute of Physics and Technology, Duke university, and a scientist personal site ([Clippings.me, 2019](https://www.clippings.me/blog/science-writing-courses/)). And in Institut Teknologi Bandung, there is NT6094 Scientific Journal Writing for guiding graduate students in publishing their work.
 

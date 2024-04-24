@@ -5,7 +5,7 @@ authors: ['Sparisoma Viridi']
 tags: ['fi1101']
 draft: false
 math: true
-url: "0008"
+url: "l/0008"
 subt: "course preparation for 2023-1 semester"
 ---
 The course is 4 (1) credit hours, 4 for lecture and 1 for laboratory activities, and given at the first semester for most of all bachelor programs of an institute of technology ([Fisika, 2021](https://fi.itb.ac.id/kurikulum-dan-silabus-program-studi-sarjana-fisika/#:~:text=FI1101)). And as the main reference it uses the textbook Principle of Physics, 10th Edition International Student Version with about 1320 pages ([Halliday et al., 2014](https://www.wiley.com/en-ie/Principles+of+Physics%2C+10th+Edition+International+Student+Version-p-9781118413784)). A draft of week plan is available ([Mahardika et al., 2023](https://osf.io/guj9s)) and there are also some slides for personal use from a physics professor ([Iskandar, 2022](https://drive.google.com/drive/folders/1rT60qzkEOIakWDF1tT1ay_FVw-FhruAP)). Then, even that you are working with a 15-week semester, there is another approach by designing a 12-week plan ([Talbert, 2022](https://rtalbert.org/the-12-week-plan-for-building-courses/)).

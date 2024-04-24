@@ -5,7 +5,7 @@ authors: ['Arrasy Adena Muhammad', 'Damar Rastri Adhika', 'Arfat Pradana', 'Gran
 tags: ['users']
 draft: false
 math: false
-url: "0012"
+url: "p/0012"
 ---
 {{< toc >}}
 

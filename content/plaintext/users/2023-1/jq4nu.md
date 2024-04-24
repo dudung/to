@@ -5,7 +5,7 @@ authors: ['Aria Wahyu Wicaksono', 'Nina Siti Aminah', 'Sparisoma Viridi']
 tags: ['users']
 draft: false
 math: false
-url: "000n"
+url: "p/000n"
 ---
 {{< toc >}}
 
