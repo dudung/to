@@ -22,7 +22,7 @@ Dilasi merupakan transformasi dalam geometri yang mana sebuah obyek matematika t
 ## temperature scale conversion
 Untuk membantu melakukan konversi temperatur antar berbagai skala temperatur yang berbeda telah tersedia kalkulator secara daring [[9](#r09)], yang prinsipnya akan disampaikan di sini. Sebagai contoh, misalkan terdapat dua skala temperatur berbeda yang memiliki dua titik acuan yang sama. Sebut yang pertama dengan skala $\rm X$ dan yang kedua dengan skala $\rm Y$ sebagaimana disajikan dalam Gambar [1](#fig1) berikut ini.
 
-![]({{< sitebaseurl >}}/0/23/0230-a.png) \
+![]({{< sitebaseurl >}}/images/0/23/0230-a.png) \
 Gambar <a name="fig1">1</a>. Dua buah termometer berskala berbeda, yaitu $\rm X$ (kiri) dan $\rm Y$ (kanan), yang masing-masing memiliki dua titik acuan yang sama, titik atas ($\color{#c00}{\large\circ}$) dan titik bawah ($\color{#07c}{\large\circ}$), serta titik tertentu ($\color{#2c6}{\large\circ}$).
 
 Pada setiap skala temperatur perbandingan antara jarak suatu titik ke titik acuan bawahnya dibagi jarak titik acuan atas ke titik acuan bawah harus selalu sama, yang dapat dirumuskan sebagai
@@ -69,7 +69,7 @@ Dengan demikian telah ditunjukkan bahwa Persamaan \eqref{eqn:equal-conversion-c-
 ## world to screen transformation
 Terdapat banyak istilah sistem koordinat dalam suatu program grafik [[10](#r10)], dengan yang akan dibahas di sini adalah sistem koordinat dunia dalam 2d dan sistem koordinat layar. Sistem koordinat dunia memiliki origin pada sudut kiri bawah [[11](#r11)], sedangkan komputer grafik pada sudut kiri atas [[12](#r12)], sebagaimana diilustrasikan berikut ini.
 
-![]({{< sitebaseurl >}}/0/23/0230-b.png) \
+![]({{< sitebaseurl >}}/images/0/23/0230-b.png) \
 Gambar <a name="fig2">2</a>. Sistem koordinat dunia (kiri) dan sistem koordinat layar (kanan) dengan origin dan arah positif sumbu $y$ yang berbeda.
 
 Untuk kedua sistem koordinat pada Gambar [2](#fig2) arah positf $x$ memiliki arah yang sama, yaitu kiri ke kanan, akan tetapi untuk $y$ berbeda. Pada sistem koordinat dunia, umumnya arah $y$ adalah ke atas, sedangkan pada sistem koordinat layar adalah ke bawah. Selanjutnya agar lebih umum titik $(0, 0)$ pada Gambar [2](#fig2) akan disebut sebagai titik minium ($\rm min$) sehingga tidak perlu menentukan suatu origin. Ini memudahkan untuk mendefinisikan jendela pada sistem koordinat dunia dan viewport pada sistem koordinat layar.
@@ -77,7 +77,7 @@ Untuk kedua sistem koordinat pada Gambar [2](#fig2) arah positf $x$ memiliki ara
 ### x transformation
 Untuk koordinat $x$ proses transformasi mirip dengan konversi skala temperatur sebagaimana disajikan dalam Gambar [3](#fig3).
 
-![]({{< sitebaseurl >}}/0/23/0230-c.png) \
+![]({{< sitebaseurl >}}/images/0/23/0230-c.png) \
 Gambar <a name="fig3">3</a>. Transformasi $x$ to $X$ harus menjaga rasio $l$ ke $L$ untuk kedua sistem koordinat.
 
 Menggunakan Persamaan \eqref{eqn:equal-ratio-between-scales} dan informasi pada Gambar [3](#fig3) dapat diperoleh hubungan
@@ -101,7 +101,7 @@ Perhatikan bahwa Persamaan \eqref{eqn:equal-conversion-xs-from-xw} dapat menjadi
 ### y transformation
 Khusus untuk koordinat $y$, walapun prosesnya sama akan tetapi suku $\rm min$ dan $\rm max$ ada yang tertukar karena sistem koordinat layar yang berbeda dengan sistem koordinat dunia.
 
-![]({{< sitebaseurl >}}/0/23/0230-d.png) \
+![]({{< sitebaseurl >}}/images/0/23/0230-d.png) \
 Gambar <a name="fig4">4</a>. Transformasi $y$ to $Y$ juga harus menjaga rasio $l$ ke $L$ untuk kedua sistem koordinat.
 
 Dengan mengikuti cara untuk memperoleh Persamaan \eqref{eqn:equal-conversion-xs-from-xw} dan \eqref{eqn:equal-conversion-xw-from-xs}, yaitu menggunakan Persamaan \eqref{eqn:equal-ratio-between-scales} dan informasi pada Gambar [4](#fig4) dapat diperoleh hubungan
@@ -125,7 +125,7 @@ Perhatikan perbedaan Persamaan \eqref{eqn:equal-conversion-ys-from-yw} dan \eqre
 ### maintaining aspect ratio
 Persamaan \eqref{eqn:equal-conversion-xs-from-xw}, \eqref{eqn:equal-conversion-xw-from-xs}, \eqref{eqn:equal-conversion-ys-from-yw}, dan \eqref{eqn:equal-conversion-yw-from-ys} belum memastikan bahwa bila terdapat suatu obyek, ukurannya tetap. Akan tetapi hanya dapat memastikan bahwa obyek tergambarkan dalam kedua sistem koordinat.
 
-![]({{< sitebaseurl >}}/0/23/0230-e.png) \
+![]({{< sitebaseurl >}}/images/0/23/0230-e.png) \
 Gambar <a name="fig5">5</a>. Transformasi dari sistem koordinat dunia ke sistem koordinat layar rasio panjang dan lebar kedua area pada masing-masing sistem koordinat tidak sama, dengan gambar asal di sebelah kiri dan hasil transformasi di sebelah kanan.
 
 Untuk memastikan ukurannya tetap diperlukan rasio perbandingan ukuran benda pada arah vertikal dan horizontal pada kedua sistem koordinat yang sebagai konsekuensinya dapat menyebabkan obyek terpotong pada salah satu sistem koordinat seperti disajikan pada Gambar [5](#fig5). Hal ini di luar dari pembahasan saat ini.

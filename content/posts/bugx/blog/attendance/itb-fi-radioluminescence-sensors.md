@@ -12,23 +12,19 @@ draft: false
 ---
 Seminar fisika di 1201 pada hari ini akan dibawakan oleh Prof. David Bradley dari Universitas Surrey dan Unversitas Sunway mengenai Towards Development of Radioluminescence Sensors [[1](#r01)]. Pembicara adalah seorang yang amat bereputasi dalam bidangnya [[2](#r02)].
 
-![](/bugx/img/attendance/david-bradley-26jul2022-0900.jpg)
+[Poster](https://dudung.github.io/bugx/img/attendance/david-bradley-26jul2022-0900.jpg)
 
 
 ## lecture
 Seminar atau lebih tepatnya kolokium [[3](#r03)], dilaksanakan di Ruang 1201, yang merupakan salah satu ruang bersejarah di kampus.
 
-![](https://live.staticflickr.com/65535/52241704351_81928c214f_c.jpg)
+[Slide overview](https://live.staticflickr.com/65535/52241704351_81928c214f_c.jpg)
 
 Gambar <a name='fig1'>1</a>. Slide tentang Overview yang sedang dijelaskan oleh Prof. David Bradley.
 
 Informasi mengenai Lumisyns yang merupakan suatu spin-off dari Multimedia University, berlokasi di Cyberjaya, disampaikan pada kolokium ini, sebagaimana tersajikan pada Gambar [1](#fig1).
 
-<br>
-
-[![](/bugx/img/attendance/d-bradley-22jul-1.jpg)](/bugx/img/attendance/d-bradley-22jul-1.jpg) | [![](/bugx/img/attendance/d-bradley-22jul-2.jpg)](/bugx/img/attendance/d-bradley-22jul-2.jpg) |  [![](/bugx/img/attendance/d-bradley-22jul-3.jpg)](/bugx/img/attendance/d-bradley-22jul-3.jpg)
-:-: | :-: | :-:
-[![](/bugx/img/attendance/d-bradley-22jul-4.jpg)](/bugx/img/attendance/d-bradley-22jul-4.jpg) | [![](/bugx/img/attendance/d-bradley-22jul-5.jpg)](/bugx/img/attendance/d-bradley-22jul-5.jpg) |  [![](/bugx/img/attendance/d-bradley-22jul-6.jpg)](/bugx/img/attendance/d-bradley-22jul-6.jpg))
+[note 1](https://dudung.github.io/bugx/img/attendance/d-bradley-22jul-1.jpg) &bull; [note 2](https://dudung.github.io/bugx/img/attendance/d-bradley-22jul-2.jpg) &bull;  [note 3](https://dudung.github.io/bugx/img/attendance/d-bradley-22jul-3.jpg) &bull; [note 4](https://dudung.github.io/bugx/img/attendance/d-bradley-22jul-4.jpg) &bull; [note 5](https://dudung.github.io/bugx/img/attendance/d-bradley-22jul-5.jpg) &bull;  [note 6](https://dudung.github.io/bugx/img/attendance/d-bradley-22jul-6.jpg)
 
 Gambar <a name='fig2'>2</a>. Enam lembar catatan kolokium.
 

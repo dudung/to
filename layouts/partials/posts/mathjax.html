@@ -1,3 +1,4 @@
+{{- if or (.Params.mathjax) -}}
 <!-- layouts/partials/mathjax.html -->
 
 <script>
@@ -29,17 +30,7 @@
 	mathjax@3/es5/tex-mml-chtml.js"
 	>
 </script>
-
-
-
-
-
-
-
-
-
-
-
+{{- end -}}
 
 
 
