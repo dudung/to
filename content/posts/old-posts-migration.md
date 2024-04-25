@@ -23,6 +23,7 @@ One of the problems in migration from jekyll to Hugo is number of posts that cou
 + Images: Fix link or just use the image there or just text.
 + JS apps: Shortcodes or code in post.
 + Tags: Accept all old ones or transform it to suit current tags, or even tagged as their repo.
++ Category: Folders or just in post front matter.
 
 
 ## mathjax
