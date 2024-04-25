@@ -25,9 +25,10 @@ One of the problems in migration from jekyll to Hugo is number of posts that cou
 + Tags: Accept all old ones or transform it to suit current tags, or even tagged as their repo.
 + Category: Folders or just in post front matter.
 
+## math
+There are two JS libraries used for supporting math expression in a Hugo post, MathJax and KaTeX.
 
-## mathjax
-File is `layouts\partials\posts\mathjax.html` with content as follow.
+For MathJax, the file is `layouts\partials\posts\mathjax.html` with content as follow.
 
 ```html
 {{- if or (.Params.mathjax) -}}
@@ -63,9 +64,7 @@ File is `layouts\partials\posts\mathjax.html` with content as follow.
 {{- end -}}
 ```
 
-
-## katex
-File is `layouts\partials\posts\math.html` with content as follow.
+For KaTeX, the file is `layouts\partials\posts\math.html` with content as follow.
 
 ```html
 {{- if or (.Params.math) (.Site.Params.math) (.Params.katex) (.Site.Params.katex) -}}
@@ -97,9 +96,7 @@ url https://github.com/KaTeX/KaTeX/tree/main/contrib/mhchem [20240412]
 {{- end -}}
 ```
 
-
-## usage
-File is `layouts\posts\single.html` with content as follow.
+And for usage, the file is `layouts\posts\single.html` with content as follow.
 ```html
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
@@ -147,6 +144,80 @@ Notice the last third and second lines.
 Jekyll is using `date: 2021-09-29 09:57:00 +07` in its post front matter, while Hugo is using `date = 2024-04-25T09:02:00+07:00`. The problem is not just YAML vs TOML but the date information stored as string in post parameters, since the first has two spaces and the second only a long single word. And also the minutes in the UTS offsets.
 
 Withour writing a program, the hundreds of posts must be edited manually.
+
+
+## categories
+Based on current the 760 posts, neglecting the `01-Jan-0001` wrong date,
+
+{{< html >}}
+<div>
+  <code>0 25-Apr-2024</code>
+  <a href="/to/0021/">old posts migration</a>
+  &bull;
+  <code>1 24-Apr-2024</code>
+  <a href="/to/0020/">sum-mul-exp hyperoperation seq</a>
+  &bull;
+  <code>2 23-Apr-2024</code>
+  <a href="/to/0019/">euler method for simple motion</a>
+  &bull;
+  <code>3 22-Apr-2024</code>
+  <a href="/to/0018/">ffnn schematic and matrix</a>
+  &bull;
+  <code>4 21-Apr-2024</code>
+  <a href="/to/0017/">generate synthetic data for ml</a>
+  &bull;
+
+  &middot;&middot;&middot;
+
+  &bull;
+  <code>18 07-Apr-2024</code>
+  <a href="/to/0003/">html unordered list</a>
+  &bull;
+  <code>19 06-Apr-2024</code>
+  <a href="/to/0002/">flowchart and mermaid</a>
+  &bull;
+  <code>20 05-Apr-2024</code>
+  <a href="/to/0001/">have no idea</a>
+
+  <br><br>
+
+  <code>21 01-Apr-2024</code>
+  <a href="/to/posts/o/pl3201/2023-03-to-do/">2023-03 to-do</a>
+  &bull;
+  <code>22 28-Mar-2024</code>
+  <a href="/to/posts/o/fi4002/intro-mc-integration/">intro mc integration</a>
+  &bull;
+
+  &middot;&middot;&middot;
+
+  &bull;
+  <code>756 01-Jan-0001</code>
+  <a href="/to/posts/bug/0/30/2022-02-26-simpson-rule/">simpson rule</a>
+  &bull;
+  <code>757 01-Jan-0001</code>
+  <a href="/to/posts/bug/0/21/2021-04-20-slr-ls-gradient-descent/">slr ls gradient descent</a>
+  &bull;
+  <code>758 01-Jan-0001</code>
+  <a href="/to/posts/bug/0/21/2021-12-03-slr-ls-line/">slr ls line</a>
+  &bull;
+  <code>759 01-Jan-0001</code>
+  <a href="/to/posts/bug/0/00/2021-11-17-test-layout/">test layout</a>
+  &bull;
+  <code>760 01-Jan-0001</code>
+  <a href="/to/posts/bug/1/20/2022-01-04-tobacco-aao-morphology/">tobacco aao morphology</a>
+</div> 
+{{< /html >}}
+
+following categories are considered and proposed.
+
++ articles,
++ codes,
++ equations,
++ fiction,
++ manuscript,
++ slides,
+
+{{< instagram C6I_chwPXoO >}}
 
 
 ## notes
