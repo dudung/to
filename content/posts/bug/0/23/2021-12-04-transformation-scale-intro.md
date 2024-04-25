@@ -15,7 +15,6 @@ category: physics
 tags: ["least square", "linear regression", "line"]
 date: 2021-12-05T16:00:00+07:00
 src: https://github.com/dudung/bug/commits/main/_posts/0/23/2021-12-04-transformation-scale-intro.md
-math: true
 ---
 Dilasi merupakan transformasi dalam geometri yang mana sebuah obyek matematika terekspansi (menjadi lebih besar) atau terkompresi (menjadi lebih kecil) sedemikian sehingga hasilnya mirip dengan aslinya [[1](#r01)]. Hal ini mirip dengan saat kita melihat suatu benda di sekeliling kita secara langsung dibandingkan dengan setelah direkam oleh kamera dan dilihat melalui layar komputer. Terjadi perubahan koordinat dari dunia-ke-kerangka, yang untuk beberapa aplikasi juga dari kerangka-ke-dunia (frame-to-world) [[2](#r02)]. Penskalaan (scale) yang merupakan salah satu transformasi dasar [[3](#r03)], dapat menjelaskan hal tersebut. Salah satu aplikasi dalam transformasi Kartesian 2d yang bersifat konformal, afin, dan polinomial adalah mengubah proyeksi tidak diketahui menjadi suatu proyeksi yang diketahui [[4](#r04)], dengan implementasinya adalah dalam aplikasi untuk melakukan koreksi perspektif foto [[5](#r05)]. Penerapan yang lebih sederhana adalah bagaimana menggambarkan koordinat dunia (yang terlihat melalui suatu jendela) ke dalam koordinat komputer (yang terlihat melalui viewport suatu devais) [[6](#r06)] atau yang lebih sederhana lagi adalah saat melakukan konversi nilai temperatur dari suatu skala temperatur ke skala temperatur yang lain [[7](#r07)].
 
@@ -126,7 +125,7 @@ Perhatikan perbedaan Persamaan \eqref{eqn:equal-conversion-ys-from-yw} dan \eqre
 ### maintaining aspect ratio
 Persamaan \eqref{eqn:equal-conversion-xs-from-xw}, \eqref{eqn:equal-conversion-xw-from-xs}, \eqref{eqn:equal-conversion-ys-from-yw}, dan \eqref{eqn:equal-conversion-yw-from-ys} belum memastikan bahwa bila terdapat suatu obyek, ukurannya tetap. Akan tetapi hanya dapat memastikan bahwa obyek tergambarkan dalam kedua sistem koordinat.
 
-![]({{site.baseurl}}/assets/img/0/23/0230-e.png) \
+![]({{< sitebaseurl >}}/0/23/0230-e.png) \
 Gambar <a name="fig5">5</a>. Transformasi dari sistem koordinat dunia ke sistem koordinat layar rasio panjang dan lebar kedua area pada masing-masing sistem koordinat tidak sama, dengan gambar asal di sebelah kiri dan hasil transformasi di sebelah kanan.
 
 Untuk memastikan ukurannya tetap diperlukan rasio perbandingan ukuran benda pada arah vertikal dan horizontal pada kedua sistem koordinat yang sebagai konsekuensinya dapat menyebabkan obyek terpotong pada salah satu sistem koordinat seperti disajikan pada Gambar [5](#fig5). Hal ini di luar dari pembahasan saat ini.
