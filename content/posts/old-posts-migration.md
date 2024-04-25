@@ -220,6 +220,8 @@ following categories are considered and proposed.
 
 {{< instagram C6I_chwPXoO >}}
 
+![](https://i.ibb.co/G5mLg4d/interference-pattern-slit-2.png)
+![](https://i.ibb.co/d5Zqnwf/interference-pattern-slit-2.png)
 
 ## notes
 [^congdon_2018]: Ben Congdon, "Switching from Jekyll to Hugo", 6 Jun 2018, url https://benjamincongdon.me/blog/2018/06/06/Switching-from-Jekyll-to-Hugo/ [20240425].
