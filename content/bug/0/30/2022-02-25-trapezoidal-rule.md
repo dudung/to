@@ -13,10 +13,11 @@ oo: false
 svgphys: false
 category: physics
 tags: ["numerical", "integration", "partition", "trapezoidal rule"]
-date: 2022-03-09 15:58:00 +07
+date: 2022-03-09T15:58:00+07:00
 src: https://github.com/dudung/bug/commits/main/_posts/0/30/2022-02-25-trapezoidal-rule.md
 twitter_username: 6unpnp
 nodes: []
+math: true
 ---
 Salah satu metode integrasi numerik dengan partisi adalah aturan trapesium, yang membagi luas di bawah kurva dengan partisi-partisi berbentuk trapesium untuk menghitung suatu integral tertentu [[1](#r01)]. Aturan ini merupakan salah satu dari aturan-aturan terpenting dalam teori integrasi [[2](#r02)]. Metode ini memerlukan jumlah titik $N \ge 2$.
 
