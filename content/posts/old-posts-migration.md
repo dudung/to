@@ -133,6 +133,12 @@ File is `layouts\posts\single.html` with content as follow.
 Notice the last third and second lines.
 
 
+## date
+Jekyll is using `date: 2021-09-29 09:57:00 +07` in its post front matter, while Hugo is using `date = 2024-04-25T09:02:00+07:00`. The problem is not just YAML vs TOML but the date information stored as string in post parameters, since the first has two spaces and the second only a long single word. And also the minutes in the UTS offsets.
+
+Withour writing a program, the hundreds of posts must be edited manually.
+
+
 ## notes
 [^congdon_2018]: Ben Congdon, "Switching from Jekyll to Hugo", 6 Jun 2018, url https://benjamincongdon.me/blog/2018/06/06/Switching-from-Jekyll-to-Hugo/ [20240425].
 [^guo_2018]: Danny Guo, "Migrating from Jekyll to Hugo", 24 Jun 2018, url https://www.dannyguo.com/blog/migrating-from-jekyll-to-hugo [20240425].
