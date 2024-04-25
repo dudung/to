@@ -16,6 +16,15 @@ Some of my old posts were still for Jekyll post, while this and the newer ones a
 One of the problems in migration from jekyll to Hugo is number of posts that could be hundreds of them, even most of them are just ramblings and brain dumps [^jing_2020], where in my case there are about 740 posts to migrate. I have already encountered some problems like folder for images, Liquid templating language to Hugo shortcodes translation, and math support, since Jekyll is using MathJax, while Hugo is using KaTeX. I think I can manage it, since there is a report that the migration was mostly painless [^guo_2018], but for tha math support it was easier said than done [^newman_2022].
 
 
+## problems
++ Support for mathematical expression: MathJax to KaTeX.
++ Data conversion: Manually edited.
++ Post URL: Collision prevention between new posts and being migrated posts.
++ Images: Fix link or just use the image there or just text.
++ JS apps: Shortcodes or code in post.
++ Tags: Accept all old ones or transform it to suit current tags, or even tagged as their repo.
+
+
 ## mathjax
 File is `layouts\partials\posts\mathjax.html` with content as follow.
 
