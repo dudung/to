@@ -21,7 +21,7 @@ This post is triggered by an offer of experimenting of producing diffused light 
 
 
 ## notes
-[^beacham_2019]: Andrw
+[^beacham_2019]: Andrew M. Beacham, Laura Vickers, Jim Monaghan, "Vertical farming: a summary of approaches to growing skywards", The Journal of Horticultural Science and Biotechnology, vol 94, no 3, p 1-7, Feb 2019, url http://dx.doi.org/10.1080/14620316.2019.1574214.
 [^corbley_2021]: Andy Corbley, "UK’s Largest Vertical Farm that Uses Only Sunlight Begins First Harvest", Good News Network, 28 Oct 2021, url https://www.goodnewsnetwork.org/shockingly-freshs-vertical-farm-uses-much-less-energy-thanks-to-natural-light/ [20240428].
 [^dbcontributors_2022]: Designing Buildings contributors, "Natural light", Designing Buildings, 5 Oct 2022, url https://www.designingbuildings.co.uk/wiki/Natural_light [20240428].
 [^eaton_2021]:  Michael Eaton, Kale Harbick, Timothy Shelford, Neil Mattson, "Modeling Natural Light Availability in Skyscraper Farms", Agronomy, vol 11, no 9, p 1684, Sep 2021, url https://doi.org/10.3390/agronomy11091684.
