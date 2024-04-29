@@ -39,6 +39,7 @@ There is course named Simulation and Modelling of Physical System, Undergraduate
 
 ## ai
 A course named Artificial Intelligence is given as part of 2019 curriculum of Master Program in Computational Science, Institut Teknologi Bandung, which is an elective course for 3 credit hours.
+  + Task for refining document for this course is canceled and the whole tasks are redistributed among team member.
 
 
 ## ds
