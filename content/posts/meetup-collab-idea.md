@@ -11,7 +11,7 @@ A discussion to find a collaboration idea <!--more-->
 
 
 ## intro
-A meetup [^dimond_2016] at Dakken [^mentari_2023] in the afternoon finally produces an idea for collab [^montano_2019], which is further advancement of previous work [^viridi_2019]. Today is the last day of this month, so this post will end this month writing challenge, that is not successful.
+A meetup [^dimond_2016] at Dakken [^mentari_2023] in the afternoon finally produces an idea for collab [^montano_2019], which would be a further advancement of previous work [^viridi_2019]. Today is the last day of this month, so this post will end this month writing challenge, that is not successful.
 
 
 ## notes
