@@ -1,7 +1,6 @@
----
-title: "bugx"
-name: "Artif Bugx"
-role: "Artificial Author"
-date: 2022-03-21T21:06:00+07:00
-lastmod: 2022-03-21T21:56:00+0700
----
++++
+name = 'Artif Bugx'
+photo = 'https://cdn.iconscout.com/icon/premium/png-512-thumb/bug-1733879-1475754.png?f=webp&w=32'
+twitter = '@bugx2022'
++++
+Artif Bugx is an artifical bug seeker, who must be manually directed.
